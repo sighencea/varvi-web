@@ -10,24 +10,27 @@
 
   var STORAGE_KEY = 'varvi_lang';
   var DEFAULT_LANG = 'ro';
-  var SUPPORTED = ['ro', 'en'];
+  var SUPPORTED = ['ro', 'en', 'de'];
 
   var current = DEFAULT_LANG;
   var dicts = {};
 
   /* Walk navigator.languages in preference order. Match on language code,
      but also on region — so e.g. en-MD (English UI, Moldovan region) still
-     maps to Romanian. Anything unrecognized falls back to English. */
+     maps to Romanian and en-AT to German. Anything unrecognized falls back
+     to English. */
   function detectBrowser() {
     var prefs = navigator.languages && navigator.languages.length
       ? navigator.languages
       : [navigator.language || 'en'];
     var RO_REGIONS = ['RO', 'MD'];
+    var DE_REGIONS = ['DE', 'AT', 'CH', 'LI', 'LU'];
     for (var i = 0; i < prefs.length; i++) {
       var parts = String(prefs[i]).split('-');
       var code = parts[0].toLowerCase();
       var region = (parts[1] || '').toUpperCase();
       if (code === 'ro' || RO_REGIONS.indexOf(region) !== -1) return 'ro';
+      if (code === 'de' || DE_REGIONS.indexOf(region) !== -1) return 'de';
       if (code === 'en') return 'en';
     }
     return 'en';

@@ -31,7 +31,7 @@ i18n/ro.json, en.json translation dictionaries
 
 ## Localization
 
-Romanian is the default. Every translatable element carries a `data-i18n` key resolved against `i18n/*.json`. First-time visitors whose browser prefers English get a one-time prompt offering a switch; any choice persists in `localStorage` (`varvi_lang`).
+Romanian is the default; English and German are available (`i18n/ro.json`, `en.json`, `de.json`). Every translatable element carries a `data-i18n` key. First-time visitors whose browser prefers another supported language get a one-time prompt, in that language, offering a switch; any choice persists in `localStorage` (`varvi_lang`). The German and Romanian copy should be reviewed by native speakers.
 
 ## Content still to be supplied
 

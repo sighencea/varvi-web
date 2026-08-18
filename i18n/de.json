@@ -1,0 +1,124 @@
+{
+  "meta.homeTitle": "VARVI | Weine aus Siebenbürgen",
+  "meta.contactTitle": "VARVI | Kontakt",
+
+  "gate.welcome": "Willkommen bei VARVI",
+  "gate.text": "Bitte bestätigen Sie, dass Sie das gesetzliche Mindestalter für den Konsum von Alkohol in Ihrem Land erreicht haben.",
+  "gate.enter": "Eintreten",
+  "gate.leave": "Verlassen",
+
+  "nav.wines": "Weine",
+  "nav.place": "Unser Ort",
+  "nav.house": "Das Haus",
+  "nav.awards": "Auszeichnungen",
+  "nav.order": "Wein bestellen",
+  "nav.contact": "Kontakt",
+  "nav.menuOpen": "Menü öffnen",
+  "nav.menuClose": "Menü schließen",
+
+  "hero.sub": "Wein, geprägt vom Ort",
+  "hero.tagline": "Aus unserem Weinberg an Ihren Tisch.",
+  "hero.cta": "Unsere Weine entdecken",
+  "hero.location": "Cricău · Alba · Rumänien",
+
+  "crest.place": "Cricău · Siebenbürgen",
+
+  "house.eyebrow": "Das Haus",
+  "house.statement": "Wein beginnt nicht in der Flasche. Er beginnt mit einem Ort.",
+  "house.support": "Die VARVI-Weine entstehen in Cricău, im Kreis Alba, im Herzen des historischen Weinlands Siebenbürgen — bei Casa de vinuri Maria, einem Haus, das in einem Maßstab arbeitet, in dem jede Abfüllung gezählt werden kann.",
+
+  "flag.eyebrow": "Limitierte Edition",
+  "flag.edition": "Ediție limitată",
+  "flag.count": "1.200 Flaschen",
+  "flag.copy": "Eine rumänische Rebsorte. Ein siebenbürgischer Ausdruck. Der Fetească Neagră 2024 wurde in einer einzigen limitierten Edition von 1.200 Flaschen abgefüllt.",
+  "flag.link": "Diesen Wein entdecken",
+  "flag.order": "Telefonisch bestellen",
+
+  "col.eyebrow": "Die Kollektion",
+  "col.title": "Die VARVI-Kollektion",
+  "col.sub": "Vier Ausdrücke. Ein Ort.",
+
+  "cat.red": "Rotwein · Limitierte Edition",
+  "cat.white": "Weißwein",
+  "cat.rose": "Roséwein",
+  "cat.blend": "Weiße Cuvée",
+  "meta.fn": "2024 · Edition von 1.200 Flaschen",
+  "meta.editionRose": "2024 · Edition von 660 Flaschen",
+  "meta.editionFrm": "2024 · Edition von 1.600 Flaschen",
+  "meta.gold": "Goldmedaille · Ausgezeichnet in Alba",
+  "meta.bronze": "Bronzemedaille · Ausgezeichnet in Alba",
+  "wine.order": "Wein bestellen",
+  "wine.viewCert": "Urkunde ansehen",
+
+  "cert.close": "Schließen",
+  "cert.note": "[ Urkunde folgt, Platzhalter angezeigt ]",
+
+  "place.eyebrow": "Der Ort",
+  "place.title": "Siebenbürgen",
+  "place.copy": "Hügel, Wald, kalte Morgen und lange Herbste, im historischen Weinland Siebenbürgens. Der Ort ist die erste Zutat des Weins.",
+
+  "origin.eyebrow": "Herkunft",
+  "origin.country": "Rumänien",
+  "origin.region": "Siebenbürgen",
+  "origin.caption": "wo die Weine entstehen",
+
+  "limited.title": "Nicht millionenfach abgefüllt.",
+  "limited.copy": "VARVI-Weine werden in limitierten Editionen abgefüllt — manchmal in Hunderten gezählt, nicht in Hunderttausenden.",
+  "limited.figure": "1.200",
+  "limited.unit": "Flaschen",
+
+  "details.caption": "Details zählen.",
+
+  "awards.eyebrow": "Anerkennung",
+  "awards.title": "Ausgezeichnet für das, was in der Flasche ist.",
+  "awards.note": "Ausgezeichnet in Alba",
+  "awards.tierGold": "Gold",
+  "awards.tierBronze": "Bronze",
+
+  "human.title": "Gemacht im menschlichen Maßstab.",
+  "human.copy": "Es gibt kein Château und keine Marketingabteilung. Es gibt ein kleines Weinhaus in Cricău und Editionen, gezählt in Hunderten und wenigen Tausenden von Flaschen. Diese Fotografien sind keine Kampagne. So sieht es wirklich aus.",
+  "human.docCap1": "der Stand, vinul județului Alba, bevor der Fotograf kommt",
+
+  "motto.label": "Das VARVI-Wappen",
+
+  "order.eyebrow": "Weinbestellungen",
+  "order.title": "VARVI-Wein bestellen",
+  "order.tagline": "Aus unserem Weinberg an Ihren Tisch.",
+  "order.copy": "Unsere Weine können direkt beim Weinhaus bestellt werden. Um eine Bestellung aufzugeben, kontaktieren Sie uns telefonisch. Wir helfen Ihnen gerne bei der Auswahl der Weine, bestätigen die Verfügbarkeit und arrangieren Ihre Bestellung.",
+  "order.cta": "Anrufen und bestellen",
+  "order.email": "Per E-Mail bestellen",
+  "order.motto": "Direkt von VARVI. Persönlich arrangiert.",
+  "order.note": "[ Telefonnummer folgt, Platzhalter angezeigt ]",
+
+  "phone.soonTitle": "Telefonische Bestellungen folgen in Kürze",
+  "phone.soonCopy": "Unsere Bestellleitung wird derzeit eingerichtet. Bis dahin freuen wir uns über Ihre E-Mail.",
+
+  "contact.title": "VARVI entdecken",
+  "contact.address": "Cricău · Alba · Rumänien",
+  "contact.link1": "Weinhaus kontaktieren",
+  "contact.link2": "VARVI finden",
+  "contact.note": "[ Kontaktdaten, Verkaufsstellen und Links folgen, nur Platzhalter ]",
+
+  "footer.address": "Cricău · Alba · Siebenbürgen · Rumänien",
+  "footer.orderTitle": "Weinbestellungen",
+  "footer.orderCopy": "Bestellen Sie VARVI-Weine telefonisch direkt beim Weinhaus.",
+  "legal.privacy": "Datenschutz",
+  "legal.terms": "AGB",
+
+  "cpage.back": "Zurück zur Website",
+  "cpage.eyebrow": "Kontakt",
+  "cpage.title": "Per E-Mail bestellen",
+  "cpage.copy": "Schreiben Sie uns, welche Weine Sie wünschen, und wir antworten Ihnen, um Verfügbarkeit, Preis und Lieferung zu bestätigen — persönlich arrangiert vom Weinhaus.",
+  "cpage.phoneLabel": "Telefon",
+  "cpage.addressLabel": "Weinhaus",
+  "cpage.note": "[ E-Mail-Adresse und Telefonnummer folgen, Platzhalter angezeigt ]",
+  "cpage.mailSubject": "Weinbestellung, VARVI",
+  "cpage.mailBody": "Guten Tag,\n\nich möchte folgende VARVI-Weine bestellen:\n\n- Wein und Menge:\n\nName:\nLieferadresse:\nTelefon:\n\nVielen Dank.",
+
+  "audio.label": "Musik",
+  "audio.volume": "Lautstärke",
+
+  "langPrompt.message": "Diese Website ist auch auf Deutsch verfügbar. Möchten Sie auf Deutsch fortfahren?",
+  "langPrompt.stay": "Auf Rumänisch fortfahren",
+  "langPrompt.switch": "Auf Deutsch fortfahren →"
+}
