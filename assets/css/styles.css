@@ -228,8 +228,17 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   gap: 24px;
   color: var(--color-ivory);
 }
-.site-header__brand { font-size: 23px; letter-spacing: .34em; font-weight: 500; }
+/* Brand lockup: small crest as a seal beside the wordmark */
+.site-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 23px;
+  letter-spacing: .34em;
+  font-weight: 500;
+}
 .site-header__brand:hover { color: var(--color-ivory); }
+.site-header__crest { height: 38px; width: auto; }
 
 .site-nav {
   display: none;
@@ -1094,7 +1103,14 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   justify-content: space-between;
   gap: 24px;
 }
-.cpage-header__brand { font-size: 21px; letter-spacing: .34em; font-weight: 500; }
+.cpage-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 21px;
+  letter-spacing: .34em;
+  font-weight: 500;
+}
 .cpage-header__back {
   font-family: var(--font-sans);
   font-size: 10.5px;
