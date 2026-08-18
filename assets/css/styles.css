@@ -164,6 +164,17 @@ body.modal-open { overflow: hidden; }
 }
 html.js:not(.age-ok) .age-gate { display: flex; }
 
+/* RO / EN on the gate: same placement as the header toggle, recolored for ivory */
+.age-gate .lang-toggle {
+  display: flex;
+  position: absolute;
+  top: 26px;
+  right: clamp(24px, 5vw, 80px);
+}
+.age-gate .lang-btn { color: var(--color-stone); }
+.age-gate .lang-btn.is-active { color: var(--color-gold); }
+.age-gate .lang-toggle__sep { color: var(--color-stone); }
+
 .age-gate__crest { width: 210px; }
 .age-gate__brand { font-size: 34px; letter-spacing: .34em; margin-top: 28px; font-weight: 500; }
 .age-gate__welcome { margin-top: 14px; font-size: 10px; font-weight: 400; }

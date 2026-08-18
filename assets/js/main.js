@@ -256,7 +256,12 @@
       !document.documentElement.classList.contains('age-ok');
     if (gateUp) {
       var enter = gate.querySelector('[data-gate-enter]');
-      if (enter) enter.addEventListener('click', function () { showLangPrompt(result.prompt); }, { once: true });
+      if (enter) enter.addEventListener('click', function () {
+        // Picking a language on the gate itself counts as the choice
+        var saved = null;
+        try { saved = localStorage.getItem('varvi_lang'); } catch (e) {}
+        if (!saved) showLangPrompt(result.prompt);
+      }, { once: true });
     } else {
       showLangPrompt(result.prompt);
     }
