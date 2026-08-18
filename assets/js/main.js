@@ -248,22 +248,9 @@
     }).catch(function () {});
   }
 
+  // Shown immediately, on top of the age gate when that is open (.modal
+  // stacks above the gate), so the visitor can settle the language first.
   window.I18n.init().then(function (result) {
-    if (!(result && result.prompt)) return;
-    // If the age gate is still up, offer the switch only once the visitor
-    // has entered; "Leave" navigates away, so no prompt is ever needed.
-    var gateUp = gate && document.documentElement.classList.contains('js') &&
-      !document.documentElement.classList.contains('age-ok');
-    if (gateUp) {
-      var enter = gate.querySelector('[data-gate-enter]');
-      if (enter) enter.addEventListener('click', function () {
-        // Picking a language on the gate itself counts as the choice
-        var saved = null;
-        try { saved = localStorage.getItem('varvi_lang'); } catch (e) {}
-        if (!saved) showLangPrompt(result.prompt);
-      }, { once: true });
-    } else {
-      showLangPrompt(result.prompt);
-    }
+    if (result && result.prompt) showLangPrompt(result.prompt);
   });
 })();
