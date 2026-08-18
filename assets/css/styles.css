@@ -958,6 +958,15 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 }
 .sound-control.is-off .sound-toggle { opacity: .55; }
 .sound-control.is-off .sound-toggle__icon { background: rgba(242, 239, 231, .35); }
+/* Pulses while the track is waiting for the first interaction to be heard */
+@keyframes sound-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.9); opacity: .4; }
+}
+.sound-control.is-pending .sound-toggle__icon {
+  background: var(--color-gold-light);
+  animation: sound-pulse 1.6s ease-in-out infinite;
+}
 .sound-volume {
   width: 90px;
   height: 14px;

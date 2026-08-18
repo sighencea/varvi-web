@@ -199,28 +199,53 @@
     music.muted = savedOff;
     if (musicVol) musicVol.value = String(savedVol);
 
+    var userMuted = savedOff;      // explicit choice via the mute button
+    var pendingUnmute = false;     // silent only because autoplay was blocked
+
+    var setUserMuted = function (val) {
+      userMuted = val;
+      try { localStorage.setItem('varvi_music', val ? 'off' : 'on'); } catch (e) {}
+    };
+
     var reflectMusic = function () {
       var off = music.muted || music.paused;
       musicBtn.setAttribute('aria-pressed', off ? 'false' : 'true');
-      if (soundControl) soundControl.classList.toggle('is-off', off);
+      if (soundControl) {
+        soundControl.classList.toggle('is-off', off);
+        soundControl.classList.toggle('is-pending', pendingUnmute);
+      }
     };
+
+    /* Any interaction anywhere turns the sound ON if its silence wasn't the
+       visitor's own doing; interactions never mute. Only the mute button
+       (excluded here, along with the rest of the control) silences it. */
+    var ensureAudible = function (e) {
+      if (userMuted) return;
+      if (soundControl && e.target instanceof Node && soundControl.contains(e.target)) return;
+      pendingUnmute = false;
+      if (music.paused) music.play().catch(function () {});
+      music.muted = false;
+      reflectMusic();
+    };
+    document.addEventListener('pointerdown', ensureAudible);
+    document.addEventListener('keydown', ensureAudible);
 
     var startMusic = function () {
       music.play().then(reflectMusic).catch(function () {
-        var once = function () {
-          document.removeEventListener('pointerdown', once);
-          document.removeEventListener('keydown', once);
-          music.play().then(reflectMusic).catch(function () {});
-        };
-        document.addEventListener('pointerdown', once);
-        document.addEventListener('keydown', once);
+        // Unmuted autoplay blocked: start the track muted (allowed), pulse
+        // the control as a hint, and let the first interaction unmute it.
+        if (!userMuted) pendingUnmute = true;
+        music.muted = true;
+        music.play().catch(function () {});
+        reflectMusic();
       });
     };
 
     // Mute button: keeps the track running silently so unmuting is seamless
     musicBtn.addEventListener('click', function () {
       music.muted = !music.muted;
-      try { localStorage.setItem('varvi_music', music.muted ? 'off' : 'on'); } catch (e) {}
+      setUserMuted(music.muted);
+      pendingUnmute = false;
       if (!music.muted && music.paused) music.play().catch(function () {});
       reflectMusic();
     });
@@ -233,7 +258,8 @@
         try { localStorage.setItem('varvi_volume', String(v)); } catch (e) {}
         if (music.muted && v > 0) {
           music.muted = false;
-          try { localStorage.setItem('varvi_music', 'on'); } catch (e) {}
+          setUserMuted(false);
+          pendingUnmute = false;
         }
         if (music.paused) music.play().catch(function () {});
         reflectMusic();
