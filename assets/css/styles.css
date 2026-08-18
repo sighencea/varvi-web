@@ -362,6 +362,11 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   height: 100%;
   object-fit: cover;
 }
+/* The bottle and glass sit in the right part of the photo; as the viewport
+   narrows and the crop tightens, keep that area as the subject */
+@media (max-width: 1100px) {
+  .hero__img { object-position: 78% center; }
+}
 .hero__scrim {
   position: absolute;
   inset: 0;
