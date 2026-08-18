@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.contactTitle">VARVI | Contact</title>
+<meta name="description" content="Order VARVI wines by email, directly from Casa de vinuri Maria in Cricău, Alba, Transylvania.">
+<meta name="theme-color" content="#F2EFE7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VARVI | Contact">
+<meta property="og:description" content="Order VARVI wines by email, directly from Casa de vinuri Maria in Cricău, Alba, Transylvania.">
+<link rel="icon" type="image/png" href="assets/images/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>(function(){document.documentElement.classList.add('js','age-ok')})();</script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<header class="cpage-header">
+  <div class="cpage-header__inner">
+    <a class="cpage-header__brand" href="index.html">VARVI</a>
+    <a class="cpage-header__back" href="index.html">← <span data-i18n="cpage.back">Înapoi la site</span></a>
+  </div>
+</header>
+
+<main class="cpage-main">
+  <img class="cpage-main__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI" width="170" height="113">
+  <div class="cpage-main__eyebrow eyebrow eyebrow--gold" data-i18n="cpage.eyebrow">Contact</div>
+  <h1 class="cpage-main__title" data-i18n="cpage.title">Comandă prin email</h1>
+  <p class="cpage-main__copy" data-i18n="cpage.copy">Scrieți-ne ce vinuri doriți și vă răspundem pentru a confirma disponibilitatea, prețul și livrarea, aranjate personal de casa de vinuri.</p>
+
+  <!-- Becomes a live mailto (with a localized, pre-filled order template) once
+       EMAIL is set in assets/js/main.js. Until then it stays inert. -->
+  <a class="cpage-main__email" data-mail-link>··· @ ···</a>
+
+  <!-- Future contact form goes here. When Formspree is configured, insert:
+       <form action="https://formspree.io/f/{form-id}" method="POST"> … </form>
+       with fields mirroring the email order template (wines and quantity,
+       name, delivery address, telephone). Not integrated yet by design. -->
+
+  <div class="cpage-main__grid">
+    <div>
+      <div class="cpage-main__label" data-i18n="cpage.phoneLabel">Telefon</div>
+      <!-- Convert to <a href="tel:…"> once PHONE is set in main.js. -->
+      <span class="cpage-main__phone" data-phone-number>+40 ··· ··· ···</span>
+    </div>
+    <div>
+      <div class="cpage-main__label" data-i18n="cpage.addressLabel">Casa de vinuri</div>
+      <div class="cpage-main__address">Casa de vinuri Maria<br>Cricău · Alba · România</div>
+    </div>
+  </div>
+
+  <div class="cpage-main__note mono-note" data-i18n="cpage.note">[ adresa de email și numărul de telefon urmează, sunt afișați substituenți ]</div>
+</main>
+
+<footer class="cpage-footer">© VARVI / Casa de vinuri Maria</footer>
+
+</body>
+</html>

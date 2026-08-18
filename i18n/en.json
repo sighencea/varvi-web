@@ -1,0 +1,121 @@
+{
+  "meta.homeTitle": "VARVI | Wines from Transylvania",
+  "meta.contactTitle": "VARVI | Contact",
+
+  "gate.welcome": "Welcome to VARVI",
+  "gate.text": "Please confirm that you are of legal drinking age in your country.",
+  "gate.enter": "Enter",
+  "gate.leave": "Leave",
+
+  "nav.wines": "Wines",
+  "nav.place": "Our Place",
+  "nav.house": "The House",
+  "nav.awards": "Awards",
+  "nav.order": "Order Wine",
+  "nav.contact": "Contact",
+  "nav.menuOpen": "Open menu",
+  "nav.menuClose": "Close menu",
+
+  "hero.sub": "Wine shaped by place",
+  "hero.tagline": "From our vineyard to your table.",
+  "hero.cta": "Discover our wines",
+  "hero.location": "Cricău · Alba · Romania",
+
+  "crest.place": "Cricău · Transylvania",
+
+  "house.eyebrow": "The House",
+  "house.statement": "Wine does not begin in the bottle. It begins with a place.",
+  "house.support": "VARVI wines are made in Cricău, in Alba, at the heart of Transylvania's historic wine country, by Casa de vinuri Maria, a house that works at a scale where each bottling can be counted.",
+
+  "flag.eyebrow": "Limited Edition",
+  "flag.edition": "Ediție limitată",
+  "flag.count": "1,200 bottles",
+  "flag.copy": "A Romanian grape. A Transylvanian expression. The 2024 Fetească Neagră was bottled in a single limited edition of 1,200 bottles.",
+  "flag.link": "Discover this wine",
+  "flag.order": "Order by telephone",
+
+  "col.eyebrow": "The Collection",
+  "col.title": "The VARVI Collection",
+  "col.sub": "Four expressions. One place.",
+
+  "cat.red": "Red Wine · Limited Edition",
+  "cat.white": "White Wine",
+  "cat.rose": "Rosé Wine",
+  "cat.blend": "White Blend",
+  "meta.fn": "2024 · Edition of 1,200 bottles",
+  "meta.gold": "Gold Medal · Awarded in Alba",
+  "meta.bronze": "Bronze Medal · Awarded in Alba",
+  "wine.order": "Order wine",
+  "wine.viewCert": "View award certificate",
+
+  "cert.close": "Close",
+  "cert.note": "[ award certificate to be supplied, placeholder shown ]",
+  "slot.bottle": "[ bottle photograph to follow ]",
+  "slot.landscape": "[ landscape photograph to follow ]",
+
+  "place.eyebrow": "The Place",
+  "place.title": "Transylvania",
+  "place.copy": "Hills, forest, cold mornings and long autumns, in Transylvania's historic wine country. The place is the wine's first ingredient.",
+
+  "origin.eyebrow": "Origin",
+  "origin.country": "Romania",
+  "origin.region": "Transylvania",
+  "origin.caption": "where the wines are made",
+
+  "limited.title": "Not made by the million.",
+  "limited.copy": "VARVI wines are bottled in limited editions, sometimes measured in hundreds rather than hundreds of thousands.",
+  "limited.figure": "1,200",
+  "limited.unit": "bottles",
+
+  "details.caption": "Details matter.",
+
+  "awards.eyebrow": "Recognition",
+  "awards.title": "Awarded for what is inside the bottle.",
+  "awards.note": "Awarded in Alba",
+  "awards.tierGold": "Gold",
+  "awards.tierBronze": "Bronze",
+
+  "human.title": "Made at human scale.",
+  "human.copy": "There is no château, and no marketing department. There is a small wine house in Cricău, and editions counted in hundreds and low thousands of bottles. These photographs are not a campaign. They are what it looks like.",
+  "human.docCap1": "the stall, vinul județului Alba, before the photographer arrives",
+
+  "motto.label": "The VARVI Crest",
+
+  "order.eyebrow": "Wine Orders",
+  "order.title": "Order VARVI Wine",
+  "order.tagline": "From our vineyard to your table.",
+  "order.copy": "Our wines are available to order directly from the wine house. To place an order, contact us by telephone. We will be delighted to help you choose your wines, confirm availability and arrange your order.",
+  "order.cta": "Call to place an order",
+  "order.email": "Order by email",
+  "order.motto": "Direct from VARVI. Personally arranged.",
+  "order.note": "[ telephone number to be supplied, placeholder shown ]",
+
+  "phone.soonTitle": "Telephone ordering is coming soon",
+  "phone.soonCopy": "Our ordering line is being set up. Until then, we would be glad to hear from you by email.",
+
+  "contact.title": "Discover VARVI",
+  "contact.address": "Cricău · Alba · Romania",
+  "contact.link1": "Contact the wine house",
+  "contact.link2": "Find VARVI",
+  "contact.note": "[ contact details, stockists and social links to be supplied, placeholders only ]",
+
+  "footer.address": "Cricău · Alba · Transylvania · Romania",
+  "footer.orderTitle": "Wine Orders",
+  "footer.orderCopy": "Order VARVI wines directly from the wine house by telephone.",
+  "legal.privacy": "Privacy",
+  "legal.terms": "Terms",
+
+  "cpage.back": "Back to the site",
+  "cpage.eyebrow": "Contact",
+  "cpage.title": "Order by email",
+  "cpage.copy": "Write to us with the wines you would like and we will reply to confirm availability, pricing and delivery, personally arranged by the wine house.",
+  "cpage.phoneLabel": "Telephone",
+  "cpage.addressLabel": "Wine house",
+  "cpage.note": "[ email address and telephone number to be supplied, placeholders shown ]",
+  "cpage.mailSubject": "Wine order, VARVI",
+  "cpage.mailBody": "Hello,\n\nI would like to order the following VARVI wines:\n\n- Wine and quantity:\n\nName:\nDelivery address:\nTelephone:\n\nThank you.",
+
+  "langPrompt.message": "This site is also available in English. Would you like to continue in English?",
+  "langPrompt.stay": "Continue in Romanian",
+  "langPrompt.switch": "Continue in English →"
+}

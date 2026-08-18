@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.homeTitle">VARVI | Vinuri din Transilvania</title>
+<meta name="description" content="VARVI wines by Casa de vinuri Maria, crafted in Cricău, Alba, in the heart of Transylvania. Limited-edition Romanian wines.">
+<meta name="theme-color" content="#161716">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VARVI | Wines from Transylvania">
+<meta property="og:description" content="VARVI wines by Casa de vinuri Maria, crafted in Cricău, Alba, in the heart of Transylvania. Limited-edition Romanian wines.">
+<!-- og:image needs an absolute URL to be picked up by scrapers — replace with the
+     full GitHub Pages / custom-domain URL once it is known. -->
+<meta property="og:image" content="assets/images/campaign/hero.jpg">
+<!-- Canonical: add once the final URL is known.
+<link rel="canonical" href=""> -->
+<link rel="icon" type="image/png" href="assets/images/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+// Runs before paint: returning of-age visitors never see the gate flash.
+// Without JS the .js class is absent, so the gate stays hidden and the site
+// remains readable.
+(function(){try{if(localStorage.getItem('varvi_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}document.documentElement.classList.add('js')})();
+</script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<!-- ======================= Age gate ======================= -->
+<div class="age-gate" role="dialog" aria-modal="true" aria-labelledby="gate-heading">
+  <img class="age-gate__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI" width="210" height="140">
+  <div class="age-gate__brand" id="gate-heading">VARVI</div>
+  <div class="age-gate__welcome eyebrow" data-i18n="gate.welcome">Bine ați venit la VARVI</div>
+  <p class="age-gate__text" data-i18n="gate.text">Vă rugăm să confirmați că aveți vârsta legală pentru consumul de alcool în țara dumneavoastră.</p>
+  <div class="age-gate__actions">
+    <button class="btn btn--dark" data-gate-enter data-i18n="gate.enter">Intră</button>
+    <button class="age-gate__leave" data-gate-leave data-i18n="gate.leave">Ieși</button>
+  </div>
+</div>
+
+<!-- ======================= Header ======================= -->
+<header class="site-header">
+  <div class="site-header__bg"></div>
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="#top">VARVI</a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="#wines" data-i18n="nav.wines">Vinurile</a>
+      <a href="#place" data-i18n="nav.place">Locul</a>
+      <a href="#house" data-i18n="nav.house">Casa</a>
+      <a href="#awards" data-i18n="nav.awards">Distincții</a>
+      <a class="nav-order" href="#order" data-i18n="nav.order">Comandă vin</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="lang-toggle">
+      <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
+      <span class="lang-toggle__sep" aria-hidden="true">/</span>
+      <button class="lang-btn" data-lang-btn="en">EN</button>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Deschide meniul" data-i18n-attr="aria-label:nav.menuOpen">
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Meniu mobil">
+  <a href="#wines" data-i18n="nav.wines">Vinurile</a>
+  <a href="#place" data-i18n="nav.place">Locul</a>
+  <a href="#house" data-i18n="nav.house">Casa</a>
+  <a href="#awards" data-i18n="nav.awards">Distincții</a>
+  <a class="nav-order" href="#order" data-i18n="nav.order">Comandă vin</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <div class="lang-toggle">
+    <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
+    <span class="lang-toggle__sep" aria-hidden="true">/</span>
+    <button class="lang-btn" data-lang-btn="en">EN</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ======================= Hero ======================= -->
+<section class="hero" id="top">
+  <img class="hero__img" src="assets/images/campaign/hero.jpg" alt="O sticlă de vin VARVI și un pahar într-o vie transilvăneană, în lumina joasă și aurie a dimineții" width="1772" height="887" fetchpriority="high">
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <div class="container">
+      <h1 class="hero__title">VARVI</h1>
+      <div class="hero__sub" data-i18n="hero.sub">Vin modelat de loc</div>
+      <div class="hero__rule"></div>
+      <p class="hero__tagline" data-i18n="hero.tagline">Din via noastră, la masa dumneavoastră.</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#wines" data-i18n="hero.cta">Descoperă vinurile</a>
+        <a class="btn btn--outline-ivory" href="#order" data-i18n="nav.order">Comandă vin</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__location" data-i18n="hero.location">Cricău · Alba · România</div>
+</section>
+
+<!-- ======================= Crest intro ======================= -->
+<section class="crest-intro">
+  <div data-reveal>
+    <img class="crest-intro__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI: coroană, scut împărțit în patru, susținători și deviza Aut Vincere Aut Mori" width="840" height="560" loading="lazy">
+    <div class="crest-intro__brand">VARVI</div>
+    <div class="crest-intro__producer">Casa de vinuri Maria</div>
+    <div class="crest-intro__place eyebrow" data-i18n="crest.place">Cricău · Transilvania</div>
+  </div>
+</section>
+
+<!-- ======================= Brand statement ======================= -->
+<section class="house" id="house">
+  <div class="container house__grid">
+    <div class="house__eyebrow eyebrow" data-i18n="house.eyebrow">Casa</div>
+    <div data-reveal>
+      <h2 class="house__statement" data-i18n="house.statement">Vinul nu începe în sticlă. Începe cu un loc.</h2>
+      <p class="house__support" data-i18n="house.support">Vinurile VARVI se fac la Cricău, în Alba, în inima ținutului viticol istoric al Transilvaniei, de către Casa de vinuri Maria, o casă care lucrează la o scară la care fiecare îmbuteliere poate fi numărată.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Flagship: Fetească Neagră ======================= -->
+<section class="flagship" id="feteasca">
+  <div class="container flagship__grid">
+    <div data-reveal>
+      <div class="eyebrow eyebrow--gold" data-i18n="flag.eyebrow">Ediție limitată</div>
+      <h2 class="flagship__title">Fetească Neagră</h2>
+      <div class="flagship__meta">
+        <span>2024</span><span class="dot" aria-hidden="true">·</span><span data-i18n="flag.edition">Ediție limitată</span><span class="dot" aria-hidden="true">·</span><span data-i18n="flag.count">1.200 de sticle</span>
+      </div>
+      <p class="flagship__copy" data-i18n="flag.copy">Un soi românesc. O expresie transilvăneană. Fetească Neagră 2024 a fost îmbuteliată într-o singură ediție limitată de 1.200 de sticle.</p>
+      <div class="flagship__links">
+        <a href="#wines"><span data-i18n="flag.link">Descoperă acest vin</span>&nbsp;&nbsp;→</a>
+        <a class="gold" href="#order" data-i18n="flag.order">Comandă telefonic</a>
+      </div>
+    </div>
+    <div class="flagship__bottle">
+      <!-- Bottle cut-out not yet supplied: intentional placeholder frame.
+           Replace the .img-slot with the real photograph when available. -->
+      <div class="img-slot img-slot--on-dark">
+        <span class="mono-note" data-i18n="slot.bottle">[ fotografia sticlei urmează ]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Collection ======================= -->
+<section class="collection" id="wines">
+  <div class="container">
+    <div class="eyebrow" data-i18n="col.eyebrow">Colecția</div>
+    <h2 class="collection__title" data-i18n="col.title">Colecția VARVI</h2>
+    <p class="collection__sub" data-i18n="col.sub">Patru expresii. Un singur loc.</p>
+  </div>
+  <div class="collection__row">
+
+    <article class="wine-panel wine-panel--fn">
+      <div class="wine-panel__media">
+        <div class="wine-panel__frame">
+          <div class="img-slot"><span class="mono-note" data-i18n="slot.bottle">[ fotografia sticlei urmează ]</span></div>
+        </div>
+      </div>
+      <div class="wine-panel__body">
+        <div class="wine-panel__category" data-i18n="cat.red">Vin roșu · Ediție limitată</div>
+        <h3 class="wine-panel__name">Fetească Neagră</h3>
+        <div class="wine-panel__meta" data-i18n="meta.fn">2024 · Ediție de 1.200 de sticle</div>
+        <a class="text-link wine-panel__order" href="#order"><span data-i18n="wine.order">Comandă vin</span>&nbsp;&nbsp;→</a>
+        <button class="text-link wine-panel__cert" data-cert="feteasca-neagra" data-cert-name="Fetească Neagră" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
+      </div>
+    </article>
+
+    <article class="wine-panel wine-panel--sb">
+      <div class="wine-panel__media">
+        <div class="wine-panel__frame">
+          <div class="img-slot"><span class="mono-note" data-i18n="slot.bottle">[ fotografia sticlei urmează ]</span></div>
+        </div>
+      </div>
+      <div class="wine-panel__body">
+        <div class="wine-panel__category" data-i18n="cat.white">Vin alb</div>
+        <h3 class="wine-panel__name">Sauvignon Blanc</h3>
+        <div class="wine-panel__meta" data-i18n="meta.gold">Medalie de aur · Premiat în Alba</div>
+        <a class="text-link wine-panel__order" href="#order"><span data-i18n="wine.order">Comandă vin</span>&nbsp;&nbsp;→</a>
+        <button class="text-link wine-panel__cert" data-cert="sauvignon-blanc" data-cert-name="Sauvignon Blanc" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
+      </div>
+    </article>
+
+    <article class="wine-panel wine-panel--rose">
+      <div class="wine-panel__media">
+        <div class="wine-panel__frame">
+          <div class="img-slot"><span class="mono-note" data-i18n="slot.bottle">[ fotografia sticlei urmează ]</span></div>
+        </div>
+      </div>
+      <div class="wine-panel__body">
+        <div class="wine-panel__category" data-i18n="cat.rose">Vin rozé</div>
+        <h3 class="wine-panel__name">Rosé</h3>
+        <div class="wine-panel__meta" data-i18n="meta.gold">Medalie de aur · Premiat în Alba</div>
+        <a class="text-link wine-panel__order" href="#order"><span data-i18n="wine.order">Comandă vin</span>&nbsp;&nbsp;→</a>
+        <button class="text-link wine-panel__cert" data-cert="rose" data-cert-name="Rosé" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
+      </div>
+    </article>
+
+    <article class="wine-panel wine-panel--frm">
+      <div class="wine-panel__media">
+        <div class="wine-panel__frame">
+          <div class="img-slot"><span class="mono-note" data-i18n="slot.bottle">[ fotografia sticlei urmează ]</span></div>
+        </div>
+      </div>
+      <div class="wine-panel__body">
+        <div class="wine-panel__category" data-i18n="cat.blend">Cupaj alb</div>
+        <h3 class="wine-panel__name">Fetească Regală &amp; Muscat Ottonel</h3>
+        <div class="wine-panel__meta" data-i18n="meta.bronze">Medalie de bronz · Premiat în Alba</div>
+        <a class="text-link wine-panel__order" href="#order"><span data-i18n="wine.order">Comandă vin</span>&nbsp;&nbsp;→</a>
+        <button class="text-link wine-panel__cert" data-cert="feteasca-regala-muscat" data-cert-name="Fetească Regală &amp; Muscat Ottonel" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ======================= The Place ======================= -->
+<section class="place" id="place">
+  <div class="place__media">
+    <!-- Landscape photograph not yet supplied: the forest ground + scrim carry
+         the section until the image is dropped in, e.g.:
+         <img src="assets/images/place/landscape.jpg" alt="…" loading="lazy"> -->
+  </div>
+  <div class="place__scrim"></div>
+  <span class="place__note mono-note" data-i18n="slot.landscape">[ fotografia peisajului urmează ]</span>
+  <div class="place__content" data-reveal>
+    <div class="eyebrow eyebrow--gold-light" data-i18n="place.eyebrow">Locul</div>
+    <h2 class="place__title" data-i18n="place.title">Transilvania</h2>
+    <div class="place__loc">Cricău · Alba</div>
+    <p class="place__copy" data-i18n="place.copy">Dealuri, pădure, dimineți reci și toamne lungi, în ținutul viticol istoric al Transilvaniei. Locul este primul ingredient al vinului.</p>
+  </div>
+</section>
+
+<!-- ======================= Origin schematic ======================= -->
+<section class="origin">
+  <div class="origin__inner" data-reveal>
+    <div class="origin__eyebrow eyebrow" data-i18n="origin.eyebrow">Origine</div>
+    <div class="origin__chain">
+      <div class="origin__country" data-i18n="origin.country">România</div>
+      <div class="origin__rule"></div>
+      <div class="origin__region" data-i18n="origin.region">Transilvania</div>
+      <div class="origin__rule"></div>
+      <div class="origin__county">Alba</div>
+      <div class="origin__rule"></div>
+      <div class="origin__dot"></div>
+      <div class="origin__village">CRICĂU</div>
+      <div class="origin__caption" data-i18n="origin.caption">unde se fac vinurile</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Limited production ======================= -->
+<section class="limited">
+  <div class="container limited__grid">
+    <div data-reveal>
+      <h2 class="limited__title" data-i18n="limited.title">Nu se face cu milionul.</h2>
+      <p class="limited__copy" data-i18n="limited.copy">Vinurile VARVI sunt îmbuteliate în ediții limitate, uneori numărate în sute, nu în sute de mii.</p>
+    </div>
+    <div class="limited__figure-block" data-reveal>
+      <div class="limited__figure" data-i18n="limited.figure">1.200</div>
+      <div class="limited__unit"><span data-i18n="limited.unit">sticle</span><br>Fetească Neagră · 2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Details ======================= -->
+<section class="details">
+  <div class="details__inner" data-reveal>
+    <img class="details__img" src="assets/images/campaign/bottles-group.jpg" alt="Cele patru vinuri VARVI: Rosé, Sauvignon Blanc, Fetească Neagră și Fetească Regală &amp; Muscat Ottonel, pe o masă de piatră" width="1672" height="941" loading="lazy">
+    <div class="details__caption" data-i18n="details.caption">Detaliile contează.</div>
+  </div>
+</section>
+
+<!-- ======================= Awards ======================= -->
+<section class="awards" id="awards">
+  <div class="container">
+    <div data-reveal>
+      <div class="eyebrow eyebrow--gold" data-i18n="awards.eyebrow">Recunoaștere</div>
+      <h2 class="awards__title" data-i18n="awards.title">Premiat pentru ce este în sticlă.</h2>
+    </div>
+    <div class="awards__grid">
+      <div class="award" data-reveal>
+        <div class="award__tier" data-i18n="awards.tierGold">Aur</div>
+        <div class="award__wine">Sauvignon Blanc</div>
+        <div class="award__note" data-i18n="awards.note">Premiat în Alba</div>
+        <button class="award__cert" data-cert="sauvignon-blanc" data-cert-name="Sauvignon Blanc" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
+      </div>
+      <div class="award" data-reveal>
+        <div class="award__tier" data-i18n="awards.tierGold">Aur</div>
+        <div class="award__wine">Rosé</div>
+        <div class="award__note" data-i18n="awards.note">Premiat în Alba</div>
+        <button class="award__cert" data-cert="rose" data-cert-name="Rosé" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
+      </div>
+      <div class="award" data-reveal>
+        <div class="award__tier" data-i18n="awards.tierBronze">Bronz</div>
+        <div class="award__wine">Fetească Regală &amp; Muscat Ottonel</div>
+        <div class="award__note" data-i18n="awards.note">Premiat în Alba</div>
+        <button class="award__cert" data-cert="feteasca-regala-muscat" data-cert-name="Fetească Regală &amp; Muscat Ottonel" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Human scale ======================= -->
+<section class="human">
+  <div class="container">
+    <div class="human__intro" data-reveal>
+      <div class="eyebrow">Casa de vinuri Maria</div>
+      <h2 class="human__title" data-i18n="human.title">Făcut la scară umană.</h2>
+      <p class="human__copy" data-i18n="human.copy">Nu există un château și nici un departament de marketing. Există o mică casă de vinuri la Cricău și ediții numărate în sute și mii de sticle. Aceste fotografii nu sunt o campanie. Așa arată cu adevărat.</p>
+    </div>
+    <div class="human__figure-wrap">
+      <figure class="contact-print" data-reveal>
+        <img src="assets/images/documentary/stall.jpg" alt="Standul VARVI: sticle pe o masă văruită în fața viei, sub panoul Vinul Județului Alba" width="1536" height="1024" loading="lazy">
+        <figcaption data-i18n="human.docCap1">standul, vinul județului Alba, înainte să vină fotograful</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Motto ======================= -->
+<section class="motto">
+  <div data-reveal>
+    <img class="motto__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul VARVI" width="840" height="560" loading="lazy">
+    <div class="motto__text">AUT VINCERE AUT MORI</div>
+    <div class="motto__label eyebrow" data-i18n="motto.label">Blazonul VARVI</div>
+  </div>
+</section>
+
+<!-- ======================= Order ======================= -->
+<section class="order" id="order">
+  <div class="order__inner" data-reveal>
+    <div class="eyebrow eyebrow--gold-light" data-i18n="order.eyebrow">Comenzi</div>
+    <h2 class="order__title" data-i18n="order.title">Comandă vin VARVI</h2>
+    <p class="order__tagline" data-i18n="order.tagline">Din via noastră, la masa dumneavoastră.</p>
+    <p class="order__copy" data-i18n="order.copy">Vinurile noastre pot fi comandate direct de la casa de vinuri. Pentru a plasa o comandă, contactați-ne telefonic. Vă ajutăm cu plăcere să alegeți vinurile, să confirmăm disponibilitatea și să aranjăm comanda.</p>
+    <!-- When PHONE is set in main.js this becomes a live number; consider
+         converting the span to <a href="tel:…"> at that point. -->
+    <span class="order__phone" data-phone-number>+40 ··· ··· ···</span>
+    <div class="order__actions">
+      <button class="btn btn--ivory" data-call-cta data-i18n="order.cta">Sună pentru a comanda</button>
+      <a class="btn btn--outline-ivory" href="contact.html" data-i18n="order.email">Comandă prin email</a>
+    </div>
+    <div class="order__motto" data-i18n="order.motto">Direct de la VARVI. Aranjat personal.</div>
+    <div class="order__note mono-note" data-i18n="order.note">[ numărul de telefon urmează, substituent afișat ]</div>
+  </div>
+</section>
+
+<!-- ======================= Contact strip ======================= -->
+<section class="contact" id="contact">
+  <div class="container contact__inner" data-reveal>
+    <h2 class="contact__title" data-i18n="contact.title">Descoperă VARVI</h2>
+    <p class="contact__address">Casa de vinuri Maria<br><span data-i18n="contact.address">Cricău · Alba · România</span></p>
+    <div class="contact__links">
+      <!-- Placeholder links: real destinations (email/phone, stockists,
+           Instagram profile) to be supplied. -->
+      <a href="contact.html" data-i18n="contact.link1">Contactează casa de vinuri</a>
+      <a href="#" title="placeholder: stockists to be supplied" data-i18n="contact.link2">Găsește VARVI</a>
+      <a href="#" title="placeholder: profile URL to be supplied">Instagram</a>
+    </div>
+    <div class="contact__note mono-note" data-i18n="contact.note">[ datele de contact, punctele de vânzare și linkurile urmează, doar substituenți ]</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= Footer ======================= -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__cols">
+      <div>
+        <div class="site-footer__brand-name">VARVI</div>
+        <div class="site-footer__producer">Casa de vinuri Maria</div>
+        <div class="site-footer__address" data-i18n="footer.address">Cricău · Alba · Transilvania · România</div>
+      </div>
+      <nav class="site-footer__nav" aria-label="Subsol">
+        <a href="#wines" data-i18n="nav.wines">Vinurile</a>
+        <a href="#place" data-i18n="nav.place">Locul</a>
+        <a href="#house" data-i18n="nav.house">Casa</a>
+        <a href="#awards" data-i18n="nav.awards">Distincții</a>
+        <a href="#order" data-i18n="nav.order">Comandă vin</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="site-footer__orders">
+        <div class="site-footer__orders-title" data-i18n="footer.orderTitle">Comenzi de vin</div>
+        <p class="site-footer__orders-copy" data-i18n="footer.orderCopy">Comandați vinurile VARVI direct de la casa de vinuri, telefonic.</p>
+        <span class="site-footer__phone" data-phone-number>+40 ··· ··· ···</span>
+      </div>
+      <div class="site-footer__legal">
+        <div class="lang-toggle">
+          <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
+          <span class="lang-toggle__sep" aria-hidden="true">/</span>
+          <button class="lang-btn" data-lang-btn="en">EN</button>
+        </div>
+        <a href="#" data-i18n="legal.privacy">Confidențialitate</a>
+        <a href="#">Cookies</a>
+        <a href="#" data-i18n="legal.terms">Termeni</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© VARVI / Casa de vinuri Maria</span>
+      <span class="center">Aut vincere aut mori</span>
+      <span class="right">Built to last by <a href="https://www.sighencea.com" target="_blank" rel="noopener">Sighencea</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================= Certificate lightbox ======================= -->
+<div class="modal lightbox" id="cert-lightbox" role="dialog" aria-modal="true" aria-label="Diploma de premiere" data-i18n-attr="aria-label:wine.viewCert">
+  <div class="lightbox__frame" data-modal-card>
+    <div class="lightbox__slot">
+      <!-- Certificate scans not yet supplied: intentional placeholder.
+           Swap the .img-slot for a per-wine <img> when the scans arrive. -->
+      <div class="img-slot">
+        <span class="mono-note" data-i18n="cert.note">[ diploma de premiere urmează, substituent afișat ]</span>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox__bar" data-modal-card>
+    <div class="lightbox__name"></div>
+    <button class="lightbox__close" data-modal-close data-i18n="cert.close">Închide</button>
+  </div>
+</div>
+
+<!-- ======================= Phone "coming soon" popup ======================= -->
+<div class="modal popup" id="phone-popup" role="dialog" aria-modal="true" aria-labelledby="phone-popup-title">
+  <div class="popup__card" data-modal-card>
+    <img class="popup__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul VARVI" width="110" height="73">
+    <div class="popup__title" id="phone-popup-title" data-i18n="phone.soonTitle">Comenzile telefonice vin în curând</div>
+    <p class="popup__copy" data-i18n="phone.soonCopy">Linia noastră de comenzi este în curs de configurare. Până atunci, ne bucurăm să ne scrieți pe email.</p>
+    <button class="btn btn--dark" data-modal-close data-i18n="cert.close">Închide</button>
+  </div>
+</div>
+
+</body>
+</html>

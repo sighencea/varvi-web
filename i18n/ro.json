@@ -1,0 +1,121 @@
+{
+  "meta.homeTitle": "VARVI | Vinuri din Transilvania",
+  "meta.contactTitle": "VARVI | Contact",
+
+  "gate.welcome": "Bine ați venit la VARVI",
+  "gate.text": "Vă rugăm să confirmați că aveți vârsta legală pentru consumul de alcool în țara dumneavoastră.",
+  "gate.enter": "Intră",
+  "gate.leave": "Ieși",
+
+  "nav.wines": "Vinurile",
+  "nav.place": "Locul",
+  "nav.house": "Casa",
+  "nav.awards": "Distincții",
+  "nav.order": "Comandă vin",
+  "nav.contact": "Contact",
+  "nav.menuOpen": "Deschide meniul",
+  "nav.menuClose": "Închide meniul",
+
+  "hero.sub": "Vin modelat de loc",
+  "hero.tagline": "Din via noastră, la masa dumneavoastră.",
+  "hero.cta": "Descoperă vinurile",
+  "hero.location": "Cricău · Alba · România",
+
+  "crest.place": "Cricău · Transilvania",
+
+  "house.eyebrow": "Casa",
+  "house.statement": "Vinul nu începe în sticlă. Începe cu un loc.",
+  "house.support": "Vinurile VARVI se fac la Cricău, în Alba, în inima ținutului viticol istoric al Transilvaniei, de către Casa de vinuri Maria, o casă care lucrează la o scară la care fiecare îmbuteliere poate fi numărată.",
+
+  "flag.eyebrow": "Ediție limitată",
+  "flag.edition": "Ediție limitată",
+  "flag.count": "1.200 de sticle",
+  "flag.copy": "Un soi românesc. O expresie transilvăneană. Fetească Neagră 2024 a fost îmbuteliată într-o singură ediție limitată de 1.200 de sticle.",
+  "flag.link": "Descoperă acest vin",
+  "flag.order": "Comandă telefonic",
+
+  "col.eyebrow": "Colecția",
+  "col.title": "Colecția VARVI",
+  "col.sub": "Patru expresii. Un singur loc.",
+
+  "cat.red": "Vin roșu · Ediție limitată",
+  "cat.white": "Vin alb",
+  "cat.rose": "Vin rozé",
+  "cat.blend": "Cupaj alb",
+  "meta.fn": "2024 · Ediție de 1.200 de sticle",
+  "meta.gold": "Medalie de aur · Premiat în Alba",
+  "meta.bronze": "Medalie de bronz · Premiat în Alba",
+  "wine.order": "Comandă vin",
+  "wine.viewCert": "Vezi diploma de premiere",
+
+  "cert.close": "Închide",
+  "cert.note": "[ diploma de premiere urmează, substituent afișat ]",
+  "slot.bottle": "[ fotografia sticlei urmează ]",
+  "slot.landscape": "[ fotografia peisajului urmează ]",
+
+  "place.eyebrow": "Locul",
+  "place.title": "Transilvania",
+  "place.copy": "Dealuri, pădure, dimineți reci și toamne lungi, în ținutul viticol istoric al Transilvaniei. Locul este primul ingredient al vinului.",
+
+  "origin.eyebrow": "Origine",
+  "origin.country": "România",
+  "origin.region": "Transilvania",
+  "origin.caption": "unde se fac vinurile",
+
+  "limited.title": "Nu se face cu milionul.",
+  "limited.copy": "Vinurile VARVI sunt îmbuteliate în ediții limitate, uneori numărate în sute, nu în sute de mii.",
+  "limited.figure": "1.200",
+  "limited.unit": "sticle",
+
+  "details.caption": "Detaliile contează.",
+
+  "awards.eyebrow": "Recunoaștere",
+  "awards.title": "Premiat pentru ce este în sticlă.",
+  "awards.note": "Premiat în Alba",
+  "awards.tierGold": "Aur",
+  "awards.tierBronze": "Bronz",
+
+  "human.title": "Făcut la scară umană.",
+  "human.copy": "Nu există un château și nici un departament de marketing. Există o mică casă de vinuri la Cricău și ediții numărate în sute și mii de sticle. Aceste fotografii nu sunt o campanie. Așa arată cu adevărat.",
+  "human.docCap1": "standul, vinul județului Alba, înainte să vină fotograful",
+
+  "motto.label": "Blazonul VARVI",
+
+  "order.eyebrow": "Comenzi",
+  "order.title": "Comandă vin VARVI",
+  "order.tagline": "Din via noastră, la masa dumneavoastră.",
+  "order.copy": "Vinurile noastre pot fi comandate direct de la casa de vinuri. Pentru a plasa o comandă, contactați-ne telefonic. Vă ajutăm cu plăcere să alegeți vinurile, să confirmăm disponibilitatea și să aranjăm comanda.",
+  "order.cta": "Sună pentru a comanda",
+  "order.email": "Comandă prin email",
+  "order.motto": "Direct de la VARVI. Aranjat personal.",
+  "order.note": "[ numărul de telefon urmează, substituent afișat ]",
+
+  "phone.soonTitle": "Comenzile telefonice vin în curând",
+  "phone.soonCopy": "Linia noastră de comenzi este în curs de configurare. Până atunci, ne bucurăm să ne scrieți pe email.",
+
+  "contact.title": "Descoperă VARVI",
+  "contact.address": "Cricău · Alba · România",
+  "contact.link1": "Contactează casa de vinuri",
+  "contact.link2": "Găsește VARVI",
+  "contact.note": "[ datele de contact, punctele de vânzare și linkurile urmează, doar substituenți ]",
+
+  "footer.address": "Cricău · Alba · Transilvania · România",
+  "footer.orderTitle": "Comenzi de vin",
+  "footer.orderCopy": "Comandați vinurile VARVI direct de la casa de vinuri, telefonic.",
+  "legal.privacy": "Confidențialitate",
+  "legal.terms": "Termeni",
+
+  "cpage.back": "Înapoi la site",
+  "cpage.eyebrow": "Contact",
+  "cpage.title": "Comandă prin email",
+  "cpage.copy": "Scrieți-ne ce vinuri doriți și vă răspundem pentru a confirma disponibilitatea, prețul și livrarea, aranjate personal de casa de vinuri.",
+  "cpage.phoneLabel": "Telefon",
+  "cpage.addressLabel": "Casa de vinuri",
+  "cpage.note": "[ adresa de email și numărul de telefon urmează, sunt afișați substituenți ]",
+  "cpage.mailSubject": "Comandă de vin, VARVI",
+  "cpage.mailBody": "Bună ziua,\n\nAș dori să comand următoarele vinuri VARVI:\n\n- Vinul și cantitatea:\n\nNume:\nAdresa de livrare:\nTelefon:\n\nVă mulțumesc.",
+
+  "langPrompt.message": "Acest site este disponibil și în engleză. Doriți să continuați în engleză?",
+  "langPrompt.stay": "Continuă în română",
+  "langPrompt.switch": "Continuă în engleză →"
+}

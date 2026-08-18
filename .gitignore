@@ -1,0 +1,12 @@
+# Design reference (not deployed)
+draft/
+
+# Claude Code
+.claude/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
