@@ -41,6 +41,32 @@
     onHeaderScroll();
   }
 
+  /* ================= Nav scroll spy =================
+     Marks the menu item of the section currently in view (top 40% of the
+     viewport) so its underline stays visible. */
+  var spyLinks = document.querySelectorAll('.site-nav a[href^="#"], .mobile-menu a[href^="#"]');
+  if (spyLinks.length) {
+    var spySections = [];
+    spyLinks.forEach(function (a) {
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el && spySections.indexOf(el) === -1) spySections.push(el);
+    });
+    var onSpy = function () {
+      var mark = window.innerHeight * 0.4;
+      var best = null;
+      var bestTop = -Infinity;
+      spySections.forEach(function (s) {
+        var top = s.getBoundingClientRect().top;
+        if (top <= mark && top > bestTop) { bestTop = top; best = s; }
+      });
+      spyLinks.forEach(function (a) {
+        a.classList.toggle('is-active', !!best && a.getAttribute('href') === '#' + best.id);
+      });
+    };
+    window.addEventListener('scroll', onSpy, { passive: true });
+    onSpy();
+  }
+
   /* ================= Mobile menu ================= */
   var menuToggle = document.querySelector('.menu-toggle');
   var mobileMenu = document.getElementById('mobile-menu');
