@@ -115,6 +115,8 @@
   "cpage.mailSubject": "Comandă de vin, VARVI",
   "cpage.mailBody": "Bună ziua,\n\nAș dori să comand următoarele vinuri VARVI:\n\n- Vinul și cantitatea:\n\nNume:\nAdresa de livrare:\nTelefon:\n\nVă mulțumesc.",
 
+  "audio.label": "Muzică",
+
   "langPrompt.message": "Acest site este disponibil și în engleză. Doriți să continuați în engleză?",
   "langPrompt.stay": "Continuă în română",
   "langPrompt.switch": "Continuă în engleză →"

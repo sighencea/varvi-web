@@ -177,6 +177,60 @@
     document.addEventListener('i18n:applied', function (e) { setMailHref(e.detail.t); });
   }
 
+  /* ================= Background music =================
+     Starts once the visitor lands on the page proper: on the age gate's
+     "Enter" click (a user gesture, so playback is allowed) or, for returning
+     visitors with no gate, on load — falling back to the first interaction
+     if the browser blocks autoplay. The toggle persists as varvi_music. */
+  var music = document.getElementById('bg-music');
+  var musicBtn = document.querySelector('[data-sound-toggle]');
+  if (music && musicBtn) {
+    var musicOff = false;
+    try { musicOff = localStorage.getItem('varvi_music') === 'off'; } catch (e) {}
+    music.volume = 0.4;
+
+    var reflectMusic = function () {
+      musicBtn.setAttribute('aria-pressed', music.paused ? 'false' : 'true');
+      musicBtn.classList.toggle('is-off', music.paused);
+    };
+
+    var tryPlayMusic = function () {
+      if (musicOff) return;
+      music.play().then(reflectMusic).catch(function () {
+        var once = function () {
+          document.removeEventListener('pointerdown', once);
+          document.removeEventListener('keydown', once);
+          if (!musicOff) music.play().then(reflectMusic).catch(function () {});
+        };
+        document.addEventListener('pointerdown', once);
+        document.addEventListener('keydown', once);
+      });
+    };
+
+    musicBtn.addEventListener('click', function () {
+      if (music.paused) {
+        musicOff = false;
+        try { localStorage.setItem('varvi_music', 'on'); } catch (e) {}
+        music.play().then(reflectMusic).catch(function () {});
+      } else {
+        music.pause();
+        musicOff = true;
+        try { localStorage.setItem('varvi_music', 'off'); } catch (e) {}
+        reflectMusic();
+      }
+    });
+    reflectMusic();
+
+    var gateUpForMusic = gate && document.documentElement.classList.contains('js') &&
+      !document.documentElement.classList.contains('age-ok');
+    if (gateUpForMusic) {
+      var gateEnterForMusic = gate.querySelector('[data-gate-enter]');
+      if (gateEnterForMusic) gateEnterForMusic.addEventListener('click', tryPlayMusic, { once: true });
+    } else {
+      tryPlayMusic();
+    }
+  }
+
   /* ================= Language switch + first-visit prompt ================= */
   document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
     btn.addEventListener('click', function () {

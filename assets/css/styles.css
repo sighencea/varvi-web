@@ -517,16 +517,17 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 .collection { background: var(--color-ivory); padding: clamp(100px, 13vw, 200px) 0 clamp(80px, 10vw, 150px); }
 .collection__title { font-size: clamp(40px, 5vw, 76px); font-weight: 500; margin: 22px 0 0; }
 .collection__sub { font-size: 22px; font-style: italic; color: var(--color-ink-muted); margin: 14px 0 0; }
+/* 2×2 grid by default, all four across on wide screens — no horizontal scroll */
 .collection__row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: clamp(16px, 2vw, 28px);
-  overflow-x: auto;
   padding: clamp(48px, 6vw, 80px) var(--pad-x) 24px;
-  scroll-snap-type: x proximity;
+}
+@media (min-width: 1100px) {
+  .collection__row { grid-template-columns: repeat(4, 1fr); }
 }
 .wine-panel {
-  flex: 0 0 min(380px, 82vw);
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
 }
@@ -563,6 +564,12 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 }
 .wine-panel__order { margin-top: 14px; align-self: flex-start; opacity: .85; }
 .wine-panel__cert { margin-top: 6px; align-self: flex-start; }
+/* Tighter panel insets when two-up on narrow screens */
+@media (max-width: 560px) {
+  .wine-panel__media { padding: 18px 18px 0; }
+  .wine-panel__body { padding: 20px 18px 26px; }
+  .wine-panel__name { font-size: 21px; }
+}
 
 /* Panel palettes (from the physical labels) */
 .wine-panel--fn   { background: var(--color-parchment); color: var(--color-charcoal); }
@@ -912,6 +919,39 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   .site-footer__bottom .center { text-align: center; }
   .site-footer__bottom .right { text-align: right; }
 }
+
+/* ==========================================================================
+   Background music toggle
+   ========================================================================== */
+.sound-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 80; /* under the header and the mobile-menu overlay */
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-ivory);
+  background: rgba(22, 23, 22, .55);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding: 10px 16px 10px 14px;
+  transition: opacity .4s ease;
+}
+.sound-toggle__icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-gold-light);
+  transition: background .4s ease;
+}
+.sound-toggle.is-off { opacity: .6; }
+.sound-toggle.is-off .sound-toggle__icon { background: rgba(242, 239, 231, .35); }
 
 /* ==========================================================================
    Modals: certificate lightbox / phone popup / language prompt
