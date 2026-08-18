@@ -193,7 +193,7 @@
       savedOff = localStorage.getItem('varvi_music') === 'off';
       savedVol = parseInt(localStorage.getItem('varvi_volume'), 10);
     } catch (e) {}
-    if (isNaN(savedVol)) savedVol = 60;
+    if (isNaN(savedVol)) savedVol = 36;
     savedVol = Math.min(100, Math.max(0, savedVol));
     music.volume = savedVol / 100;
     music.muted = savedOff;
