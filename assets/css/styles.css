@@ -339,11 +339,6 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   visibility: visible;
   transition: opacity .5s var(--ease);
 }
-.mobile-menu__crest {
-  width: min(150px, 38vw);
-  height: auto;
-  margin-bottom: 10px;
-}
 .mobile-menu a {
   font-family: var(--font-sans);
   font-size: 13px;
