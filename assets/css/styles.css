@@ -204,16 +204,17 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   top: 0; left: 0; right: 0;
   z-index: 100;
 }
+/* Semi-transparent tint from the start for legibility over the hero;
+   deepens to the full dark bar past 60px of scroll */
 .site-header__bg {
   position: absolute;
   inset: 0;
-  background: rgba(22, 23, 22, .9);
+  background: rgba(22, 23, 22, .45);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  opacity: 0;
-  transition: opacity .6s ease;
+  transition: background-color .6s ease;
 }
-.site-header.is-scrolled .site-header__bg { opacity: 1; }
+.site-header.is-scrolled .site-header__bg { background: rgba(22, 23, 22, .9); }
 
 .site-header__inner {
   position: relative;
@@ -226,14 +227,14 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   gap: 24px;
   color: var(--color-ivory);
 }
-.site-header__brand { font-size: 21px; letter-spacing: .34em; font-weight: 500; }
+.site-header__brand { font-size: 23px; letter-spacing: .34em; font-weight: 500; }
 .site-header__brand:hover { color: var(--color-ivory); }
 
 .site-nav {
   display: none;
   gap: clamp(18px, 3vw, 44px);
   font-family: var(--font-sans);
-  font-size: 10.5px;
+  font-size: 12px;
   letter-spacing: .22em;
   text-transform: uppercase;
   font-weight: 500;
@@ -249,6 +250,7 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   align-items: baseline;
 }
 .lang-toggle__sep { opacity: .35; }
+.site-header .lang-btn { font-size: 12px; }
 .lang-btn {
   font-family: var(--font-sans);
   font-size: 10.5px;
