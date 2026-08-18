@@ -116,6 +116,7 @@
   "cpage.mailBody": "Hello,\n\nI would like to order the following VARVI wines:\n\n- Wine and quantity:\n\nName:\nDelivery address:\nTelephone:\n\nThank you.",
 
   "audio.label": "Music",
+  "audio.volume": "Volume",
 
   "langPrompt.message": "This site is also available in English. Would you like to continue in English?",
   "langPrompt.stay": "Continue in Romanian",

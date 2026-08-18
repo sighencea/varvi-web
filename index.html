@@ -416,10 +416,13 @@
 
 <!-- ======================= Background music ======================= -->
 <audio id="bg-music" src="assets/audio/ambience.mp3" loop preload="metadata"></audio>
-<button class="sound-toggle" data-sound-toggle aria-pressed="false">
-  <span class="sound-toggle__icon" aria-hidden="true"></span>
-  <span data-i18n="audio.label">Muzică</span>
-</button>
+<div class="sound-control">
+  <button class="sound-toggle" data-sound-toggle aria-pressed="true">
+    <span class="sound-toggle__icon" aria-hidden="true"></span>
+    <span data-i18n="audio.label">Muzică</span>
+  </button>
+  <input class="sound-volume" data-sound-volume type="range" min="0" max="100" step="1" value="60" aria-label="Volum" data-i18n-attr="aria-label:audio.volume">
+</div>
 
 <!-- ======================= Certificate lightbox ======================= -->
 <div class="modal lightbox" id="cert-lightbox" role="dialog" aria-modal="true" aria-label="Diploma de premiere" data-i18n-attr="aria-label:wine.viewCert">

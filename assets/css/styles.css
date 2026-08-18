@@ -921,13 +921,23 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 }
 
 /* ==========================================================================
-   Background music toggle
+   Background music control (mute toggle + volume slider)
    ========================================================================== */
-.sound-toggle {
+.sound-control {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 80; /* under the header and the mobile-menu overlay */
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--color-ivory);
+  background: rgba(22, 23, 22, .55);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding: 10px 16px 10px 14px;
+}
+.sound-toggle {
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -937,10 +947,6 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   text-transform: uppercase;
   font-weight: 500;
   color: var(--color-ivory);
-  background: rgba(22, 23, 22, .55);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  padding: 10px 16px 10px 14px;
   transition: opacity .4s ease;
 }
 .sound-toggle__icon {
@@ -950,8 +956,17 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   background: var(--color-gold-light);
   transition: background .4s ease;
 }
-.sound-toggle.is-off { opacity: .6; }
-.sound-toggle.is-off .sound-toggle__icon { background: rgba(242, 239, 231, .35); }
+.sound-control.is-off .sound-toggle { opacity: .55; }
+.sound-control.is-off .sound-toggle__icon { background: rgba(242, 239, 231, .35); }
+.sound-volume {
+  width: 90px;
+  height: 14px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--color-gold);
+  background: transparent;
+}
+.sound-control.is-off .sound-volume { opacity: .55; }
 
 /* ==========================================================================
    Modals: certificate lightbox / phone popup / language prompt

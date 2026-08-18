@@ -178,57 +178,70 @@
   }
 
   /* ================= Background music =================
-     Starts once the visitor lands on the page proper: on the age gate's
-     "Enter" click (a user gesture, so playback is allowed) or, for returning
-     visitors with no gate, on load — falling back to the first interaction
-     if the browser blocks autoplay. The toggle persists as varvi_music. */
+     Plays automatically on load. Browsers usually block unmuted autoplay
+     without a gesture, so on rejection playback starts on the first
+     interaction instead (the age gate / language prompt clicks count).
+     Mute state persists as varvi_music, volume as varvi_volume. */
   var music = document.getElementById('bg-music');
+  var soundControl = document.querySelector('.sound-control');
   var musicBtn = document.querySelector('[data-sound-toggle]');
+  var musicVol = document.querySelector('[data-sound-volume]');
   if (music && musicBtn) {
-    var musicOff = false;
-    try { musicOff = localStorage.getItem('varvi_music') === 'off'; } catch (e) {}
-    music.volume = 0.4;
+    var savedVol = NaN;
+    var savedOff = false;
+    try {
+      savedOff = localStorage.getItem('varvi_music') === 'off';
+      savedVol = parseInt(localStorage.getItem('varvi_volume'), 10);
+    } catch (e) {}
+    if (isNaN(savedVol)) savedVol = 60;
+    savedVol = Math.min(100, Math.max(0, savedVol));
+    music.volume = savedVol / 100;
+    music.muted = savedOff;
+    if (musicVol) musicVol.value = String(savedVol);
 
     var reflectMusic = function () {
-      musicBtn.setAttribute('aria-pressed', music.paused ? 'false' : 'true');
-      musicBtn.classList.toggle('is-off', music.paused);
+      var off = music.muted || music.paused;
+      musicBtn.setAttribute('aria-pressed', off ? 'false' : 'true');
+      if (soundControl) soundControl.classList.toggle('is-off', off);
     };
 
-    var tryPlayMusic = function () {
-      if (musicOff) return;
+    var startMusic = function () {
       music.play().then(reflectMusic).catch(function () {
         var once = function () {
           document.removeEventListener('pointerdown', once);
           document.removeEventListener('keydown', once);
-          if (!musicOff) music.play().then(reflectMusic).catch(function () {});
+          music.play().then(reflectMusic).catch(function () {});
         };
         document.addEventListener('pointerdown', once);
         document.addEventListener('keydown', once);
       });
     };
 
+    // Mute button: keeps the track running silently so unmuting is seamless
     musicBtn.addEventListener('click', function () {
-      if (music.paused) {
-        musicOff = false;
-        try { localStorage.setItem('varvi_music', 'on'); } catch (e) {}
-        music.play().then(reflectMusic).catch(function () {});
-      } else {
-        music.pause();
-        musicOff = true;
-        try { localStorage.setItem('varvi_music', 'off'); } catch (e) {}
-        reflectMusic();
-      }
+      music.muted = !music.muted;
+      try { localStorage.setItem('varvi_music', music.muted ? 'off' : 'on'); } catch (e) {}
+      if (!music.muted && music.paused) music.play().catch(function () {});
+      reflectMusic();
     });
-    reflectMusic();
 
-    var gateUpForMusic = gate && document.documentElement.classList.contains('js') &&
-      !document.documentElement.classList.contains('age-ok');
-    if (gateUpForMusic) {
-      var gateEnterForMusic = gate.querySelector('[data-gate-enter]');
-      if (gateEnterForMusic) gateEnterForMusic.addEventListener('click', tryPlayMusic, { once: true });
-    } else {
-      tryPlayMusic();
+    // Volume slider; raising it while muted unmutes
+    if (musicVol) {
+      musicVol.addEventListener('input', function () {
+        var v = parseInt(musicVol.value, 10) || 0;
+        music.volume = v / 100;
+        try { localStorage.setItem('varvi_volume', String(v)); } catch (e) {}
+        if (music.muted && v > 0) {
+          music.muted = false;
+          try { localStorage.setItem('varvi_music', 'on'); } catch (e) {}
+        }
+        if (music.paused) music.play().catch(function () {});
+        reflectMusic();
+      });
     }
+
+    reflectMusic();
+    startMusic();
   }
 
   /* ================= Language switch + first-visit prompt ================= */
