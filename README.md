@@ -27,7 +27,6 @@ assets/js/i18n.js     localization engine (RO default, EN offered)
 assets/js/main.js     age gate, menu, reveals, modals, contact wiring
 assets/images/        brand / campaign / documentary imagery
 i18n/ro.json, en.json translation dictionaries
-draft/                design reference (git-ignored, not deployed)
 ```
 
 ## Localization
