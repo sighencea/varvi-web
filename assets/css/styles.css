@@ -348,6 +348,9 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   align-items: center;
   color: var(--color-ivory);
 }
+/* Full width inside the flex row so the text block hugs the left padding
+   instead of being shrink-wrapped and centered */
+.hero__content .container { width: 100%; }
 .hero__title {
   font-size: clamp(64px, 11vw, 160px);
   font-weight: 500;
@@ -491,10 +494,16 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 .flagship__links a.gold { border-bottom-color: rgba(169, 138, 80, .6); color: var(--color-gold); }
 .flagship__bottle {
   height: clamp(460px, 70vh, 760px);
-  aspect-ratio: 5 / 8;
+  aspect-ratio: 2 / 3; /* the supplied photograph's natural ratio */
   max-width: 100%;
   margin: 0 auto;
   will-change: transform;
+}
+.flagship__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 @media (min-width: 900px) {
   .flagship__grid { grid-template-columns: minmax(280px, 5fr) minmax(240px, 4fr); }
@@ -520,7 +529,10 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   flex-direction: column;
 }
 .wine-panel__media { padding: 36px 36px 0; }
-.wine-panel__frame { position: relative; width: 100%; aspect-ratio: 5 / 8; }
+/* The frame takes the photograph's natural ratio (as in the draft prototype,
+   which adapted each frame to the loaded image) */
+.wine-panel__frame { position: relative; width: 100%; }
+.wine-panel__frame img { width: 100%; height: auto; display: block; }
 .wine-panel__body {
   padding: 34px 36px 40px;
   display: flex;
@@ -606,13 +618,6 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   margin: 26px 0 0;
   color: rgba(242, 239, 231, .85);
 }
-.place__note {
-  position: absolute;
-  top: clamp(24px, 5vw, 56px);
-  right: var(--pad-x);
-  color: rgba(242, 239, 231, .3);
-}
-
 /* ==========================================================================
    Origin schematic
    ========================================================================== */

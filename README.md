@@ -36,7 +36,6 @@ Romanian is the default. Every translatable element carries a `data-i18n` key re
 ## Content still to be supplied
 
 - `PHONE` and `EMAIL` constants at the top of `assets/js/main.js` (single source of truth; placeholders shown until set)
-- Bottle cut-out photographs (flagship + four collection panels)
 - Landscape photograph for "The Place"
 - Award certificate scans (lightbox)
 - Stockists and Instagram links

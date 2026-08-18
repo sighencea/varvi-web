@@ -43,6 +43,8 @@
   "cat.rose": "Rosé Wine",
   "cat.blend": "White Blend",
   "meta.fn": "2024 · Edition of 1,200 bottles",
+  "meta.editionRose": "2024 · Edition of 660 bottles",
+  "meta.editionFrm": "2024 · Edition of 1,600 bottles",
   "meta.gold": "Gold Medal · Awarded in Alba",
   "meta.bronze": "Bronze Medal · Awarded in Alba",
   "wine.order": "Order wine",
@@ -50,8 +52,6 @@
 
   "cert.close": "Close",
   "cert.note": "[ award certificate to be supplied, placeholder shown ]",
-  "slot.bottle": "[ bottle photograph to follow ]",
-  "slot.landscape": "[ landscape photograph to follow ]",
 
   "place.eyebrow": "The Place",
   "place.title": "Transylvania",

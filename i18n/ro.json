@@ -43,6 +43,8 @@
   "cat.rose": "Vin rozé",
   "cat.blend": "Cupaj alb",
   "meta.fn": "2024 · Ediție de 1.200 de sticle",
+  "meta.editionRose": "2024 · Ediție de 660 de sticle",
+  "meta.editionFrm": "2024 · Ediție de 1.600 de sticle",
   "meta.gold": "Medalie de aur · Premiat în Alba",
   "meta.bronze": "Medalie de bronz · Premiat în Alba",
   "wine.order": "Comandă vin",
@@ -50,8 +52,6 @@
 
   "cert.close": "Închide",
   "cert.note": "[ diploma de premiere urmează, substituent afișat ]",
-  "slot.bottle": "[ fotografia sticlei urmează ]",
-  "slot.landscape": "[ fotografia peisajului urmează ]",
 
   "place.eyebrow": "Locul",
   "place.title": "Transilvania",
