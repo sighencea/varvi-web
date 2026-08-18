@@ -2,7 +2,7 @@
    VARVI i18n engine
    The site always opens in Romanian (the native brand language), regardless
    of the browser's language. Browser detection only decides whether to OFFER
-   a switch (via the language prompt in main.js) — it never switches
+   a switch (via the language prompt in main.js); it never switches
    automatically. A choice, once made, persists in localStorage.
    ========================================================================== */
 (function () {
@@ -16,7 +16,7 @@
   var dicts = {};
 
   /* Walk navigator.languages in preference order. Match on language code,
-     but also on region — so e.g. en-MD (English UI, Moldovan region) still
+     but also on region, so e.g. en-MD (English UI, Moldovan region) still
      maps to Romanian and en-AT to German. Anything unrecognized falls back
      to English. */
   function detectBrowser() {
@@ -102,7 +102,7 @@
       .catch(function () { /* dictionaries unreachable: inline Romanian markup stays */ });
   }
 
-  /* Apply AND persist — a deliberate user choice. */
+  /* Apply AND persist: a deliberate user choice. */
   function set(lang) {
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
     return render(lang);

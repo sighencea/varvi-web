@@ -1,5 +1,5 @@
 /* ==========================================================================
-   VARVI — behaviour
+   VARVI behaviour
    Age gate · header · mobile menu · scroll reveals · flagship parallax ·
    certificate lightbox · phone popup · language prompt · contact links
    ========================================================================== */
@@ -304,7 +304,7 @@
   });
 
   /* The prompt appears only until the user has ever made a language choice
-     (either answer — including "stay" — is persisted by I18n.set). It is
+     (either answer, including "stay", is persisted by I18n.set). It is
      rendered in the DETECTED language, so an English-speaking visitor reads
      the offer in English even though the page behind it is Romanian. */
   function showLangPrompt(lang) {
@@ -343,7 +343,7 @@
       stayBtn.textContent = t('langPrompt.stay');
 
       var settle = function (choice) {
-        window.I18n.set(choice); // either answer counts as a choice — persisted
+        window.I18n.set(choice); // either answer counts as a choice and is persisted
         modal.remove();
         document.removeEventListener('keydown', onKey);
       };

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   VARVI — Casa de vinuri Maria
+   VARVI · Casa de vinuri Maria
    Mobile-first stylesheet. Design tokens derive from the approved draft.
    ========================================================================== */
 
@@ -149,7 +149,7 @@ body.modal-open { overflow: hidden; }
 
 /* ==========================================================================
    Age gate (shown by default on first visit; inline head script adds
-   .age-ok to <html> before paint once confirmed — see main.js)
+   .age-ok to <html> before paint once confirmed; see main.js)
    ========================================================================== */
 .age-gate {
   position: fixed;
@@ -486,7 +486,7 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 }
 
 /* ==========================================================================
-   Flagship — Fetească Neagră
+   Flagship: Fetească Neagră
    ========================================================================== */
 .flagship {
   background: var(--color-flagship);
@@ -563,7 +563,7 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 .collection { background: var(--color-ivory); padding: clamp(100px, 13vw, 200px) 0 clamp(80px, 10vw, 150px); }
 .collection__title { font-size: clamp(40px, 5vw, 76px); font-weight: 500; margin: 22px 0 0; }
 .collection__sub { font-size: 22px; font-style: italic; color: var(--color-ink-muted); margin: 14px 0 0; }
-/* 2×2 grid by default, all four across on wide screens — no horizontal scroll */
+/* 2×2 grid by default, all four across on wide screens, no horizontal scroll */
 .collection__row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -25,7 +25,7 @@
 
   "house.eyebrow": "Das Haus",
   "house.statement": "Wein beginnt nicht in der Flasche. Er beginnt mit einem Ort.",
-  "house.support": "Die VARVI-Weine entstehen in Cricău, im Kreis Alba, im Herzen des historischen Weinlands Siebenbürgen — bei Casa de vinuri Maria, einem Haus, das in einem Maßstab arbeitet, in dem jede Abfüllung gezählt werden kann.",
+  "house.support": "Die VARVI-Weine entstehen in Cricău, im Kreis Alba, im Herzen des historischen Weinlands Siebenbürgen, bei Casa de vinuri Maria, einem Haus, das in einem Maßstab arbeitet, in dem jede Abfüllung gezählt werden kann.",
 
   "flag.eyebrow": "Limitierte Edition",
   "flag.edition": "Ediție limitată",
@@ -63,7 +63,7 @@
   "origin.caption": "wo die Weine entstehen",
 
   "limited.title": "Nicht millionenfach abgefüllt.",
-  "limited.copy": "VARVI-Weine werden in limitierten Editionen abgefüllt — manchmal in Hunderten gezählt, nicht in Hunderttausenden.",
+  "limited.copy": "VARVI-Weine werden in limitierten Editionen abgefüllt, manchmal in Hunderten gezählt, nicht in Hunderttausenden.",
   "limited.figure": "1.200",
   "limited.unit": "Flaschen",
 
@@ -108,7 +108,7 @@
   "cpage.back": "Zurück zur Website",
   "cpage.eyebrow": "Kontakt",
   "cpage.title": "Per E-Mail bestellen",
-  "cpage.copy": "Schreiben Sie uns, welche Weine Sie wünschen, und wir antworten Ihnen, um Verfügbarkeit, Preis und Lieferung zu bestätigen — persönlich arrangiert vom Weinhaus.",
+  "cpage.copy": "Schreiben Sie uns, welche Weine Sie wünschen, und wir antworten Ihnen, um Verfügbarkeit, Preis und Lieferung zu bestätigen, persönlich arrangiert vom Weinhaus.",
   "cpage.phoneLabel": "Telefon",
   "cpage.addressLabel": "Weinhaus",
   "cpage.note": "[ E-Mail-Adresse und Telefonnummer folgen, Platzhalter angezeigt ]",

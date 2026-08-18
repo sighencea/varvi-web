@@ -1,6 +1,6 @@
-# VARVI — Casa de vinuri Maria
+# VARVI · Casa de vinuri Maria
 
-Brand presentation website for **VARVI**, a small Transylvanian wine house in Cricău, Alba, Romania. A long-scroll homepage plus a contact/order-by-email page. Ordering is by telephone or email only — no e-commerce by design.
+Brand presentation website for **VARVI**, a small Transylvanian wine house in Cricău, Alba, Romania. A long-scroll homepage plus a contact/order-by-email page. Ordering is by telephone or email only; there is no e-commerce by design.
 
 ## Stack
 
@@ -39,8 +39,8 @@ Romanian is the default; English and German are available (`i18n/ro.json`, `en.j
 - Landscape photograph for "The Place"
 - Award certificate scans (lightbox)
 - Stockists and Instagram links
-- **Formspree**: the future contact form's insertion point is marked with a comment in `contact.html` — add the `action="https://formspree.io/f/{form-id}"` form there when configured.
+- **Formspree**: the future contact form's insertion point is marked with a comment in `contact.html`. Add the `action="https://formspree.io/f/{form-id}"` form there when configured.
 
 ## GitHub Pages
 
-All paths are relative, so the site works both at a user/organization root and under a repository subpath. No `CNAME` yet — a custom domain will be configured later (also update the `og:image`/canonical URLs then).
+All paths are relative, so the site works both at a user/organization root and under a repository subpath. No `CNAME` yet; a custom domain will be configured later (also update the `og:image`/canonical URLs then).
