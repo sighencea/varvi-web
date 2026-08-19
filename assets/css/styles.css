@@ -1204,6 +1204,15 @@ html.js:not(.age-ok) .age-gate { display: flex; }
   gap: 24px;
   flex-wrap: wrap;
 }
+/* Left block: category eyebrow stacked above the name */
+.stockist__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+/* Close the list with a bottom rule; between entries the next border-top
+   already acts as the divider, so lines never double up */
+.stockist:last-child { border-bottom: 1px solid var(--color-hairline); }
 .stockist__category {
   font-family: var(--font-sans);
   font-size: 9.5px;
