@@ -115,6 +115,15 @@
   "cpage.mailSubject": "Wine order, VARVI",
   "cpage.mailBody": "Hello,\n\nI would like to order the following VARVI wines:\n\n- Wine and quantity:\n\nName:\nDelivery address:\nTelephone:\n\nThank you.",
 
+  "meta.stockistsTitle": "VARVI | Find VARVI",
+  "spage.eyebrow": "Find VARVI",
+  "spage.title": "Where to find us",
+  "spage.intro": "VARVI wines are available directly from the wine house and at the partners below.",
+  "spage.mapLink": "View on map",
+  "spage.note": "[ the list of stockists is being completed ]",
+
+  "nav.backTop": "Back to top",
+
   "audio.label": "Music",
   "audio.volume": "Volume",
 

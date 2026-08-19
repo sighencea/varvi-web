@@ -67,6 +67,17 @@
     onSpy();
   }
 
+  /* ================= Back to top (revealed past the hero) ================= */
+  var backTop = document.querySelector('.back-top');
+  var heroEl = document.querySelector('.hero');
+  if (backTop && heroEl) {
+    var onBackTop = function () {
+      backTop.classList.toggle('is-visible', window.scrollY > heroEl.offsetHeight - 60);
+    };
+    window.addEventListener('scroll', onBackTop, { passive: true });
+    onBackTop();
+  }
+
   /* ================= Mobile menu ================= */
   var menuToggle = document.querySelector('.menu-toggle');
   var mobileMenu = document.getElementById('mobile-menu');

@@ -4,6 +4,9 @@ draft/
 # Claude Code
 .claude/
 
+# Local planning notes
+TODO.md
+
 # OS / editor files
 .DS_Store
 Thumbs.db

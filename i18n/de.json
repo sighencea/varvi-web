@@ -115,6 +115,15 @@
   "cpage.mailSubject": "Weinbestellung, VARVI",
   "cpage.mailBody": "Guten Tag,\n\nich möchte folgende VARVI-Weine bestellen:\n\n- Wein und Menge:\n\nName:\nLieferadresse:\nTelefon:\n\nVielen Dank.",
 
+  "meta.stockistsTitle": "VARVI | VARVI finden",
+  "spage.eyebrow": "VARVI finden",
+  "spage.title": "Wo Sie uns finden",
+  "spage.intro": "VARVI-Weine erhalten Sie direkt beim Weinhaus und bei den unten aufgeführten Partnern.",
+  "spage.mapLink": "Auf der Karte ansehen",
+  "spage.note": "[ die Liste der Verkaufsstellen wird ergänzt ]",
+
+  "nav.backTop": "Nach oben",
+
   "audio.label": "Musik",
   "audio.volume": "Lautstärke",
 

@@ -22,6 +22,7 @@ Then open `http://localhost:8000`.
 ```
 index.html            homepage
 contact.html          order-by-email page
+stockists.html        where to find VARVI (partners and stockists)
 assets/css/styles.css design system + all styles (mobile-first)
 assets/js/i18n.js     localization engine (RO default, EN offered)
 assets/js/main.js     age gate, menu, reveals, modals, contact wiring

@@ -115,6 +115,15 @@
   "cpage.mailSubject": "Comandă de vin, VARVI",
   "cpage.mailBody": "Bună ziua,\n\nAș dori să comand următoarele vinuri VARVI:\n\n- Vinul și cantitatea:\n\nNume:\nAdresa de livrare:\nTelefon:\n\nVă mulțumesc.",
 
+  "meta.stockistsTitle": "VARVI | Găsește VARVI",
+  "spage.eyebrow": "Găsește VARVI",
+  "spage.title": "Unde ne găsiți",
+  "spage.intro": "Vinurile VARVI pot fi comandate direct de la casa de vinuri și pot fi găsite la partenerii de mai jos.",
+  "spage.mapLink": "Vezi pe hartă",
+  "spage.note": "[ lista punctelor de vânzare este în curs de completare ]",
+
+  "nav.backTop": "Înapoi sus",
+
   "audio.label": "Muzică",
   "audio.volume": "Volum",
 
