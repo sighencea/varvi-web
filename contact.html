@@ -38,12 +38,18 @@
     <p class="coming-soon__text" data-i18n="cs.text">Vinurile noastre se odihnesc încă. Site-ul VARVI se deschide în curând.</p>
     <div class="coming-soon__order eyebrow eyebrow--gold-light" data-i18n="cs.order">Comenzi telefonice</div>
     <a class="coming-soon__phone" data-cs-phone><span data-phone-number>+40 745 612 366</span></a>
-  </div>
-  <div class="coming-soon__admin">
     <button class="coming-soon__admin-btn" type="button" data-admin-toggle>Admin</button>
-    <form class="coming-soon__form" data-admin-form>
-      <input class="coming-soon__input" type="password" data-admin-pass autocomplete="off" aria-label="Parolă / Password" placeholder="Parolă / Password">
-      <button class="coming-soon__submit" type="submit">Intră</button>
+  </div>
+</div>
+
+<!-- Admin unlock popup (stacks above the curtain; removed together with it at launch) -->
+<div class="modal popup admin-popup" id="admin-popup" role="dialog" aria-modal="true" aria-labelledby="admin-popup-title">
+  <div class="popup__card" data-modal-card>
+    <img class="popup__crest crest" src="assets/images/brand/crest-logo.png" alt="" width="110" height="73">
+    <div class="popup__title" id="admin-popup-title">Acces administrator</div>
+    <form class="admin-popup__form" data-admin-form>
+      <input class="admin-popup__input" type="password" data-admin-pass autocomplete="off" aria-label="Parolă" placeholder="Parolă">
+      <button class="btn btn--dark" type="submit">Intră</button>
     </form>
   </div>
 </div>

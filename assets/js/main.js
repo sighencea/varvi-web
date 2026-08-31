@@ -24,13 +24,14 @@
   var curtain = document.querySelector('.coming-soon');
   var siteLocked = !!curtain && !document.documentElement.classList.contains('admin-ok');
   if (curtain) {
+    var adminPopup = document.getElementById('admin-popup');
     var adminToggle = curtain.querySelector('[data-admin-toggle]');
-    var adminForm = curtain.querySelector('[data-admin-form]');
-    var adminPass = curtain.querySelector('[data-admin-pass]');
+    var adminForm = adminPopup && adminPopup.querySelector('[data-admin-form]');
+    var adminPass = adminPopup && adminPopup.querySelector('[data-admin-pass]');
     if (adminToggle && adminForm && adminPass) {
+      // The generic .modal wiring below adds backdrop-click and Escape close
       adminToggle.addEventListener('click', function () {
-        adminToggle.style.display = 'none';
-        adminForm.classList.add('is-open');
+        openModal(adminPopup);
         adminPass.focus();
       });
       adminPass.addEventListener('input', function () {

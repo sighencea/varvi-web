@@ -271,49 +271,40 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 .coming-soon__phone[href]:hover { color: var(--color-gold-light); }
 
-/* Gentle owner unlock, tucked into the bottom corner */
-.coming-soon__admin {
-  position: absolute;
-  bottom: 26px;
-  right: clamp(24px, 5vw, 80px);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+/* Gentle owner unlock, below the phone number; opens the admin popup */
 .coming-soon__admin-btn {
+  margin-top: 30px;
   font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: .3em;
   text-transform: uppercase;
-  color: rgba(242, 239, 231, .45);
-  text-shadow: 0 1px 8px rgba(22, 23, 22, .8);
+  color: rgba(242, 239, 231, .4);
 }
 .coming-soon__admin-btn:hover { color: var(--color-gold-light); }
-.coming-soon__form { display: none; align-items: center; gap: 12px; }
-.coming-soon__form.is-open { display: flex; }
-.coming-soon__input {
+
+/* Password popup: the standard site popup, raised above the curtain (400) */
+.admin-popup { z-index: 420; }
+.admin-popup__form {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-popup__input {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: .12em;
-  color: var(--color-ivory);
+  text-align: center;
+  color: var(--color-charcoal);
   background: none;
   border: none;
-  border-bottom: 1px solid rgba(242, 239, 231, .35);
+  border-bottom: 1px solid var(--color-hairline);
   border-radius: 0;
-  padding: 6px 2px;
-  width: 160px;
+  padding: 8px 2px;
+  width: min(220px, 100%);
 }
-.coming-soon__input::placeholder { color: rgba(242, 239, 231, .3); }
-.coming-soon__input:focus { outline: none; border-bottom-color: var(--color-gold-light); }
-.coming-soon__form.is-wrong .coming-soon__input { border-bottom-color: #a0524d; }
-.coming-soon__submit {
-  font-family: var(--font-sans);
-  font-size: 10px;
-  letter-spacing: .3em;
-  text-transform: uppercase;
-  color: rgba(242, 239, 231, .55);
-}
-.coming-soon__submit:hover { color: var(--color-gold-light); }
+.admin-popup__input:focus { outline: none; border-bottom-color: var(--color-gold); }
+.admin-popup__form.is-wrong .admin-popup__input { border-bottom-color: #a0524d; }
 
 /* ==========================================================================
    Header
