@@ -50,4 +50,4 @@ Romanian is the default; English and German are available (`i18n/ro.json`, `en.j
 
 ## GitHub Pages
 
-All paths are relative, so the site works both at a user/organization root and under a repository subpath. No `CNAME` yet; a custom domain will be configured later (also update the `og:image`/canonical URLs then).
+All paths are relative, so the site works both at a user/organization root and under a repository subpath. The custom domain is **varvi.ro** (`CNAME` file in the root; DNS is managed on Cloudflare pointing at GitHub Pages' A records, with `www` as a CNAME to `sighencea.github.io`). The `og:image`, `og:url` and canonical URLs are absolute on that domain.
