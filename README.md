@@ -30,6 +30,12 @@ assets/images/        brand / campaign / documentary imagery
 i18n/ro.json, en.json translation dictionaries
 ```
 
+## Pre-launch coming soon curtain
+
+While the site is being built, every page shows a full-screen "coming soon" curtain (with the order telephone number) instead of the site. The owner unlocks it via the small **Admin** button in the bottom corner (password `22446688`, stored in plain sight by design; it only guards work in progress). The unlock persists per browser in `localStorage` (`varvi_admin_ok`).
+
+To go live, remove: the `.coming-soon` block from all three HTML pages, the `varvi_admin_ok` reads in their inline head scripts, the "Coming soon curtain" sections in `assets/js/main.js` (plus its `siteLocked` guards and the `data-cs-phone` wiring), and the curtain styles in `assets/css/styles.css`.
+
 ## Localization
 
 Romanian is the default; English and German are available (`i18n/ro.json`, `en.json`, `de.json`). Every translatable element carries a `data-i18n` key. First-time visitors whose browser prefers another supported language get a one-time prompt, in that language, offering a switch; any choice persists in `localStorage` (`varvi_lang`). The German and Romanian copy should be reviewed by native speakers.

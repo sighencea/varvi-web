@@ -23,12 +23,31 @@
 // Runs before paint: returning of-age visitors never see the gate flash.
 // Without JS the .js class is absent, so the gate stays hidden and the site
 // remains readable.
-(function(){try{if(localStorage.getItem('varvi_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}document.documentElement.classList.add('js')})();
+(function(){try{if(localStorage.getItem('varvi_age_ok')==='1')document.documentElement.classList.add('age-ok');if(localStorage.getItem('varvi_admin_ok')==='1')document.documentElement.classList.add('admin-ok')}catch(e){}document.documentElement.classList.add('js')})();
 </script>
 <script src="assets/js/i18n.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+
+<!-- ======================= Coming soon (pre-launch curtain) =======================
+     Remove this block from every page (plus the varvi_admin_ok reads in the head
+     scripts and the curtain section in main.js) when the site goes live. -->
+<div class="coming-soon" role="dialog" aria-modal="true" aria-label="VARVI - în curând / coming soon">
+  <img class="coming-soon__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI" width="210" height="140">
+  <div class="coming-soon__brand">VARVI</div>
+  <div class="coming-soon__eyebrow eyebrow eyebrow--gold-light">În curând · Coming soon</div>
+  <p class="coming-soon__text">Vinurile noastre se odihnesc încă. Site-ul VARVI se deschide în curând.<br>Our wines are still resting. The VARVI website opens soon.</p>
+  <div class="coming-soon__order eyebrow eyebrow--gold-light">Comenzi telefonice · Orders by telephone</div>
+  <a class="coming-soon__phone" data-cs-phone><span data-phone-number>+40 ··· ··· ···</span></a>
+  <div class="coming-soon__admin">
+    <button class="coming-soon__admin-btn" type="button" data-admin-toggle>Admin</button>
+    <form class="coming-soon__form" data-admin-form>
+      <input class="coming-soon__input" type="password" data-admin-pass autocomplete="off" aria-label="Parolă / Password" placeholder="Parolă / Password">
+      <button class="coming-soon__submit" type="submit">Intră</button>
+    </form>
+  </div>
+</div>
 
 <!-- ======================= Age gate ======================= -->
 <div class="age-gate" role="dialog" aria-modal="true" aria-labelledby="gate-heading">
@@ -36,8 +55,6 @@
     <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
     <span class="lang-toggle__sep" aria-hidden="true">/</span>
     <button class="lang-btn" data-lang-btn="en">EN</button>
-    <span class="lang-toggle__sep" aria-hidden="true">/</span>
-    <button class="lang-btn" data-lang-btn="de">DE</button>
   </div>
   <img class="age-gate__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI" width="210" height="140">
   <div class="age-gate__brand" id="gate-heading">VARVI</div>
@@ -69,8 +86,6 @@
       <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
       <span class="lang-toggle__sep" aria-hidden="true">/</span>
       <button class="lang-btn" data-lang-btn="en">EN</button>
-    <span class="lang-toggle__sep" aria-hidden="true">/</span>
-    <button class="lang-btn" data-lang-btn="de">DE</button>
     </div>
     <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Deschide meniul" data-i18n-attr="aria-label:nav.menuOpen">
       <span class="menu-toggle__bar"></span>
@@ -92,8 +107,6 @@
     <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
     <span class="lang-toggle__sep" aria-hidden="true">/</span>
     <button class="lang-btn" data-lang-btn="en">EN</button>
-    <span class="lang-toggle__sep" aria-hidden="true">/</span>
-    <button class="lang-btn" data-lang-btn="de">DE</button>
   </div>
 </nav>
 
@@ -108,7 +121,7 @@
       <h1 class="hero__title">VARVI</h1>
       <div class="hero__sub" data-i18n="hero.sub">Vin modelat de loc</div>
       <div class="hero__rule"></div>
-      <p class="hero__tagline" data-i18n="hero.tagline">Din via noastră, la masa dumneavoastră.</p>
+      <p class="hero__tagline" data-i18n="hero.tagline">Vinuri pentru cunoscători.</p>
       <div class="hero__actions">
         <a class="btn btn--gold" href="#wines" data-i18n="hero.cta">Descoperă vinurile</a>
         <a class="btn btn--outline-ivory" href="#order" data-i18n="nav.order">Comandă vin</a>
@@ -350,7 +363,7 @@
   <div class="order__inner" data-reveal>
     <div class="eyebrow eyebrow--gold-light" data-i18n="order.eyebrow">Comenzi</div>
     <h2 class="order__title" data-i18n="order.title">Comandă vin VARVI</h2>
-    <p class="order__tagline" data-i18n="order.tagline">Din via noastră, la masa dumneavoastră.</p>
+    <p class="order__tagline" data-i18n="order.tagline">Vinuri pentru cunoscători.</p>
     <p class="order__copy" data-i18n="order.copy">Vinurile noastre pot fi comandate direct de la casa de vinuri. Pentru a plasa o comandă, contactați-ne telefonic. Vă ajutăm cu plăcere să alegeți vinurile, să confirmăm disponibilitatea și să aranjăm comanda.</p>
     <!-- When PHONE is set in main.js this becomes a live number; consider
          converting the span to <a href="tel:…"> at that point. -->
@@ -409,8 +422,6 @@
           <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
           <span class="lang-toggle__sep" aria-hidden="true">/</span>
           <button class="lang-btn" data-lang-btn="en">EN</button>
-    <span class="lang-toggle__sep" aria-hidden="true">/</span>
-    <button class="lang-btn" data-lang-btn="de">DE</button>
         </div>
         <a href="#" data-i18n="legal.privacy">Confidențialitate</a>
         <a href="#">Cookies</a>

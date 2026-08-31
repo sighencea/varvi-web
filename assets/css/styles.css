@@ -198,6 +198,93 @@ html.js:not(.age-ok) .age-gate { display: flex; }
 }
 
 /* ==========================================================================
+   Coming soon curtain (pre-launch)
+   Visible by default, JS or not, so the unfinished site never shows.
+   The inline head script adds .admin-ok to <html> before paint once the
+   owner has unlocked it, so the curtain never flashes for them; see main.js.
+   ========================================================================== */
+.coming-soon {
+  position: fixed;
+  inset: 0;
+  z-index: 400; /* above modals (300): nothing may peek out pre-launch */
+  background: var(--color-charcoal);
+  color: var(--color-ivory);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+html.admin-ok .coming-soon { display: none; }
+html:not(.admin-ok) body { overflow: hidden; }
+
+.coming-soon__crest { width: 210px; }
+.coming-soon__brand { font-size: 34px; letter-spacing: .34em; margin-top: 28px; font-weight: 500; }
+.coming-soon__eyebrow { margin-top: 16px; }
+.coming-soon__text {
+  max-width: 440px;
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--color-stone);
+  margin: 22px 0 0;
+}
+
+/* Orders by telephone until the site opens */
+.coming-soon__order { margin-top: 40px; }
+.coming-soon__phone {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 26px;
+  letter-spacing: .08em;
+  color: var(--color-ivory);
+}
+.coming-soon__phone[href]:hover { color: var(--color-gold-light); }
+
+/* Gentle owner unlock, tucked into the bottom corner */
+.coming-soon__admin {
+  position: absolute;
+  bottom: 26px;
+  right: clamp(24px, 5vw, 80px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.coming-soon__admin-btn {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: rgba(242, 239, 231, .3);
+}
+.coming-soon__admin-btn:hover { color: var(--color-gold-light); }
+.coming-soon__form { display: none; align-items: center; gap: 12px; }
+.coming-soon__form.is-open { display: flex; }
+.coming-soon__input {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: .12em;
+  color: var(--color-ivory);
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(242, 239, 231, .35);
+  border-radius: 0;
+  padding: 6px 2px;
+  width: 160px;
+}
+.coming-soon__input::placeholder { color: rgba(242, 239, 231, .3); }
+.coming-soon__input:focus { outline: none; border-bottom-color: var(--color-gold-light); }
+.coming-soon__form.is-wrong .coming-soon__input { border-bottom-color: #a0524d; }
+.coming-soon__submit {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: rgba(242, 239, 231, .55);
+}
+.coming-soon__submit:hover { color: var(--color-gold-light); }
+
+/* ==========================================================================
    Header
    ========================================================================== */
 .site-header {
