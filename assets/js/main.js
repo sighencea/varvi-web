@@ -9,7 +9,7 @@
   /* ---- CONTACT DETAILS (single source of truth; set real values when
      supplied). Empty = placeholder shown, links stay inert, and the call
      CTA opens the "coming soon" popup instead. ---- */
-  var PHONE = ''; // e.g. '+40 7xx xxx xxx'
+  var PHONE = '+40 745 612 366';
   var EMAIL = ''; // e.g. 'comenzi@...'
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

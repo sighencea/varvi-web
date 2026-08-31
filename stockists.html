@@ -23,13 +23,18 @@
 <!-- ======================= Coming soon (pre-launch curtain) =======================
      Remove this block from every page (plus the varvi_admin_ok reads in the head
      scripts and the curtain section in main.js) when the site goes live. -->
-<div class="coming-soon" role="dialog" aria-modal="true" aria-label="VARVI - în curând / coming soon">
+<div class="coming-soon" role="dialog" aria-modal="true" aria-label="VARVI - în curând">
+  <div class="lang-toggle">
+    <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
+    <span class="lang-toggle__sep" aria-hidden="true">/</span>
+    <button class="lang-btn" data-lang-btn="en">EN</button>
+  </div>
   <img class="coming-soon__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI" width="210" height="140">
   <div class="coming-soon__brand">VARVI</div>
-  <div class="coming-soon__eyebrow eyebrow eyebrow--gold-light">În curând · Coming soon</div>
-  <p class="coming-soon__text">Vinurile noastre se odihnesc încă. Site-ul VARVI se deschide în curând.<br>Our wines are still resting. The VARVI website opens soon.</p>
-  <div class="coming-soon__order eyebrow eyebrow--gold-light">Comenzi telefonice · Orders by telephone</div>
-  <a class="coming-soon__phone" data-cs-phone><span data-phone-number>+40 ··· ··· ···</span></a>
+  <div class="coming-soon__eyebrow eyebrow eyebrow--gold-light" data-i18n="cs.eyebrow">În curând</div>
+  <p class="coming-soon__text" data-i18n="cs.text">Vinurile noastre se odihnesc încă. Site-ul VARVI se deschide în curând.</p>
+  <div class="coming-soon__order eyebrow eyebrow--gold-light" data-i18n="cs.order">Comenzi telefonice</div>
+  <a class="coming-soon__phone" data-cs-phone><span data-phone-number>+40 745 612 366</span></a>
   <div class="coming-soon__admin">
     <button class="coming-soon__admin-btn" type="button" data-admin-toggle>Admin</button>
     <form class="coming-soon__form" data-admin-form>
