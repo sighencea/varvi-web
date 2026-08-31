@@ -282,8 +282,9 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 .coming-soon__admin-btn:hover { color: var(--color-gold-light); }
 
-/* Password popup: the standard site popup, raised above the curtain (400) */
-.admin-popup { z-index: 420; }
+/* Password popup: the standard site popup, raised above the curtain (400).
+   Doubled selector so it beats the later .modal { z-index: 300 } rule. */
+.modal.admin-popup { z-index: 420; }
 .admin-popup__form {
   margin-top: 26px;
   display: flex;
