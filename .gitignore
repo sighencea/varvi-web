@@ -13,3 +13,7 @@ Thumbs.db
 Desktop.ini
 *.swp
 *~
+
+# Label photos (reference only, never deployed) and notes extracted from them
+Wine Labels/
+wine-details.md
