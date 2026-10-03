@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- GitHub Pages serves this file for any missing path, however deep, so
-     every relative URL (including the i18n fetches) resolves from the root. -->
-<base href="/">
+     every relative URL (including the i18n fetches) must resolve from the site
+     root. Skipped when the file is opened straight from disk (file://), where
+     "/" would point at the drive root and leave the page unstyled. -->
+<script>if (location.protocol !== 'file:') document.write('<base href="/">');</script>
 <title data-i18n="meta.notFoundTitle">VARVI | Pagina nu a fost găsită</title>
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#F2EFE7">
