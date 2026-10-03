@@ -792,6 +792,7 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 .limited__figure-block { text-align: right; }
 .limited__figure { font-size: clamp(72px, 7vw, 120px); font-weight: 400; line-height: 1; color: var(--color-oxblood); }
+.limited__figure--next { margin-top: 44px; }
 .limited__unit {
   font-family: var(--font-sans);
   font-size: 10px;
@@ -1132,7 +1133,8 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 .lightbox__bar { display: flex; align-items: baseline; gap: 28px; color: var(--color-ivory); }
 .lightbox__name { font-size: 22px; font-style: italic; }
-.lightbox__close {
+.lightbox__close,
+.lightbox__download {
   font-family: var(--font-sans);
   font-size: 10.5px;
   letter-spacing: .3em;

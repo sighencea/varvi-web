@@ -30,10 +30,7 @@
   "house.support": "Die VARVI-Weine entstehen in Cricău, im Kreis Alba, im Herzen des historischen Weinlands Siebenbürgen, bei Casa de vinuri Maria, einem Haus, das in einem Maßstab arbeitet, in dem jede Abfüllung gezählt werden kann.",
 
   "flag.eyebrow": "Limitierte Edition",
-  "flag.edition": "Limitierte Edition",
-  "flag.count": "1.200 Flaschen",
   "flag.copy": "Eine rumänische Rebsorte. Ein siebenbürgischer Ausdruck. Der Fetească Neagră 2024 wurde in einer einzigen limitierten Edition von 1.200 Flaschen abgefüllt.",
-  "flag.link": "Diesen Wein entdecken",
   "flag.order": "Telefonisch bestellen",
 
   "col.eyebrow": "Die Kollektion",
@@ -108,7 +105,6 @@
   "cpage.copy": "Schreiben Sie uns, welche Weine Sie wünschen, und wir antworten Ihnen, um Verfügbarkeit, Preis und Lieferung zu bestätigen, persönlich arrangiert vom Weinhaus.",
   "cpage.phoneLabel": "Telefon",
   "cpage.addressLabel": "Weinhaus",
-  "cpage.note": "[ E-Mail-Adresse und Telefonnummer folgen, Platzhalter angezeigt ]",
   "cpage.mailSubject": "Weinbestellung, VARVI",
   "cpage.mailBody": "Guten Tag,\n\nich möchte folgende VARVI-Weine bestellen:\n\n- Wein und Menge:\n\nName:\nLieferadresse:\nTelefon:\n\nVielen Dank.",
 
@@ -153,7 +149,7 @@
   "cookies.s3h": "Lokaler Speicher im Browser",
   "cookies.s3b": "<p>Für den Betrieb der Website nutzen wir den lokalen Speicher des Browsers (localStorage). Diese Informationen bleiben auf Ihrem Gerät und werden nicht an uns übertragen:</p><ul><li><strong>varvi_lang</strong>: die für die Website gewählte Sprache;</li><li><strong>varvi_age_ok</strong>: Ihre Bestätigung des gesetzlichen Mindestalters, damit die Frage nicht bei jedem Besuch erneut erscheint;</li><li><strong>varvi_admin_ok</strong>: ein technischer Eintrag, der nur in der Zeit vor dem Start der Website verwendet wird.</li></ul><p>Sie bleiben gespeichert, bis Sie die Websitedaten in Ihrem Browser löschen.</p>",
   "cookies.s4h": "Dienste Dritter",
-  "cookies.s4b": "<p>Die Schriften der Seite werden von den Google-Fonts-Servern geladen; beim Öffnen der Seite übermittelt Ihr Browser Ihre IP-Adresse an Google, um die Schriften herunterzuladen. Die Website enthält außerdem Links zu externen Diensten wie Google Maps oder Instagram; nach dem Aufruf dieser Links gelten die Richtlinien der jeweiligen Dienste.</p>",
+  "cookies.s4b": "<p>Die Schriften der Seite werden von den Google-Fonts-Servern geladen; beim Öffnen der Seite übermittelt Ihr Browser Ihre IP-Adresse an Google, um die Schriften herunterzuladen. Die Website enthält außerdem Links zu externen Diensten wie Google Maps; nach dem Aufruf dieser Links gelten die Richtlinien der jeweiligen Dienste.</p>",
   "cookies.s5h": "So kontrollieren Sie die Speicherung",
   "cookies.s5b": "<p>Sie können die von varvi.ro gespeicherten Daten jederzeit in den Browsereinstellungen unter Cookies und Websitedaten löschen. Die Website bleibt voll nutzbar; Sie werden lediglich erneut nach Sprache und Altersbestätigung gefragt.</p>",
   "cookies.s6h": "Änderungen",

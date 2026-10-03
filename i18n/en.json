@@ -30,10 +30,7 @@
   "house.support": "VARVI wines are made in Cricău, in Alba, at the heart of Transylvania's historic wine country, by Casa de vinuri Maria, a house that works at a scale where each bottling can be counted.",
 
   "flag.eyebrow": "Limited Edition",
-  "flag.edition": "Limited edition",
-  "flag.count": "1,200 bottles",
-  "flag.copy": "A Romanian grape. A Transylvanian expression. The 2024 Fetească Neagră was bottled in a single limited edition of 1,200 bottles.",
-  "flag.link": "Discover this wine",
+  "flag.copy": "A Romanian grape. A Transylvanian expression. Fetească Neagră is bottled in limited editions: 1,200 bottles of the 2024 vintage and just 600 of the 2025.",
   "flag.order": "Order by telephone",
 
   "col.eyebrow": "The Collection",
@@ -108,7 +105,6 @@
   "cpage.copy": "Write to us with the wines you would like and we will reply to confirm availability, pricing and delivery, personally arranged by the wine house.",
   "cpage.phoneLabel": "Telephone",
   "cpage.addressLabel": "Wine house",
-  "cpage.note": "[ email address and telephone number to be supplied, placeholders shown ]",
   "cpage.mailSubject": "Wine order, VARVI",
   "cpage.mailBody": "Hello,\n\nI would like to order the following VARVI wines:\n\n- Wine and quantity:\n\nName:\nDelivery address:\nTelephone:\n\nThank you.",
 
@@ -123,7 +119,7 @@
   "spage.note": "[ the list of stockists is being completed ]",
 
   "legal.eyebrow": "Legal",
-  "legal.updated": "Last updated: 30 September 2026",
+  "legal.updated": "Last updated: 3 October 2026",
 
   "meta.privacyTitle": "VARVI | Privacy Policy",
   "privacy.title": "Privacy Policy",
@@ -139,7 +135,7 @@
   "privacy.s5h": "How long we keep data",
   "privacy.s5b": "<p>Correspondence and order data are kept for as long as needed to fulfil the order and to meet legal obligations, in particular fiscal and accounting ones, and are then deleted.</p>",
   "privacy.s6h": "Your rights",
-  "privacy.s6b": "<p>Under the GDPR you have the right to access, rectify and erase your data, to restrict processing, to data portability and to object. To exercise these rights, <a href=\"contact.html\">contact the wine house</a>. You also have the right to lodge a complaint with the Romanian supervisory authority, ANSPDCP, at <a href=\"https://www.dataprotection.ro\" target=\"_blank\" rel=\"noopener\">www.dataprotection.ro</a>.</p>",
+  "privacy.s6b": "<p>Under the GDPR you have the right to access, rectify and erase your data, to restrict processing, to data portability and to object. To exercise these rights, contact the wine house at <a href=\"mailto:varvy_styll@yahoo.com\">varvy_styll@yahoo.com</a>. You also have the right to lodge a complaint with the Romanian supervisory authority, ANSPDCP, at <a href=\"https://www.dataprotection.ro\" target=\"_blank\" rel=\"noopener\">www.dataprotection.ro</a>.</p>",
   "privacy.s7h": "Changes to this policy",
   "privacy.s7b": "<p>We may update this policy as the site or our services change. The current version, with the date of the last update, is always published on this page.</p>",
 
@@ -153,7 +149,7 @@
   "cookies.s3h": "Local storage in your browser",
   "cookies.s3b": "<p>For the site to work we use the browser's local storage (localStorage). This information stays on your device and is not transmitted to us:</p><ul><li><strong>varvi_lang</strong>: the language you chose for the site;</li><li><strong>varvi_age_ok</strong>: your confirmation of legal drinking age, so the question does not reappear on every visit;</li><li><strong>varvi_admin_ok</strong>: a technical entry used only during the pre-launch period.</li></ul><p>They remain until you clear the site's data from your browser.</p>",
   "cookies.s4h": "Third-party services",
-  "cookies.s4b": "<p>The page's fonts are loaded from Google Fonts servers; when the page opens, your browser transmits your IP address to Google to download the fonts. The site also links to external services such as Google Maps or Instagram; once you follow those links, the policies of those services apply.</p>",
+  "cookies.s4b": "<p>The page's fonts are loaded from Google Fonts servers; when the page opens, your browser transmits your IP address to Google to download the fonts. The site also links to external services such as Google Maps; once you follow those links, the policies of those services apply.</p>",
   "cookies.s5h": "How to control storage",
   "cookies.s5b": "<p>You can delete the data saved by varvi.ro at any time from your browser settings, under cookies and site data. The site remains fully usable; you will simply be asked again for your language and age confirmation.</p>",
   "cookies.s6h": "Changes",
@@ -177,7 +173,7 @@
   "terms.s7h": "Governing law",
   "terms.s7b": "<p>These terms are governed by Romanian law, and any disputes fall under the jurisdiction of the Romanian courts. Consumers may also turn to the National Authority for Consumer Protection, <a href=\"https://anpc.ro\" target=\"_blank\" rel=\"noopener\">anpc.ro</a>.</p>",
   "terms.s8h": "Changes and contact",
-  "terms.s8b": "<p>We may update these terms; the current version is published on this page with the date of the last update. For questions, <a href=\"contact.html\">contact the wine house</a>.</p>",
+  "terms.s8b": "<p>We may update these terms; the current version is published on this page with the date of the last update. For questions, contact the wine house at <a href=\"mailto:varvy_styll@yahoo.com\">varvy_styll@yahoo.com</a>.</p>",
 
   "nav.backTop": "Back to top",
 
@@ -261,5 +257,12 @@
   "frm.food": "White fish, seafood, aged cheeses, smoked ham, dry-cured charcuterie, game.",
   "rose.story": "This wine is bottled poetry. It has hints of forest berries, strawberries, melon and rose petals, and a surprising taste of citrus peel. Its colour pleases the eye and brings summer and holidays to mind. This wine, then, is a state of mind.",
   "rose.food": "Salads, light dishes, starters, cheeses and, lately, salted crisps. Fish and seafood seem far better with a Rosé.",
-  "rose.quote": "That wine is good is true enough,<br>But you know the saying well:<br>Nothing ever made you drunk<br>The way a woman did."
+  "rose.quote": "That wine is good is true enough,<br>But you know the saying well:<br>Nothing ever made you drunk<br>The way a woman did.",
+
+  "flag.ed2024": "Vintage 2024 · 1,200 bottles",
+  "flag.ed2025": "Vintage 2025 · 600 bottles",
+  "flag.link2024": "Vintage 2024",
+  "flag.link2025": "Vintage 2025",
+  "cert.download": "Download PDF",
+  "frm.quote": "Two things ease my pain and ailing,<br>Two that soothe my every ill:<br>The demijohn when it is brimming<br>And a woman, bare and still."
 }

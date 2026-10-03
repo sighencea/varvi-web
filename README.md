@@ -38,14 +38,12 @@ To go live, remove: the `.coming-soon` block from all three HTML pages, the `var
 
 ## Localization
 
-Romanian is the default; English and German are available (`i18n/ro.json`, `en.json`, `de.json`). Every translatable element carries a `data-i18n` key. First-time visitors whose browser prefers another supported language get a one-time prompt, in that language, offering a switch; any choice persists in `localStorage` (`varvi_lang`). The German and Romanian copy should be reviewed by native speakers.
+Romanian is the default and English is available (`i18n/ro.json`, `en.json`). Every translatable element carries a `data-i18n` key. First-time visitors whose browser prefers a language other than Romanian get a one-time prompt offering English; any choice persists in `localStorage` (`varvi_lang`). `i18n/de.json` is kept for a possible future German site but is not offered anywhere (not in `SUPPORTED` in `assets/js/i18n.js`) and is no longer updated.
 
 ## Content still to be supplied
 
-- `PHONE` and `EMAIL` constants at the top of `assets/js/main.js` (single source of truth; placeholders shown until set)
-- Landscape photograph for "The Place"
-- Award certificate scans (lightbox)
-- Stockists and Instagram links
+- Company details (CUI, Reg. Com. number, registered office) for the footer and legal pages
+- Stockist addresses and telephone numbers
 - **Formspree**: the future contact form's insertion point is marked with a comment in `contact.html`. Add the `action="https://formspree.io/f/{form-id}"` form there when configured.
 
 ## GitHub Pages

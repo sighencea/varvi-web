@@ -10,7 +10,7 @@
      supplied). Empty = placeholder shown and links stay inert. The markup
      also carries the tel: links statically so they work without JS. ---- */
   var PHONE = '+40 745 612 366';
-  var EMAIL = ''; // e.g. 'comenzi@...'
+  var EMAIL = 'varvy_styll@yahoo.com';
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -219,18 +219,22 @@
   });
 
   // Certificate lightbox: buttons carry the diploma slug (scan at
-  // assets/certificates/<slug>.jpg) and the wine name to show under the frame
+  // assets/certificates/<slug>.jpg, PDF beside it) and the wine name to show
+  // under the frame
   var lightbox = document.getElementById('cert-lightbox');
   if (lightbox) {
     var lbName = lightbox.querySelector('.lightbox__name');
     var lbImg = lightbox.querySelector('.lightbox__img');
+    var lbPdf = lightbox.querySelector('.lightbox__download');
     document.querySelectorAll('[data-cert]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var name = btn.getAttribute('data-cert-name') || '';
         if (lbName) lbName.textContent = name;
+        var base = 'assets/certificates/' + btn.getAttribute('data-cert');
+        if (lbPdf) lbPdf.setAttribute('href', base + '.pdf');
         if (lbImg) {
           lbImg.removeAttribute('src'); // never flash the previous diploma
-          lbImg.src = 'assets/certificates/' + btn.getAttribute('data-cert') + '.jpg';
+          lbImg.src = base + '.jpg';
           lbImg.alt = (btn.textContent || '').trim() + ': ' + name;
         }
         openModal(lightbox);
