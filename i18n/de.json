@@ -48,12 +48,12 @@
   "meta.editionRose": "2024 · Edition von 660 Flaschen",
   "meta.editionFrm": "2024 · Edition von 1.600 Flaschen",
   "meta.gold": "Goldmedaille · Ausgezeichnet in Alba",
-  "meta.bronze": "Bronzemedaille · Ausgezeichnet in Alba",
+  "meta.goldFrm": "Goldmedaille · Jahrgang 2022",
+  "meta.goldRose": "Goldmedaille · Jahrgang 2023",
   "wine.order": "Wein bestellen",
   "wine.viewCert": "Urkunde ansehen",
 
   "cert.close": "Schließen",
-  "cert.note": "[ Urkunde folgt, Platzhalter angezeigt ]",
 
   "place.eyebrow": "Der Ort",
   "place.title": "Siebenbürgen",
@@ -75,7 +75,6 @@
   "awards.title": "Ausgezeichnet für das, was in der Flasche ist.",
   "awards.note": "Ausgezeichnet in Alba",
   "awards.tierGold": "Gold",
-  "awards.tierBronze": "Bronze",
 
   "human.title": "Gemacht im menschlichen Maßstab.",
   "human.copy": "Es gibt kein Château und keine Marketingabteilung. Es gibt ein kleines Weinhaus in Cricău und Editionen, gezählt in Hunderten und wenigen Tausenden von Flaschen. Diese Fotografien sind keine Kampagne. So sieht es wirklich aus.",
@@ -90,16 +89,11 @@
   "order.cta": "Anrufen und bestellen",
   "order.email": "Per E-Mail bestellen",
   "order.motto": "Direkt von VARVI. Persönlich arrangiert.",
-  "order.note": "[ Telefonnummer folgt, Platzhalter angezeigt ]",
-
-  "phone.soonTitle": "Telefonische Bestellungen folgen in Kürze",
-  "phone.soonCopy": "Unsere Bestellleitung wird derzeit eingerichtet. Bis dahin freuen wir uns über Ihre E-Mail.",
 
   "contact.title": "VARVI entdecken",
   "contact.address": "Cricău · Alba · Rumänien",
   "contact.link1": "Weinhaus kontaktieren",
   "contact.link2": "VARVI finden",
-  "contact.note": "[ Kontaktdaten, Verkaufsstellen und Links folgen, nur Platzhalter ]",
 
   "footer.address": "Cricău · Alba · Siebenbürgen · Rumänien",
   "footer.orderTitle": "Weinbestellungen",
@@ -192,5 +186,38 @@
 
   "langPrompt.message": "Diese Website ist auch auf Deutsch verfügbar. Möchten Sie auf Deutsch fortfahren?",
   "langPrompt.stay": "Auf Rumänisch fortfahren",
-  "langPrompt.switch": "Auf Deutsch fortfahren →"
+  "langPrompt.switch": "Auf Deutsch fortfahren →",
+
+  "meta.notFoundTitle": "VARVI | Seite nicht gefunden",
+  "e404.title": "Diese Seite gibt es nicht.",
+  "e404.copy": "Vielleicht wurde sie verschoben, oder die Adresse wurde falsch eingegeben. Die Weine sind aber noch genau dort, wo sie waren.",
+  "e404.cta": "Zurück zu VARVI",
+
+  "meta.sb24Title": "VARVI | Sauvignon Blanc 2024",
+  "wp.story": "Der Wein",
+  "wp.specs": "Steckbrief",
+  "wp.specsTitle": "Eigenschaften",
+  "wp.pairing": "Passt zu",
+  "wp.grape": "Rebsorte",
+  "wp.vintage": "Jahrgang",
+  "wp.vineyard": "Weinbaugebiet",
+  "wp.appellation": "Herkunftsbezeichnung",
+  "wp.style": "Stil",
+  "wp.alcohol": "Alkohol",
+  "wp.volume": "Inhalt",
+  "wp.serving": "Trinktemperatur",
+  "wp.sulphites": "Enthält Sulfite.",
+  "wp.styleDryWhite": "Trockener Weißwein",
+  "wp.award": "Auszeichnung",
+  "wp.goldMedal": "Goldmedaille",
+  "wp.seal": "Gold",
+  "wp.more": "Die Kollektion",
+  "wp.moreTitle": "Die Kollektion entdecken",
+  "wp.discover": "Entdecken",
+  "award.alba2025": "Weinwettbewerb der kleinen Erzeuger des Kreises Alba, 11. Ausgabe, 2025.",
+  "award.alba2025Short": "Goldmedaille · Alba 2025",
+  "sb.story": "Ein gelber Wein mit grünlichen Reflexen und intensiven, reichen Aromen von weißen Blüten und Weinranken, von Holunder und frisch gemähtem Gras; ein Wein mit mittlerem Körper und hoher Säure. Auch ein Hauch von Salz, ja von Feuerstein ist zu spüren. Vollkommene mineralische Noten.",
+  "sb.food": "Weißer Fisch, Käse, helles Fleisch, gedämpftes Gemüse, Meeresfrüchte, Pasta mit weißer Sauce, Prosciutto und Obstsalate.",
+  "sb.quote": "Gesegnet seien der Weinstock und die Frau, die dem Armen wie dem Reichen die größte Freude bereiten.",
+  "sb24.alcohol": "14,19 % vol."
 }

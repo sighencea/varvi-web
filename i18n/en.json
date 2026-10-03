@@ -48,12 +48,12 @@
   "meta.editionRose": "2024 · Edition of 660 bottles",
   "meta.editionFrm": "2024 · Edition of 1,600 bottles",
   "meta.gold": "Gold Medal · Awarded in Alba",
-  "meta.bronze": "Bronze Medal · Awarded in Alba",
+  "meta.goldFrm": "Gold Medal · 2022 vintage",
+  "meta.goldRose": "Gold Medal · 2023 vintage",
   "wine.order": "Order wine",
   "wine.viewCert": "View award certificate",
 
   "cert.close": "Close",
-  "cert.note": "[ award certificate to be supplied, placeholder shown ]",
 
   "place.eyebrow": "The Place",
   "place.title": "Transylvania",
@@ -75,7 +75,6 @@
   "awards.title": "Awarded for what is inside the bottle.",
   "awards.note": "Awarded in Alba",
   "awards.tierGold": "Gold",
-  "awards.tierBronze": "Bronze",
 
   "human.title": "Made at human scale.",
   "human.copy": "There is no château, and no marketing department. There is a small wine house in Cricău, and editions counted in hundreds and low thousands of bottles. These photographs are not a campaign. They are what it looks like.",
@@ -90,16 +89,11 @@
   "order.cta": "Call to place an order",
   "order.email": "Order by email",
   "order.motto": "Direct from VARVI. Personally arranged.",
-  "order.note": "[ telephone number to be supplied, placeholder shown ]",
-
-  "phone.soonTitle": "Telephone ordering is coming soon",
-  "phone.soonCopy": "Our ordering line is being set up. Until then, we would be glad to hear from you by email.",
 
   "contact.title": "Discover VARVI",
   "contact.address": "Cricău · Alba · Romania",
   "contact.link1": "Contact the wine house",
   "contact.link2": "Find VARVI",
-  "contact.note": "[ contact details, stockists and social links to be supplied, placeholders only ]",
 
   "footer.address": "Cricău · Alba · Transylvania · Romania",
   "footer.orderTitle": "Wine Orders",
@@ -192,5 +186,38 @@
 
   "langPrompt.message": "This site is also available in English. Would you like to continue in English?",
   "langPrompt.stay": "Continue in Romanian",
-  "langPrompt.switch": "Continue in English →"
+  "langPrompt.switch": "Continue in English →",
+
+  "meta.notFoundTitle": "VARVI | Page not found",
+  "e404.title": "This page does not exist.",
+  "e404.copy": "It may have moved, or the address may have been mistyped. The wines, however, are exactly where they were.",
+  "e404.cta": "Back to VARVI",
+
+  "meta.sb24Title": "VARVI | Sauvignon Blanc 2024",
+  "wp.story": "The wine",
+  "wp.specs": "Wine profile",
+  "wp.specsTitle": "Characteristics",
+  "wp.pairing": "Pairs with",
+  "wp.grape": "Grape",
+  "wp.vintage": "Vintage",
+  "wp.vineyard": "Vineyard",
+  "wp.appellation": "Appellation",
+  "wp.style": "Style",
+  "wp.alcohol": "Alcohol",
+  "wp.volume": "Volume",
+  "wp.serving": "Serving temperature",
+  "wp.sulphites": "Contains sulphites.",
+  "wp.styleDryWhite": "Dry white wine",
+  "wp.award": "Distinction",
+  "wp.goldMedal": "Gold Medal",
+  "wp.seal": "Gold",
+  "wp.more": "The collection",
+  "wp.moreTitle": "Discover the collection",
+  "wp.discover": "Discover",
+  "award.alba2025": "The Alba County Small Producers’ Wine Contest, 11th edition, 2025.",
+  "award.alba2025Short": "Gold Medal · Alba 2025",
+  "sb.story": "A yellow wine with green glints and intense, rich aromas of white flowers and vine tendrils, elderflower and freshly cut grass; a wine of medium body and high acidity. A touch of salt, even of gunflint, comes through as well. Perfect mineral notes.",
+  "sb.food": "White fish, cheeses, white meat, steamed vegetables, seafood, pasta in a white sauce, prosciutto and fruit salads.",
+  "sb.quote": "Blessed be the vine and woman, who bring the greatest joy to poor and rich alike.",
+  "sb24.alcohol": "14.19% vol."
 }

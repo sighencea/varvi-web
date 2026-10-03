@@ -1,14 +1,14 @@
 /* ==========================================================================
    VARVI behaviour
    Age gate · header · mobile menu · scroll reveals · flagship parallax ·
-   certificate lightbox · phone popup · language prompt · contact links
+   certificate lightbox · language prompt · contact links
    ========================================================================== */
 (function () {
   'use strict';
 
   /* ---- CONTACT DETAILS (single source of truth; set real values when
-     supplied). Empty = placeholder shown, links stay inert, and the call
-     CTA opens the "coming soon" popup instead. ---- */
+     supplied). Empty = placeholder shown and links stay inert. The markup
+     also carries the tel: links statically so they work without JS. ---- */
   var PHONE = '+40 745 612 366';
   var EMAIL = ''; // e.g. 'comenzi@...'
 
@@ -113,7 +113,7 @@
 
   /* ================= Back to top (revealed past the hero) ================= */
   var backTop = document.querySelector('.back-top');
-  var heroEl = document.querySelector('.hero');
+  var heroEl = document.querySelector('.hero, .wp-hero');
   if (backTop && heroEl) {
     var onBackTop = function () {
       backTop.classList.toggle('is-visible', window.scrollY > heroEl.offsetHeight - 60);
@@ -194,7 +194,7 @@
     }, { passive: true });
   }
 
-  /* ================= Modals (lightbox / phone popup) ================= */
+  /* ================= Modals (lightbox / popups) ================= */
   var openModal = function (modal) {
     modal.classList.add('is-open');
     document.body.classList.add('modal-open');
@@ -218,35 +218,35 @@
     document.querySelectorAll('.modal.is-open').forEach(closeModal);
   });
 
-  // Certificate lightbox: buttons carry the wine name to show under the frame
+  // Certificate lightbox: buttons carry the diploma slug (scan at
+  // assets/certificates/<slug>.jpg) and the wine name to show under the frame
   var lightbox = document.getElementById('cert-lightbox');
   if (lightbox) {
     var lbName = lightbox.querySelector('.lightbox__name');
+    var lbImg = lightbox.querySelector('.lightbox__img');
     document.querySelectorAll('[data-cert]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        if (lbName) lbName.textContent = btn.getAttribute('data-cert-name') || '';
+        var name = btn.getAttribute('data-cert-name') || '';
+        if (lbName) lbName.textContent = name;
+        if (lbImg) {
+          lbImg.removeAttribute('src'); // never flash the previous diploma
+          lbImg.src = 'assets/certificates/' + btn.getAttribute('data-cert') + '.jpg';
+          lbImg.alt = (btn.textContent || '').trim() + ': ' + name;
+        }
         openModal(lightbox);
       });
     });
   }
 
   /* ================= Telephone / email wiring ================= */
-  var phonePopup = document.getElementById('phone-popup');
-
   document.querySelectorAll('[data-phone-number]').forEach(function (el) {
     el.textContent = PHONE || '+40 ··· ··· ···';
   });
 
-  // Coming soon curtain: the order number dials once PHONE is set
-  var csPhone = document.querySelector('[data-cs-phone]');
-  if (csPhone && PHONE) csPhone.setAttribute('href', 'tel:' + PHONE.replace(/\s/g, ''));
-
-  // Rings the number once PHONE is set; until then shows the coming-soon notice
-  document.querySelectorAll('[data-call-cta]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      if (PHONE) window.location.href = 'tel:' + PHONE.replace(/\s/g, '');
-      else if (phonePopup) openModal(phonePopup);
-    });
+  // Tap-to-call: number links, the call CTA and the curtain's number
+  document.querySelectorAll('a[data-phone-number], [data-phone-href], [data-cs-phone]').forEach(function (a) {
+    if (PHONE) a.setAttribute('href', 'tel:' + PHONE.replace(/\s/g, ''));
+    else a.removeAttribute('href');
   });
 
   // Contact page: mailto with a localized, pre-filled order template

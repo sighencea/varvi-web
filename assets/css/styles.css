@@ -845,7 +845,7 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 .awards__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); /* six medals: 3 x 2 on desktop */
   gap: clamp(28px, 4vw, 64px);
   margin-top: clamp(56px, 7vw, 100px);
 }
@@ -1134,9 +1134,15 @@ html:not(.admin-ok) body { overflow: hidden; }
   background: var(--color-ivory);
   padding: 16px;
   box-shadow: 0 24px 80px rgba(0, 0, 0, .5);
-  width: min(860px, 92vw);
 }
-.lightbox__slot { height: min(72vh, 620px); }
+/* Shrink-wraps portrait and landscape scans alike; the ivory frame is the mat */
+.lightbox__img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(1100px, calc(92vw - 32px));
+  max-height: min(78vh, 1000px);
+}
 .lightbox__bar { display: flex; align-items: baseline; gap: 28px; color: var(--color-ivory); }
 .lightbox__name { font-size: 22px; font-style: italic; }
 .lightbox__close {
@@ -1258,6 +1264,7 @@ html:not(.admin-ok) body { overflow: hidden; }
 .cpage-main__phone { display: inline-block; font-size: 24px; margin-top: 14px; }
 .cpage-main__address { font-size: 21px; line-height: 1.7; margin-top: 14px; }
 .cpage-main__note { margin-top: 64px; }
+.e404__cta { margin-top: 48px; }
 
 /* ==========================================================================
    Stockists page
@@ -1393,6 +1400,211 @@ html:not(.admin-ok) body { overflow: hidden; }
   border-bottom: 1px solid var(--color-hairline);
 }
 .lpage-body strong { font-weight: 600; }
+
+/* ==========================================================================
+   Wine pages (one per wine; each page's palette comes from its label)
+   ========================================================================== */
+.wp--sb24 { --wp-bg: var(--color-charcoal); --wp-fg: var(--color-ivory); --wp-hi: var(--color-gold-light); }
+.wp--sb25 { --wp-bg: var(--color-navy); --wp-fg: var(--color-ivory); --wp-hi: var(--color-gold-light); }
+.wp--fn24 { --wp-bg: #FBFAF6; --wp-fg: var(--color-charcoal); --wp-hi: var(--color-oxblood); }
+.wp--fn25 { --wp-bg: var(--color-parchment); --wp-fg: var(--color-charcoal); --wp-hi: var(--color-oxblood); }
+.wp--frm  { --wp-bg: var(--color-forest); --wp-fg: var(--color-ivory); --wp-hi: var(--color-gold-light); }
+.wp--rose { --wp-bg: var(--color-oxblood); --wp-fg: var(--color-ivory); --wp-hi: var(--color-gold-light); }
+
+/* 1 · Showcase: full-bleed photograph, darkened only at the top so the
+   header stays legible over light stone backgrounds */
+.wp-hero {
+  position: relative;
+  height: 88svh;
+  min-height: 560px;
+  background: var(--wp-bg);
+  overflow: hidden;
+}
+.wp-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.wp-hero__scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(22,23,22,.5) 0%, rgba(22,23,22,0) 24%);
+}
+
+/* Title band in the label colour */
+.wp-intro {
+  background: var(--wp-bg);
+  color: var(--wp-fg);
+  text-align: center;
+  padding: clamp(72px, 9vw, 130px) 24px clamp(80px, 10vw, 140px);
+}
+.wp-intro__category { color: var(--wp-hi); }
+.wp-intro__name {
+  font-size: clamp(52px, 8vw, 124px);
+  font-weight: 500;
+  line-height: 1.02;
+  margin: 26px 0 0;
+  text-wrap: balance;
+}
+.wp-intro__vintage {
+  font-size: clamp(30px, 3.4vw, 50px);
+  font-style: italic;
+  color: var(--wp-hi);
+  margin-top: 10px;
+}
+.wp-intro__meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 34px;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  opacity: .72;
+}
+.wp-intro__meta .dot { color: var(--wp-hi); }
+/* Medal mark: a small gold seal; opens the diploma */
+.wp-medal {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 46px;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--wp-hi);
+}
+.wp-medal__seal {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  box-shadow: inset 0 0 0 4px var(--wp-bg), inset 0 0 0 5px currentColor;
+  display: grid;
+  place-items: center;
+  font-size: 9.5px;
+  letter-spacing: .2em;
+  font-weight: 600;
+}
+.wp-medal__label { border-bottom: 1px solid currentColor; padding-bottom: 4px; }
+.wp-medal:hover .wp-medal__label { opacity: .75; }
+
+/* 2 · Story: the back label, set as an editorial piece */
+.wp-story { padding: var(--section-pad) 0; }
+.wp-story__grid { display: grid; gap: 36px; }
+.wp-story__epigraph { margin: 0; max-width: 46ch; }
+.wp-story__epigraph p {
+  font-size: clamp(19px, 1.6vw, 23px);
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+  margin: 0;
+}
+.wp-story__epigraph footer {
+  margin-top: 14px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+.wp-story__text {
+  font-size: clamp(27px, 2.8vw, 42px);
+  font-weight: 400;
+  line-height: 1.42;
+  margin: clamp(48px, 6vw, 80px) 0 0;
+  max-width: 32ch;
+  text-wrap: pretty;
+}
+@media (min-width: 900px) {
+  .wp-story__grid { grid-template-columns: minmax(160px, 1fr) 4fr; gap: 64px; }
+}
+
+/* 3 · Characteristics: the spec sheet */
+.wp-specs { background: var(--color-parchment); padding: var(--section-pad) 0; }
+.wp-specs__grid { display: grid; gap: 56px; }
+.wp-specs__title { font-size: clamp(38px, 4.4vw, 64px); font-weight: 500; margin: 22px 0 0; line-height: 1.1; }
+.wp-specs__pairing { margin-top: 44px; max-width: 40ch; }
+.wp-specs__pairing-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--color-brass);
+  font-weight: 600;
+}
+.wp-specs__pairing p { font-size: 21px; line-height: 1.65; margin: 14px 0 0; color: var(--color-ink); }
+.wp-specs__list { margin: 0; border-bottom: 1px solid var(--color-hairline); }
+.wp-specs__row {
+  display: grid;
+  grid-template-columns: minmax(120px, 2fr) 3fr;
+  gap: 20px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-hairline);
+}
+.wp-specs__row dt {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+.wp-specs__row dd { margin: 0; font-size: 22px; }
+.wp-specs__note { margin-top: 18px; font-family: var(--font-sans); font-size: 11px; letter-spacing: .08em; color: var(--color-ink-faint); }
+@media (min-width: 900px) {
+  .wp-specs__grid { grid-template-columns: 1fr 1fr; gap: clamp(64px, 8vw, 140px); }
+}
+
+/* 4 · Distinction: the gold medal with its diploma */
+.wp-award { background: var(--color-navy); color: var(--color-ivory); padding: var(--section-pad) 0; }
+.wp-award__grid { display: grid; gap: 56px; align-items: center; }
+.wp-award__thumb {
+  justify-self: center;
+  background: var(--color-ivory);
+  padding: 12px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .45);
+  transition: transform .6s var(--ease);
+}
+.wp-award__thumb:hover { transform: translateY(-6px); }
+.wp-award__thumb img { display: block; width: auto; height: auto; max-width: min(340px, 76vw); max-height: 480px; }
+.wp-award__tier { font-size: clamp(40px, 5vw, 72px); font-weight: 500; margin: 22px 0 0; line-height: 1.1; }
+.wp-award__contest {
+  font-size: clamp(19px, 1.5vw, 22px);
+  line-height: 1.65;
+  color: rgba(242, 239, 231, .8);
+  margin: 26px 0 0;
+  max-width: 42ch;
+}
+.wp-award__cert { display: inline-block; margin-top: 34px; color: var(--color-gold-light); }
+@media (min-width: 900px) {
+  .wp-award__grid { grid-template-columns: 1fr 1fr; gap: clamp(64px, 8vw, 140px); }
+}
+
+/* 6 · The rest of the collection, each card in its label colour */
+.wp-more { padding: var(--section-pad) 0; }
+.wp-more__title { font-size: clamp(38px, 4.4vw, 64px); font-weight: 500; margin: 22px 0 0; line-height: 1.1; }
+.wp-more__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+  gap: clamp(14px, 1.6vw, 22px);
+  margin-top: clamp(48px, 6vw, 80px);
+}
+.wp-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 30px 28px;
+  background: var(--wp-bg);
+  color: var(--wp-fg);
+  transition: transform .6s var(--ease);
+}
+.wp-card:hover { color: var(--wp-fg); transform: translateY(-4px); }
+.wp-card.wp--fn24 { box-shadow: inset 0 0 0 1px var(--color-hairline); }
+.wp-card__vintage { font-family: var(--font-sans); font-size: 10px; letter-spacing: .3em; color: var(--wp-hi); }
+.wp-card__name { font-size: 28px; font-weight: 500; line-height: 1.15; margin-top: 16px; }
+.wp-card__link { margin-top: auto; padding-top: 28px; align-self: flex-start; }
+@media (max-width: 600px) { .wp-card { min-height: 180px; } }
 
 /* ==========================================================================
    Back to top (appears once the hero has been scrolled past)

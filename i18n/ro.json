@@ -48,12 +48,12 @@
   "meta.editionRose": "2024 · Ediție de 660 de sticle",
   "meta.editionFrm": "2024 · Ediție de 1.600 de sticle",
   "meta.gold": "Medalie de aur · Premiat în Alba",
-  "meta.bronze": "Medalie de bronz · Premiat în Alba",
+  "meta.goldFrm": "Medalie de aur · Recolta 2022",
+  "meta.goldRose": "Medalie de aur · Recolta 2023",
   "wine.order": "Comandă vin",
   "wine.viewCert": "Vezi diploma de premiere",
 
   "cert.close": "Închide",
-  "cert.note": "[ diploma de premiere urmează, substituent afișat ]",
 
   "place.eyebrow": "Locul",
   "place.title": "Transilvania",
@@ -75,7 +75,6 @@
   "awards.title": "Premiat pentru ce este în sticlă.",
   "awards.note": "Premiat în Alba",
   "awards.tierGold": "Aur",
-  "awards.tierBronze": "Bronz",
 
   "human.title": "Făcut la scară umană.",
   "human.copy": "Nu există un château și nici un departament de marketing. Există o mică casă de vinuri la Cricău și ediții numărate în sute și mii de sticle. Aceste fotografii nu sunt o campanie. Așa arată cu adevărat.",
@@ -90,16 +89,11 @@
   "order.cta": "Sună pentru a comanda",
   "order.email": "Comandă prin email",
   "order.motto": "Direct de la VARVI. Aranjat personal.",
-  "order.note": "[ numărul de telefon urmează, substituent afișat ]",
-
-  "phone.soonTitle": "Comenzile telefonice vin în curând",
-  "phone.soonCopy": "Linia noastră de comenzi este în curs de configurare. Până atunci, ne bucurăm să ne scrieți pe email.",
 
   "contact.title": "Descoperă VARVI",
   "contact.address": "Cricău · Alba · România",
   "contact.link1": "Contactează casa de vinuri",
   "contact.link2": "Găsește VARVI",
-  "contact.note": "[ datele de contact, punctele de vânzare și linkurile urmează, doar substituenți ]",
 
   "footer.address": "Cricău · Alba · Transilvania · România",
   "footer.orderTitle": "Comenzi de vin",
@@ -192,5 +186,38 @@
 
   "langPrompt.message": "Acest site este disponibil și în engleză. Doriți să continuați în engleză?",
   "langPrompt.stay": "Continuă în română",
-  "langPrompt.switch": "Continuă în engleză →"
+  "langPrompt.switch": "Continuă în engleză →",
+
+  "meta.notFoundTitle": "VARVI | Pagina nu a fost găsită",
+  "e404.title": "Această pagină nu există.",
+  "e404.copy": "Poate a fost mutată, sau adresa a fost scrisă greșit. Vinurile sunt însă tot la locul lor.",
+  "e404.cta": "Înapoi la VARVI",
+
+  "meta.sb24Title": "VARVI | Sauvignon Blanc 2024",
+  "wp.story": "Vinul",
+  "wp.specs": "Fișa vinului",
+  "wp.specsTitle": "Caracteristici",
+  "wp.pairing": "Se potrivește cu",
+  "wp.grape": "Soi",
+  "wp.vintage": "Recolta",
+  "wp.vineyard": "Podgorie",
+  "wp.appellation": "Denumire de origine",
+  "wp.style": "Stil",
+  "wp.alcohol": "Alcool",
+  "wp.volume": "Volum",
+  "wp.serving": "Temperatura de servire",
+  "wp.sulphites": "Conține sulfiți.",
+  "wp.styleDryWhite": "Vin alb sec",
+  "wp.award": "Distincție",
+  "wp.goldMedal": "Medalie de aur",
+  "wp.seal": "Aur",
+  "wp.more": "Colecția",
+  "wp.moreTitle": "Descoperă colecția",
+  "wp.discover": "Descoperă",
+  "award.alba2025": "Concursul de vinuri al micilor producători din județul Alba, ediția a XI-a, 2025.",
+  "award.alba2025Short": "Medalie de aur · Alba 2025",
+  "sb.story": "Un vin galben cu reflexe verzui, cu arome intense și bogate, de flori albe și cârcei de viță-de-vie, de soc și iarbă proaspăt cosită, un vin cu un corp mediu și aciditate ridicată. Se mai poate simți și puțină sare sau praf de pușcă. Note minerale perfecte.",
+  "sb.food": "Pește alb, brânzeturi, carne albă, legume la abur, fructe de mare, paste cu sos alb, prosciutto și salate de fructe.",
+  "sb.quote": "Binecuvântată fie vița-de-vie și femeia, care produc cea mai mare bucurie și săracului și bogatului.",
+  "sb24.alcohol": "14,19% vol."
 }
