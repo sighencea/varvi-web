@@ -933,6 +933,18 @@ html:not(.admin-ok) body { overflow: hidden; }
   letter-spacing: .06em;
   color: rgba(242, 239, 231, .45);
 }
+/* ANPC Order 449/2022 (amended by 270/2026): the official SAL pictogram, unaltered,
+   250px wide and linked to the SAL platform. */
+.site-footer__compliance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px 48px;
+}
+.site-footer__compliance .site-footer__company { flex: 1 1 320px; }
+.site-footer__sal { display: block; flex: none; }
+.site-footer__sal img { display: block; width: 250px; height: auto; }
 .site-footer__bottom {
   border-top: 1px solid rgba(242, 239, 231, .12);
   padding-top: 32px;
