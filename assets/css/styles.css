@@ -517,48 +517,10 @@ html:not(.admin-ok) body { overflow: hidden; }
   text-align: center;
   pointer-events: none;
   font-family: var(--font-sans);
-  font-size: 9.5px;
+  font-size: 10px;
   letter-spacing: .4em;
   color: rgba(242, 239, 231, .55);
   text-transform: uppercase;
-}
-
-/* ==========================================================================
-   Crest intro
-   ========================================================================== */
-.crest-intro {
-  background: var(--color-ivory);
-  padding: clamp(110px, 16vw, 240px) 24px;
-  text-align: center;
-}
-.crest-intro__crest { width: min(400px, 80vw); }
-.crest-intro__brand { font-size: 26px; letter-spacing: .34em; font-weight: 500; margin-top: 44px; text-indent: .34em; }
-.crest-intro__producer { font-size: 20px; font-style: italic; color: var(--color-ink-muted); margin-top: 12px; }
-.crest-intro__place { margin-top: 20px; font-size: 10px; font-weight: 400; }
-
-/* ==========================================================================
-   Brand statement (The House)
-   ========================================================================== */
-.house { background: var(--color-parchment); padding: var(--section-pad) 0; }
-.house__grid { display: grid; grid-template-columns: 1fr; gap: clamp(24px, 5vw, 80px); }
-.house__eyebrow { padding-top: 14px; }
-.house__statement {
-  font-size: clamp(38px, 5.4vw, 84px);
-  font-weight: 500;
-  line-height: 1.12;
-  margin: 0;
-  max-width: 16ch;
-  text-wrap: pretty;
-}
-.house__support {
-  font-size: clamp(19px, 1.6vw, 23px);
-  line-height: 1.65;
-  color: var(--color-ink);
-  max-width: 52ch;
-  margin: 40px 0 0;
-}
-@media (min-width: 760px) {
-  .house__grid { grid-template-columns: minmax(120px, 1fr) minmax(0, 4fr); }
 }
 
 /* ==========================================================================
@@ -572,7 +534,7 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 .flagship__grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(48px, 6vw, 100px);
   align-items: center;
 }
@@ -583,19 +545,6 @@ html:not(.admin-ok) body { overflow: hidden; }
   margin: 26px 0 0;
   text-wrap: pretty;
 }
-.flagship__meta {
-  display: flex;
-  gap: 28px;
-  align-items: baseline;
-  flex-wrap: wrap;
-  margin-top: 26px;
-  font-family: var(--font-sans);
-  font-size: 11px;
-  letter-spacing: .3em;
-  text-transform: uppercase;
-  color: rgba(242, 239, 231, .65);
-}
-.flagship__meta .dot { color: var(--color-gold); }
 .flagship__copy {
   font-size: clamp(19px, 1.5vw, 22px);
   line-height: 1.7;
@@ -614,6 +563,26 @@ html:not(.admin-ok) body { overflow: hidden; }
   text-transform: uppercase;
   font-weight: 500;
 }
+.flagship__editions { display: flex; flex-wrap: wrap; gap: 28px clamp(40px, 5vw, 72px); margin-top: 44px; }
+.flagship__edition { display: block; }
+.flagship__edition:hover { color: inherit; }
+.flagship__figure {
+  display: block;
+  font-size: clamp(56px, 5.4vw, 88px);
+  line-height: 1;
+  color: var(--color-gold-light);
+  transition: color .4s ease;
+}
+.flagship__edition:hover .flagship__figure { color: var(--color-ivory); }
+.flagship__unit {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: rgba(242, 239, 231, .65);
+}
 .flagship__links a { border-bottom: 1px solid rgba(242, 239, 231, .4); padding-bottom: 6px; }
 .flagship__links a.gold { border-bottom-color: rgba(169, 138, 80, .6); color: var(--color-gold); }
 .flagship__bottle {
@@ -628,6 +597,11 @@ html:not(.admin-ok) body { overflow: hidden; }
   height: 100%;
   object-fit: cover;
   display: block;
+}
+/* Stacked on phones: size the photo from the column width, not the viewport
+   height, or a tall phone makes it wider than the screen */
+@media (max-width: 899px) {
+  .flagship__bottle { height: auto; width: min(100%, 420px); }
 }
 @media (min-width: 900px) {
   .flagship__grid { grid-template-columns: minmax(280px, 5fr) minmax(240px, 4fr); }
@@ -653,6 +627,9 @@ html:not(.admin-ok) body { overflow: hidden; }
   display: flex;
   flex-direction: column;
 }
+.wine-panel__frame { overflow: hidden; }
+.wine-panel__frame img { transition: transform 1.2s var(--ease); }
+.wine-panel:hover .wine-panel__frame img { transform: scale(1.03); }
 .wine-panel__media { display: block; padding: 36px 36px 0; }
 /* The frame takes the photograph's natural ratio (as in the draft prototype,
    which adapted each frame to the loaded image) */
@@ -663,13 +640,6 @@ html:not(.admin-ok) body { overflow: hidden; }
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.wine-panel__category {
-  font-family: var(--font-sans);
-  font-size: 9.5px;
-  letter-spacing: .32em;
-  text-transform: uppercase;
-  opacity: .65;
 }
 .wine-panel__name {
   font-family: var(--font-display);
@@ -685,7 +655,6 @@ html:not(.admin-ok) body { overflow: hidden; }
   text-transform: uppercase;
 }
 .wine-panel__order { margin-top: 14px; align-self: flex-start; opacity: .85; }
-.wine-panel__cert { margin-top: 6px; align-self: flex-start; }
 /* Tighter panel insets when two-up on narrow screens */
 @media (max-width: 560px) {
   .wine-panel__media { padding: 18px 18px 0; }
@@ -694,18 +663,18 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 
 /* Panel palettes (from the physical labels) */
-.wine-panel--sb24 { background: var(--color-charcoal); color: var(--color-ivory); }
-.wine-panel--sb25 { background: var(--color-navy); color: var(--color-ivory); }
-.wine-panel--fn24 { background: #FBFAF6; color: var(--color-charcoal); box-shadow: inset 0 0 0 1px var(--color-hairline); }
-.wine-panel--fn25 { background: var(--color-parchment); color: var(--color-charcoal); }
-.wine-panel--frm  { background: var(--color-forest); color: var(--color-ivory); }
-.wine-panel--rose { background: var(--color-oxblood); color: var(--color-ivory); }
-.wine-panel--sb24 .wine-panel__meta, .wine-panel--sb24 .wine-panel__cert,
-.wine-panel--sb25 .wine-panel__meta, .wine-panel--sb25 .wine-panel__cert { color: var(--color-gold); border-color: var(--color-gold); }
-.wine-panel--fn24 .wine-panel__meta, .wine-panel--fn24 .wine-panel__cert,
-.wine-panel--fn25 .wine-panel__meta, .wine-panel--fn25 .wine-panel__cert { color: var(--color-oxblood); border-color: var(--color-oxblood); }
-.wine-panel--frm .wine-panel__meta, .wine-panel--frm .wine-panel__cert,
-.wine-panel--rose .wine-panel__meta, .wine-panel--rose .wine-panel__cert { color: var(--color-gold-light); border-color: var(--color-gold-light); }
+.wine-panel--sb24, .wine-panel--sb24:hover { background: var(--color-charcoal); color: var(--color-ivory); }
+.wine-panel--sb25, .wine-panel--sb25:hover { background: var(--color-navy); color: var(--color-ivory); }
+.wine-panel--fn24, .wine-panel--fn24:hover { background: #FBFAF6; color: var(--color-charcoal); box-shadow: inset 0 0 0 1px var(--color-hairline); }
+.wine-panel--fn25, .wine-panel--fn25:hover { background: var(--color-parchment); color: var(--color-charcoal); }
+.wine-panel--frm, .wine-panel--frm:hover  { background: var(--color-forest); color: var(--color-ivory); }
+.wine-panel--rose, .wine-panel--rose:hover { background: var(--color-oxblood); color: var(--color-ivory); }
+.wine-panel--sb24 .wine-panel__meta,
+.wine-panel--sb25 .wine-panel__meta { color: var(--color-gold); border-color: var(--color-gold); }
+.wine-panel--fn24 .wine-panel__meta,
+.wine-panel--fn25 .wine-panel__meta { color: var(--color-oxblood); border-color: var(--color-oxblood); }
+.wine-panel--frm .wine-panel__meta,
+.wine-panel--rose .wine-panel__meta { color: var(--color-gold-light); border-color: var(--color-gold-light); }
 
 /* ==========================================================================
    The Place
@@ -735,14 +704,57 @@ html:not(.admin-ok) body { overflow: hidden; }
   padding: clamp(96px, 13vw, 200px) var(--pad-x) clamp(64px, 9vw, 120px);
   color: var(--color-ivory);
 }
-.place__title { font-size: clamp(52px, 8vw, 120px); font-weight: 500; margin: 18px 0 0; line-height: 1; }
-.place__loc {
+.place__statement {
+  font-size: clamp(38px, 5.4vw, 80px);
+  font-weight: 500;
+  line-height: 1.08;
+  margin: 22px 0 0;
+  max-width: 16ch;
+  text-wrap: balance;
+}
+/* The origin chain, reduced to one line: România, Transilvania, Alba, Cricău */
+.origin-line {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 0;
+  margin: 40px 0 0;
+  padding: 0;
   font-family: var(--font-sans);
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: .32em;
   text-transform: uppercase;
-  margin-top: 20px;
-  color: rgba(242, 239, 231, .8);
+  color: rgba(242, 239, 231, .6);
+}
+.origin-line li { display: flex; align-items: center; }
+.origin-line li + li::before {
+  content: '';
+  width: clamp(18px, 3vw, 40px);
+  height: 1px;
+  margin: 0 14px;
+  background: rgba(242, 239, 231, .35);
+  order: -2; /* rule, then (for Cricău) the dot, then the name */
+}
+.origin-line__here { color: var(--color-ivory); }
+/* Phones: tighter tracking and rules keep the chain on one line */
+@media (max-width: 480px) {
+  .origin-line { letter-spacing: .18em; font-size: 9.5px; }
+  .origin-line li + li::before { width: 12px; margin: 0 7px; }
+  .origin-line__here::after { margin-right: 6px; }
+}
+@media (max-width: 380px) {
+  .origin-line { letter-spacing: .1em; }
+  .origin-line li + li::before { width: 8px; margin: 0 5px; }
+}
+.origin-line__here::after {
+  content: '';
+  order: -1;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: var(--color-gold);
 }
 .place__copy {
   font-size: clamp(19px, 1.5vw, 22px);
@@ -751,74 +763,6 @@ html:not(.admin-ok) body { overflow: hidden; }
   margin: 26px 0 0;
   color: rgba(242, 239, 231, .85);
 }
-/* ==========================================================================
-   Origin schematic
-   ========================================================================== */
-.origin { background: var(--color-ivory); padding: clamp(100px, 13vw, 190px) 24px; }
-.origin__inner { max-width: 520px; margin: 0 auto; text-align: center; }
-.origin__eyebrow { margin-bottom: 56px; }
-.origin__chain { display: flex; flex-direction: column; align-items: center; }
-.origin__country { font-family: var(--font-sans); font-size: 11px; letter-spacing: .5em; color: var(--color-stone); text-transform: uppercase; }
-.origin__region { font-family: var(--font-sans); font-size: 12px; letter-spacing: .46em; color: var(--color-ink-faint); text-transform: uppercase; }
-.origin__county { font-family: var(--font-sans); font-size: 13px; letter-spacing: .42em; color: #454540; text-transform: uppercase; }
-.origin__rule { width: 1px; height: 56px; background: var(--color-hairline); margin: 18px 0; }
-.origin__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--color-gold); margin-bottom: 16px; }
-.origin__village { font-size: 44px; font-weight: 500; letter-spacing: .2em; text-indent: .2em; }
-.origin__caption { font-size: 19px; font-style: italic; color: var(--color-ink-faint); margin-top: 10px; }
-
-/* ==========================================================================
-   Limited production
-   ========================================================================== */
-.limited { background: var(--color-parchment); padding: clamp(100px, 13vw, 200px) 0; }
-.limited__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: clamp(48px, 6vw, 90px);
-  align-items: end;
-}
-.limited__title {
-  font-size: clamp(44px, 6.4vw, 100px);
-  font-weight: 500;
-  line-height: 1.05;
-  margin: 0;
-  text-wrap: pretty;
-}
-.limited__copy {
-  font-size: clamp(19px, 1.6vw, 23px);
-  line-height: 1.65;
-  color: var(--color-ink);
-  max-width: 50ch;
-  margin: 36px 0 0;
-}
-.limited__figure-block { text-align: right; }
-.limited__figure { font-size: clamp(72px, 7vw, 120px); font-weight: 400; line-height: 1; color: var(--color-oxblood); }
-.limited__figure--next { margin-top: 44px; }
-.limited__unit {
-  font-family: var(--font-sans);
-  font-size: 10px;
-  letter-spacing: .3em;
-  text-transform: uppercase;
-  color: var(--color-brass);
-  margin-top: 14px;
-  line-height: 1.9;
-}
-@media (min-width: 760px) {
-  .limited__grid { grid-template-columns: minmax(0, 3fr) minmax(200px, 1fr); }
-}
-
-/* ==========================================================================
-   Details ("Details matter.")
-   ========================================================================== */
-.details { background: var(--color-charcoal); padding: clamp(80px, 10vw, 150px) 0; text-align: center; }
-.details__inner { max-width: 1200px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 64px); }
-.details__img { width: 100%; display: block; height: auto; }
-.details__caption {
-  font-size: clamp(22px, 2vw, 28px);
-  font-style: italic;
-  color: rgba(242, 239, 231, .85);
-  margin-top: 44px;
-}
-
 /* ==========================================================================
    Awards
    ========================================================================== */
@@ -868,36 +812,6 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 
 /* ==========================================================================
-   Human scale
-   ========================================================================== */
-.human { background: var(--color-ivory); padding: clamp(100px, 13vw, 200px) 0; }
-.human__intro { max-width: 760px; }
-.human__title { font-size: clamp(40px, 5.4vw, 84px); font-weight: 500; line-height: 1.1; margin: 24px 0 0; }
-.human__copy {
-  font-size: clamp(19px, 1.6vw, 23px);
-  line-height: 1.65;
-  color: var(--color-ink);
-  margin: 36px 0 0;
-  max-width: 52ch;
-}
-.human__figure-wrap { margin-top: clamp(56px, 7vw, 96px); }
-.contact-print {
-  margin: 0;
-  background: #fff;
-  padding: 16px 16px 18px;
-  box-shadow: 0 2px 18px rgba(22, 23, 22, .12);
-  transform: rotate(-.8deg);
-  max-width: 880px;
-}
-.contact-print img { width: 100%; display: block; height: auto; }
-.contact-print figcaption {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--color-ink-faint);
-  margin-top: 12px;
-}
-
-/* ==========================================================================
    Motto
    ========================================================================== */
 .motto { background: var(--color-parchment); padding: clamp(110px, 15vw, 220px) 24px; text-align: center; }
@@ -929,7 +843,6 @@ html:not(.admin-ok) body { overflow: hidden; }
 }
 .order__inner { max-width: 680px; margin: 0 auto; }
 .order__title { font-size: clamp(40px, 5.4vw, 80px); font-weight: 500; margin: 26px 0 0; line-height: 1.1; }
-.order__tagline { font-size: 22px; font-style: italic; color: rgba(242, 239, 231, .8); margin: 18px 0 0; }
 .order__copy { font-size: clamp(19px, 1.5vw, 22px); line-height: 1.7; color: rgba(242, 239, 231, .85); margin: 44px 0 0; }
 .order__phone {
   display: inline-block;
@@ -940,7 +853,18 @@ html:not(.admin-ok) body { overflow: hidden; }
   color: var(--color-ivory);
 }
 .order__actions { margin-top: 36px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
-.order__actions .btn--outline-ivory { border-color: rgba(242, 239, 231, .55); padding: 17px 46px; letter-spacing: .3em; }
+.order__email {
+  display: inline-block;
+  margin-top: 30px;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: rgba(242, 239, 231, .7);
+  border-bottom: 1px solid rgba(242, 239, 231, .35);
+  padding-bottom: 4px;
+}
+.order__email:hover { color: var(--color-ivory); }
 .order__motto {
   font-family: var(--font-sans);
   font-size: 10px;
@@ -949,29 +873,6 @@ html:not(.admin-ok) body { overflow: hidden; }
   color: var(--color-gold-light);
   margin-top: 40px;
 }
-.order__note { margin-top: 22px; color: rgba(242, 239, 231, .4); }
-
-/* ==========================================================================
-   Contact strip
-   ========================================================================== */
-.contact { background: var(--color-ivory); padding: clamp(110px, 14vw, 210px) 0; }
-.contact__inner { text-align: center; }
-.contact__title { font-size: clamp(44px, 5.6vw, 88px); font-weight: 500; margin: 0; }
-.contact__address { font-size: 21px; line-height: 1.9; color: var(--color-ink); margin: 36px 0 0; }
-.contact__links {
-  display: flex;
-  gap: clamp(24px, 4vw, 52px);
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 52px;
-  font-family: var(--font-sans);
-  font-size: 11px;
-  letter-spacing: .28em;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.contact__links a { border-bottom: 1px solid var(--color-stone); padding-bottom: 6px; }
-.contact__note { margin-top: 32px; }
 
 /* ==========================================================================
    Footer
@@ -1024,6 +925,14 @@ html:not(.admin-ok) body { overflow: hidden; }
   color: rgba(242, 239, 231, .45);
 }
 .site-footer__legal .lang-toggle { display: flex; color: rgba(242, 239, 231, .75); }
+.site-footer__company {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  line-height: 1.9;
+  letter-spacing: .06em;
+  color: rgba(242, 239, 231, .45);
+}
 .site-footer__bottom {
   border-top: 1px solid rgba(242, 239, 231, .12);
   padding-top: 32px;
@@ -1032,7 +941,7 @@ html:not(.admin-ok) body { overflow: hidden; }
   gap: 16px;
   align-items: baseline;
   font-family: var(--font-sans);
-  font-size: 9.5px;
+  font-size: 10px;
   letter-spacing: .3em;
   text-transform: uppercase;
   color: rgba(242, 239, 231, .4);
@@ -1067,7 +976,7 @@ html:not(.admin-ok) body { overflow: hidden; }
   align-items: center;
   gap: 9px;
   font-family: var(--font-sans);
-  font-size: 9.5px;
+  font-size: 10px;
   letter-spacing: .3em;
   text-transform: uppercase;
   font-weight: 500;
@@ -1307,7 +1216,7 @@ html:not(.admin-ok) body { overflow: hidden; }
 .stockist:last-child { border-bottom: 1px solid var(--color-hairline); }
 .stockist__category {
   font-family: var(--font-sans);
-  font-size: 9.5px;
+  font-size: 10px;
   letter-spacing: .32em;
   text-transform: uppercase;
   color: var(--color-brass);
@@ -1471,7 +1380,7 @@ html:not(.admin-ok) body { overflow: hidden; }
   box-shadow: inset 0 0 0 4px var(--wp-bg), inset 0 0 0 5px currentColor;
   display: grid;
   place-items: center;
-  font-size: 9.5px;
+  font-size: 10px;
   letter-spacing: .2em;
   font-weight: 600;
 }
@@ -1634,10 +1543,26 @@ html:not(.admin-ok) body { overflow: hidden; }
   padding: 30px 24px;
   text-align: center;
   font-family: var(--font-sans);
-  font-size: 9.5px;
+  font-size: 10px;
   letter-spacing: .3em;
   text-transform: uppercase;
   color: var(--color-stone);
+}
+
+/* ==========================================================================
+   Touch targets: the small tracked-out text links keep their look, but on
+   touch screens get an invisible hit area of about 30 to 35px (WCAG 2.5.8).
+   Vertical inset stays under half the footer link gap so areas never overlap.
+   ========================================================================== */
+@media (pointer: coarse) {
+  .text-link, .award__cert, .order__email, .flagship__links a, .cpage-header__back, .lang-btn,
+  .site-footer__nav a, .site-footer__legal a, .lightbox__close, .lightbox__download { position: relative; }
+  .text-link::after, .award__cert::after, .order__email::after, .flagship__links a::after, .cpage-header__back::after, .lang-btn::after,
+  .site-footer__nav a::after, .site-footer__legal a::after, .lightbox__close::after, .lightbox__download::after {
+    content: '';
+    position: absolute;
+    inset: -8px -6px;
+  }
 }
 
 /* ==========================================================================

@@ -86,11 +86,10 @@
     </a>
     <nav class="site-nav" aria-label="Principal">
       <a href="#wines" data-i18n="nav.wines">Vinurile</a>
-      <a href="#place" data-i18n="nav.place">Locul</a>
       <a href="#house" data-i18n="nav.house">Casa</a>
       <a href="#awards" data-i18n="nav.awards">Distincții</a>
-      <a class="nav-order" href="#order" data-i18n="nav.order">Comandă vin</a>
-      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a class="nav-order" href="tel:+40745612366" data-phone-href data-i18n="nav.order">Comandă vin</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="lang-toggle">
       <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
@@ -108,11 +107,10 @@
 <!-- Mobile menu overlay -->
 <nav class="mobile-menu" id="mobile-menu" aria-label="Meniu mobil">
   <a href="#wines" data-i18n="nav.wines">Vinurile</a>
-  <a href="#place" data-i18n="nav.place">Locul</a>
   <a href="#house" data-i18n="nav.house">Casa</a>
   <a href="#awards" data-i18n="nav.awards">Distincții</a>
-  <a class="nav-order" href="#order" data-i18n="nav.order">Comandă vin</a>
-  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <a class="nav-order" href="tel:+40745612366" data-phone-href data-i18n="nav.order">Comandă vin</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
   <div class="lang-toggle">
     <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
     <span class="lang-toggle__sep" aria-hidden="true">/</span>
@@ -132,53 +130,29 @@
       <p class="hero__tagline" data-i18n="hero.tagline">Vinuri pentru cunoscători.</p>
       <div class="hero__actions">
         <a class="btn btn--gold" href="#wines" data-i18n="hero.cta">Descoperă vinurile</a>
-        <a class="btn btn--outline-ivory" href="#order" data-i18n="nav.order">Comandă vin</a>
+        <a class="btn btn--outline-ivory" href="tel:+40745612366" data-phone-href data-i18n="hero.call">Sună pentru comandă</a>
       </div>
     </div>
   </div>
   <div class="hero__location" data-i18n="hero.location">Cricău · Alba · România</div>
 </section>
 
-<!-- ======================= Crest intro ======================= -->
-<section class="crest-intro">
-  <div data-reveal>
-    <img class="crest-intro__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI: coroană, scut împărțit în patru, susținători și deviza Aut Vincere Aut Mori" width="840" height="560" loading="lazy">
-    <div class="crest-intro__brand">VARVI</div>
-    <div class="crest-intro__producer">Casa de vinuri Maria</div>
-    <div class="crest-intro__place eyebrow" data-i18n="crest.place">Cricău · Transilvania</div>
+<!-- ======================= The house and the place ======================= -->
+<section class="place" id="house">
+  <div class="place__media">
+    <img src="assets/images/place/landscape.jpg" alt="Vii transilvănene pe dealuri ondulate, în ceața dimineții, cu pădure în depărtare și lumină de toamnă" width="1536" height="1024" loading="lazy">
   </div>
-</section>
-
-<!-- ======================= Brand statement ======================= -->
-<section class="house" id="house">
-  <div class="container house__grid">
-    <div class="house__eyebrow eyebrow" data-i18n="house.eyebrow">Casa</div>
-    <div data-reveal>
-      <h2 class="house__statement" data-i18n="house.statement">Vinul nu începe în sticlă. Începe cu un loc.</h2>
-      <p class="house__support" data-i18n="house.support">Vinurile VARVI se fac la Cricău, în Alba, în inima ținutului viticol istoric al Transilvaniei, de către Casa de vinuri Maria, o casă care lucrează la o scară la care fiecare îmbuteliere poate fi numărată.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= Flagship: Fetească Neagră ======================= -->
-<section class="flagship" id="feteasca">
-  <div class="container flagship__grid">
-    <div data-reveal>
-      <div class="eyebrow eyebrow--gold" data-i18n="flag.eyebrow">Ediție limitată</div>
-      <h2 class="flagship__title">Fetească Neagră</h2>
-      <div class="flagship__meta">
-        <span data-i18n="flag.ed2024">Recolta 2024 · 1.200 de sticle</span><span class="dot" aria-hidden="true">·</span><span data-i18n="flag.ed2025">Recolta 2025 · 600 de sticle</span>
-      </div>
-      <p class="flagship__copy" data-i18n="flag.copy">Un soi românesc. O expresie transilvăneană. Fetească Neagră se îmbuteliază în ediții limitate: 1.200 de sticle din recolta 2024 și doar 600 din recolta 2025.</p>
-      <div class="flagship__links">
-        <a href="feteasca-neagra-2024.html"><span data-i18n="flag.link2024">Recolta 2024</span>&nbsp;&nbsp;→</a>
-        <a href="feteasca-neagra-2025.html"><span data-i18n="flag.link2025">Recolta 2025</span>&nbsp;&nbsp;→</a>
-        <a class="gold" href="#order" data-i18n="flag.order">Comandă telefonic</a>
-      </div>
-    </div>
-    <div class="flagship__bottle">
-      <img class="flagship__img" src="assets/images/wines/feteasca-neagra-scene.jpg" alt="O sticlă de VARVI Fetească Neagră lângă un pahar de vin roșu, pe o masă festivă cu flori albe și lumânări" width="1024" height="1536" loading="lazy">
-    </div>
+  <div class="place__scrim"></div>
+  <div class="place__content" data-reveal>
+    <div class="eyebrow eyebrow--gold-light" data-i18n="house.eyebrow">Casa</div>
+    <h2 class="place__statement" data-i18n="house.statement">Vinul nu începe în sticlă. Începe cu un loc.</h2>
+    <p class="place__copy" data-i18n="house.support">Vinurile VARVI se fac la Cricău, în Alba, în inima ținutului viticol istoric al Transilvaniei, de către Casa de vinuri Maria.</p>
+    <ol class="origin-line" aria-label="Origine" data-i18n-attr="aria-label:origin.eyebrow">
+      <li data-i18n="origin.country">România</li>
+      <li data-i18n="origin.region">Transilvania</li>
+      <li>Alba</li>
+      <li class="origin-line__here">Cricău</li>
+    </ol>
   </div>
 </section>
 
@@ -191,158 +165,111 @@
   </div>
   <div class="collection__row">
 
-    <article class="wine-panel wine-panel--sb24">
-      <a class="wine-panel__media" href="sauvignon-blanc-2024.html" tabindex="-1" aria-hidden="true">
+    <a class="wine-panel wine-panel--sb24" href="sauvignon-blanc-2024.html">
+      <div class="wine-panel__media">
         <div class="wine-panel__frame">
           <img src="assets/images/wines/sauvignon-blanc-2024.jpg" alt="Sticlă de VARVI Sauvignon Blanc 2024 cu etichetă neagră, pe un piedestal de travertin" width="1672" height="941" loading="lazy">
         </div>
-      </a>
-      <div class="wine-panel__body">
-        <div class="wine-panel__category" data-i18n="cat.white">Vin alb</div>
-        <h3 class="wine-panel__name"><a href="sauvignon-blanc-2024.html">Sauvignon Blanc</a></h3>
-        <div class="wine-panel__meta">2024</div>
-        <div class="wine-panel__meta" data-i18n="meta.gold">Medalie de aur · Premiat în Alba</div>
-        <a class="text-link wine-panel__order" href="sauvignon-blanc-2024.html"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</a>
-        <button class="text-link wine-panel__cert" data-cert="sauvignon-blanc-2024-aur-alba-2025" data-cert-name="Sauvignon Blanc 2024" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
       </div>
-    </article>
+      <div class="wine-panel__body">
+        <h3 class="wine-panel__name">Sauvignon Blanc</h3>
+        <div class="wine-panel__meta">2024</div>
+        <span class="text-link wine-panel__order"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</span>
+      </div>
+    </a>
 
-    <article class="wine-panel wine-panel--fn25">
-      <a class="wine-panel__media" href="feteasca-neagra-2025.html" tabindex="-1" aria-hidden="true">
+    <a class="wine-panel wine-panel--fn25" href="feteasca-neagra-2025.html">
+      <div class="wine-panel__media">
         <div class="wine-panel__frame">
           <img src="assets/images/wines/feteasca-neagra-2025.jpg" alt="Sticlă de VARVI Fetească Neagră 2025 cu etichetă crem, pe un piedestal de travertin" width="1672" height="941" loading="lazy">
         </div>
-      </a>
-      <div class="wine-panel__body">
-        <div class="wine-panel__category" data-i18n="cat.red">Vin roșu · Ediție limitată</div>
-        <h3 class="wine-panel__name"><a href="feteasca-neagra-2025.html">Fetească Neagră</a></h3>
-        <div class="wine-panel__meta" data-i18n="meta.fn25">2025 · Ediție de 600 de sticle</div>
-        <div class="wine-panel__meta" data-i18n="meta.gold">Medalie de aur · Premiat în Alba</div>
-        <a class="text-link wine-panel__order" href="feteasca-neagra-2025.html"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</a>
-        <button class="text-link wine-panel__cert" data-cert="feteasca-neagra-2025-aur-alba-2026" data-cert-name="Fetească Neagră 2025" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
       </div>
-    </article>
+      <div class="wine-panel__body">
+        <h3 class="wine-panel__name">Fetească Neagră</h3>
+        <div class="wine-panel__meta" data-i18n="meta.fn25">2025 · Ediție de 600 de sticle</div>
+        <span class="text-link wine-panel__order"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</span>
+      </div>
+    </a>
 
-    <article class="wine-panel wine-panel--fn24">
-      <a class="wine-panel__media" href="feteasca-neagra-2024.html" tabindex="-1" aria-hidden="true">
+    <a class="wine-panel wine-panel--fn24" href="feteasca-neagra-2024.html">
+      <div class="wine-panel__media">
         <div class="wine-panel__frame">
           <img src="assets/images/wines/feteasca-neagra-2024.jpg" alt="Sticlă de VARVI Fetească Neagră 2024 cu etichetă albă, pe un piedestal de travertin" width="1672" height="941" loading="lazy">
         </div>
-      </a>
-      <div class="wine-panel__body">
-        <div class="wine-panel__category" data-i18n="cat.red">Vin roșu · Ediție limitată</div>
-        <h3 class="wine-panel__name"><a href="feteasca-neagra-2024.html">Fetească Neagră</a></h3>
-        <div class="wine-panel__meta" data-i18n="meta.fn">2024 · Ediție de 1.200 de sticle</div>
-        <div class="wine-panel__meta" data-i18n="meta.gold">Medalie de aur · Premiat în Alba</div>
-        <a class="text-link wine-panel__order" href="feteasca-neagra-2024.html"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</a>
-        <button class="text-link wine-panel__cert" data-cert="feteasca-neagra-2024-aur-alba-2026" data-cert-name="Fetească Neagră 2024" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
       </div>
-    </article>
+      <div class="wine-panel__body">
+        <h3 class="wine-panel__name">Fetească Neagră</h3>
+        <div class="wine-panel__meta" data-i18n="meta.fn">2024 · Ediție de 1.200 de sticle</div>
+        <span class="text-link wine-panel__order"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</span>
+      </div>
+    </a>
 
-    <article class="wine-panel wine-panel--frm">
-      <a class="wine-panel__media" href="feteasca-regala-muscat-ottonel-2024.html" tabindex="-1" aria-hidden="true">
+    <a class="wine-panel wine-panel--frm" href="feteasca-regala-muscat-ottonel-2024.html">
+      <div class="wine-panel__media">
         <div class="wine-panel__frame">
           <img src="assets/images/wines/feteasca-regala-muscat-ottonel-2024.jpg" alt="Sticlă de VARVI Fetească Regală și Muscat Ottonel 2024 cu etichetă verde, pe un piedestal de travertin" width="1672" height="941" loading="lazy">
         </div>
-      </a>
-      <div class="wine-panel__body">
-        <div class="wine-panel__category" data-i18n="cat.blend">Cupaj alb</div>
-        <h3 class="wine-panel__name"><a href="feteasca-regala-muscat-ottonel-2024.html">Fetească Regală &amp; Muscat Ottonel</a></h3>
-        <div class="wine-panel__meta" data-i18n="meta.editionFrm">2024 · Ediție de 1.600 de sticle</div>
-        <div class="wine-panel__meta" data-i18n="meta.goldFrm">Medalie de aur · Recolta 2022</div>
-        <a class="text-link wine-panel__order" href="feteasca-regala-muscat-ottonel-2024.html"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</a>
-        <button class="text-link wine-panel__cert" data-cert="feteasca-regala-muscat-ottonel-2022-aur-alba-2024" data-cert-name="Fetească Regală &amp; Muscat Ottonel 2022" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
       </div>
-    </article>
+      <div class="wine-panel__body">
+        <h3 class="wine-panel__name">Fetească Regală &amp; Muscat Ottonel</h3>
+        <div class="wine-panel__meta" data-i18n="meta.editionFrm">2024 · Ediție de 1.600 de sticle</div>
+        <span class="text-link wine-panel__order"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</span>
+      </div>
+    </a>
 
-    <article class="wine-panel wine-panel--rose">
-      <a class="wine-panel__media" href="rose-2024.html" tabindex="-1" aria-hidden="true">
+    <a class="wine-panel wine-panel--rose" href="rose-2024.html">
+      <div class="wine-panel__media">
         <div class="wine-panel__frame">
           <img src="assets/images/wines/rose-2024.jpg" alt="Sticlă de VARVI Rosé 2024 cu etichetă vișinie, pe un piedestal de travertin" width="1672" height="941" loading="lazy">
         </div>
-      </a>
-      <div class="wine-panel__body">
-        <div class="wine-panel__category" data-i18n="cat.rose">Vin rozé</div>
-        <h3 class="wine-panel__name"><a href="rose-2024.html">Rosé</a></h3>
-        <div class="wine-panel__meta" data-i18n="meta.editionRose">2024 · Ediție de 660 de sticle</div>
-        <div class="wine-panel__meta" data-i18n="meta.goldRose">Medalie de aur · Recolta 2023</div>
-        <a class="text-link wine-panel__order" href="rose-2024.html"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</a>
-        <button class="text-link wine-panel__cert" data-cert="rose-2023-aur-alba-2024" data-cert-name="Rosé 2023" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
       </div>
-    </article>
+      <div class="wine-panel__body">
+        <h3 class="wine-panel__name">Rosé</h3>
+        <div class="wine-panel__meta" data-i18n="meta.editionRose">2024 · Ediție de 660 de sticle</div>
+        <span class="text-link wine-panel__order"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</span>
+      </div>
+    </a>
 
-    <article class="wine-panel wine-panel--sb25">
-      <a class="wine-panel__media" href="sauvignon-blanc-2025.html" tabindex="-1" aria-hidden="true">
+    <a class="wine-panel wine-panel--sb25" href="sauvignon-blanc-2025.html">
+      <div class="wine-panel__media">
         <div class="wine-panel__frame">
           <img src="assets/images/wines/sauvignon-blanc-2025.jpg" alt="Sticlă de VARVI Sauvignon Blanc 2025 cu etichetă bleumarin și medalia de aur Vinarium, pe un piedestal de travertin" width="1672" height="941" loading="lazy">
         </div>
-      </a>
-      <div class="wine-panel__body">
-        <div class="wine-panel__category" data-i18n="cat.white">Vin alb</div>
-        <h3 class="wine-panel__name"><a href="sauvignon-blanc-2025.html">Sauvignon Blanc</a></h3>
-        <div class="wine-panel__meta">2025</div>
-        <div class="wine-panel__meta" data-i18n="award.vinarium2026Short">Medalie de aur · Vinarium 2026</div>
-        <a class="text-link wine-panel__order" href="sauvignon-blanc-2025.html"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</a>
-        <button class="text-link wine-panel__cert" data-cert="sauvignon-blanc-2025-aur-vinarium-2026" data-cert-name="Sauvignon Blanc 2025" data-i18n="wine.viewCert">Vezi diploma de premiere</button>
       </div>
-    </article>
+      <div class="wine-panel__body">
+        <h3 class="wine-panel__name">Sauvignon Blanc</h3>
+        <div class="wine-panel__meta">2025</div>
+        <span class="text-link wine-panel__order"><span data-i18n="wine.discover">Descoperă vinul</span>&nbsp;&nbsp;→</span>
+      </div>
+    </a>
 
   </div>
 </section>
 
-<!-- ======================= The Place ======================= -->
-<section class="place" id="place">
-  <div class="place__media">
-    <img src="assets/images/place/landscape.jpg" alt="Vii transilvănene pe dealuri ondulate, în ceața dimineții, cu pădure în depărtare și lumină de toamnă" width="1536" height="1024" loading="lazy">
-  </div>
-  <div class="place__scrim"></div>
-  <div class="place__content" data-reveal>
-    <div class="eyebrow eyebrow--gold-light" data-i18n="place.eyebrow">Locul</div>
-    <h2 class="place__title" data-i18n="place.title">Transilvania</h2>
-    <div class="place__loc">Cricău · Alba</div>
-    <p class="place__copy" data-i18n="place.copy">Dealuri, pădure, dimineți reci și toamne lungi, în ținutul viticol istoric al Transilvaniei. Locul este primul ingredient al vinului.</p>
-  </div>
-</section>
-
-<!-- ======================= Origin schematic ======================= -->
-<section class="origin">
-  <div class="origin__inner" data-reveal>
-    <div class="origin__eyebrow eyebrow" data-i18n="origin.eyebrow">Origine</div>
-    <div class="origin__chain">
-      <div class="origin__country" data-i18n="origin.country">România</div>
-      <div class="origin__rule"></div>
-      <div class="origin__region" data-i18n="origin.region">Transilvania</div>
-      <div class="origin__rule"></div>
-      <div class="origin__county">Alba</div>
-      <div class="origin__rule"></div>
-      <div class="origin__dot"></div>
-      <div class="origin__village">CRICĂU</div>
-      <div class="origin__caption" data-i18n="origin.caption">unde se fac vinurile</div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= Limited production ======================= -->
-<section class="limited">
-  <div class="container limited__grid">
+<!-- ======================= Feature: Fetească Neagră, limited editions ======================= -->
+<section class="flagship" id="feteasca">
+  <div class="container flagship__grid">
     <div data-reveal>
-      <h2 class="limited__title" data-i18n="limited.title">Nu se face cu milionul.</h2>
-      <p class="limited__copy" data-i18n="limited.copy">Vinurile VARVI sunt îmbuteliate în ediții limitate, uneori numărate în sute, nu în sute de mii.</p>
+      <div class="eyebrow eyebrow--gold" data-i18n="flag.eyebrow">Ediție limitată</div>
+      <h2 class="flagship__title">Fetească Neagră</h2>
+      <p class="flagship__copy" data-i18n="flag.copy">Nu se face cu milionul. Fetească Neagră se îmbuteliază în ediții limitate, numărate în sute de sticle, nu în sute de mii.</p>
+      <div class="flagship__editions">
+        <a class="flagship__edition" href="feteasca-neagra-2024.html">
+          <span class="flagship__figure" data-i18n="limited.figure">1.200</span>
+          <span class="flagship__unit"><span data-i18n="limited.unit">sticle</span> · <span data-i18n="flag.link2024">Recolta 2024</span>&nbsp;&nbsp;→</span>
+        </a>
+        <a class="flagship__edition" href="feteasca-neagra-2025.html">
+          <span class="flagship__figure">600</span>
+          <span class="flagship__unit"><span data-i18n="limited.unit">sticle</span> · <span data-i18n="flag.link2025">Recolta 2025</span>&nbsp;&nbsp;→</span>
+        </a>
+      </div>
+      <div class="flagship__links">
+        <a class="gold" href="tel:+40745612366" data-phone-href data-i18n="flag.order">Comandă telefonic</a>
+      </div>
     </div>
-    <div class="limited__figure-block" data-reveal>
-      <div class="limited__figure" data-i18n="limited.figure">1.200</div>
-      <div class="limited__unit"><span data-i18n="limited.unit">sticle</span><br>Fetească Neagră · 2024</div>
-      <div class="limited__figure limited__figure--next">600</div>
-      <div class="limited__unit"><span data-i18n="limited.unit">sticle</span><br>Fetească Neagră · 2025</div>
+    <div class="flagship__bottle">
+      <img class="flagship__img" src="assets/images/wines/feteasca-neagra-scene.jpg" alt="O sticlă de VARVI Fetească Neagră lângă un pahar de vin roșu, pe o masă festivă cu flori albe și lumânări" width="1024" height="1536" loading="lazy">
     </div>
-  </div>
-</section>
-
-<!-- ======================= Details ======================= -->
-<section class="details">
-  <div class="details__inner" data-reveal>
-    <img class="details__img" src="assets/images/campaign/bottles-group.jpg" alt="Șase sticle VARVI pe o treaptă de piatră: două Sauvignon Blanc, două Fetească Neagră, Fetească Regală &amp; Muscat Ottonel și Rosé" width="1672" height="941" loading="lazy">
-    <div class="details__caption" data-i18n="details.caption">Detaliile contează.</div>
   </div>
 </section>
 
@@ -394,20 +321,18 @@
   </div>
 </section>
 
-<!-- ======================= Human scale ======================= -->
-<section class="human">
-  <div class="container">
-    <div class="human__intro" data-reveal>
-      <div class="eyebrow">Casa de vinuri Maria</div>
-      <h2 class="human__title" data-i18n="human.title">Făcut la scară umană.</h2>
-      <p class="human__copy" data-i18n="human.copy">Nu există un château și nici un departament de marketing. Există o mică casă de vinuri la Cricău și ediții numărate în sute și mii de sticle. Aceste fotografii nu sunt o campanie. Așa arată cu adevărat.</p>
+<!-- ======================= Order ======================= -->
+<section class="order" id="order">
+  <div class="order__inner" data-reveal>
+    <div class="eyebrow eyebrow--gold-light" data-i18n="order.eyebrow">Comenzi</div>
+    <h2 class="order__title" data-i18n="order.title">Comandă vin VARVI</h2>
+    <p class="order__copy" data-i18n="order.copy">Vinurile VARVI se comandă direct de la casa de vinuri, telefonic. Vă ajutăm să alegeți vinurile, confirmăm disponibilitatea și aranjăm personal comanda.</p>
+    <a class="order__phone" href="tel:+40745612366" data-phone-number>+40 745 612 366</a>
+    <div class="order__actions">
+      <a class="btn btn--ivory" href="tel:+40745612366" data-phone-href data-i18n="order.cta">Sună pentru a comanda</a>
     </div>
-    <div class="human__figure-wrap">
-      <figure class="contact-print" data-reveal>
-        <img src="assets/images/documentary/stall.jpg" alt="Standul VARVI: sticle pe o masă văruită în fața viei, sub panoul Vinul Județului Alba" width="1536" height="1024" loading="lazy">
-        <figcaption data-i18n="human.docCap1">standul, vinul județului Alba, înainte să vină fotograful</figcaption>
-      </figure>
-    </div>
+    <a class="order__email" href="contact.html" data-i18n="order.emailLink">Preferați emailul? Scrieți-ne.</a>
+    <div class="order__motto" data-i18n="order.motto">Direct de la VARVI. Aranjat personal.</div>
   </div>
 </section>
 
@@ -417,34 +342,6 @@
     <img class="motto__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul VARVI" width="840" height="560" loading="lazy">
     <div class="motto__text">AUT VINCERE AUT MORI</div>
     <div class="motto__label eyebrow" data-i18n="motto.label">Blazonul VARVI</div>
-  </div>
-</section>
-
-<!-- ======================= Order ======================= -->
-<section class="order" id="order">
-  <div class="order__inner" data-reveal>
-    <div class="eyebrow eyebrow--gold-light" data-i18n="order.eyebrow">Comenzi</div>
-    <h2 class="order__title" data-i18n="order.title">Comandă vin VARVI</h2>
-    <p class="order__tagline" data-i18n="order.tagline">Vinuri pentru cunoscători.</p>
-    <p class="order__copy" data-i18n="order.copy">Vinurile noastre pot fi comandate direct de la casa de vinuri. Pentru a plasa o comandă, contactați-ne telefonic. Vă ajutăm cu plăcere să alegeți vinurile, să confirmăm disponibilitatea și să aranjăm comanda.</p>
-    <a class="order__phone" href="tel:+40745612366" data-phone-number>+40 745 612 366</a>
-    <div class="order__actions">
-      <a class="btn btn--ivory" href="tel:+40745612366" data-phone-href data-i18n="order.cta">Sună pentru a comanda</a>
-      <a class="btn btn--outline-ivory" href="contact.html" data-i18n="order.email">Comandă prin email</a>
-    </div>
-    <div class="order__motto" data-i18n="order.motto">Direct de la VARVI. Aranjat personal.</div>
-  </div>
-</section>
-
-<!-- ======================= Contact strip ======================= -->
-<section class="contact" id="contact">
-  <div class="container contact__inner" data-reveal>
-    <h2 class="contact__title" data-i18n="contact.title">Descoperă VARVI</h2>
-    <p class="contact__address">Casa de vinuri Maria<br><span data-i18n="contact.address">Cricău · Alba · România</span></p>
-    <div class="contact__links">
-      <a href="contact.html" data-i18n="contact.link1">Contactează casa de vinuri</a>
-      <a href="stockists.html" data-i18n="contact.link2">Găsește VARVI</a>
-    </div>
   </div>
 </section>
 
@@ -461,11 +358,11 @@
       </div>
       <nav class="site-footer__nav" aria-label="Subsol">
         <a href="#wines" data-i18n="nav.wines">Vinurile</a>
-        <a href="#place" data-i18n="nav.place">Locul</a>
         <a href="#house" data-i18n="nav.house">Casa</a>
         <a href="#awards" data-i18n="nav.awards">Distincții</a>
-        <a href="#order" data-i18n="nav.order">Comandă vin</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="tel:+40745612366" data-phone-href data-i18n="nav.order">Comandă vin</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="stockists.html" data-i18n="contact.link2">Găsește VARVI</a>
       </nav>
       <div class="site-footer__orders">
         <div class="site-footer__orders-title" data-i18n="footer.orderTitle">Comenzi de vin</div>
@@ -483,6 +380,7 @@
         <a href="terms.html" data-i18n="legal.terms">Termeni</a>
       </div>
     </div>
+    <p class="site-footer__company" data-i18n="footer.company">Casa de vinuri Maria S.R.L. · Sediu social: Str. Mihai Viteazul nr. 283D, sat Cricău, comuna Cricău, jud. Alba · CUI 46214932 · Nr. Reg. Com. J2022000640011</p>
     <div class="site-footer__bottom">
       <span>© VARVI / Casa de vinuri Maria</span>
       <span class="center">Aut vincere aut mori</span>

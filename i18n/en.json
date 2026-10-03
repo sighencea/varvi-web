@@ -11,7 +11,6 @@
   "gate.leave": "Leave",
 
   "nav.wines": "Wines",
-  "nav.place": "Our Place",
   "nav.house": "The House",
   "nav.awards": "Awards",
   "nav.order": "Order Wine",
@@ -23,14 +22,12 @@
   "hero.cta": "Discover our wines",
   "hero.location": "Cricău · Alba · Romania",
 
-  "crest.place": "Cricău · Transylvania",
-
   "house.eyebrow": "The House",
   "house.statement": "Wine does not begin in the bottle. It begins with a place.",
-  "house.support": "VARVI wines are made in Cricău, in Alba, at the heart of Transylvania's historic wine country, by Casa de vinuri Maria, a house that works at a scale where each bottling can be counted.",
+  "house.support": "VARVI wines are made in Cricău, in Alba, at the heart of Transylvania's historic wine country, by Casa de vinuri Maria.",
 
   "flag.eyebrow": "Limited Edition",
-  "flag.copy": "A Romanian grape. A Transylvanian expression. Fetească Neagră is bottled in limited editions: 1,200 bottles of the 2024 vintage and just 600 of the 2025.",
+  "flag.copy": "Not made by the million. Fetească Neagră is bottled in limited editions, counted in hundreds of bottles, not hundreds of thousands.",
   "flag.order": "Order by telephone",
 
   "col.eyebrow": "The Collection",
@@ -44,52 +41,32 @@
   "meta.fn": "2024 · Edition of 1,200 bottles",
   "meta.editionRose": "2024 · Edition of 660 bottles",
   "meta.editionFrm": "2024 · Edition of 1,600 bottles",
-  "meta.gold": "Gold Medal · Awarded in Alba",
   "meta.goldFrm": "Gold Medal · 2022 vintage",
   "meta.goldRose": "Gold Medal · 2023 vintage",
-  "wine.order": "Order wine",
   "wine.viewCert": "View award certificate",
 
   "cert.close": "Close",
 
-  "place.eyebrow": "The Place",
-  "place.title": "Transylvania",
-  "place.copy": "Hills, forest, cold mornings and long autumns, in Transylvania's historic wine country. The place is the wine's first ingredient.",
-
   "origin.eyebrow": "Origin",
   "origin.country": "Romania",
   "origin.region": "Transylvania",
-  "origin.caption": "where the wines are made",
 
-  "limited.title": "Not made by the million.",
-  "limited.copy": "VARVI wines are bottled in limited editions, sometimes measured in hundreds rather than hundreds of thousands.",
   "limited.figure": "1,200",
   "limited.unit": "bottles",
-
-  "details.caption": "Details matter.",
 
   "awards.eyebrow": "Recognition",
   "awards.title": "Awarded for what is inside the bottle.",
   "awards.note": "Awarded in Alba",
   "awards.tierGold": "Gold",
 
-  "human.title": "Made at human scale.",
-  "human.copy": "There is no château, and no marketing department. There is a small wine house in Cricău, and editions counted in hundreds and low thousands of bottles. These photographs are not a campaign. They are what it looks like.",
-  "human.docCap1": "the stall, vinul județului Alba, before the photographer arrives",
-
   "motto.label": "The VARVI Crest",
 
   "order.eyebrow": "Wine Orders",
   "order.title": "Order VARVI Wine",
-  "order.tagline": "Wines for connoisseurs.",
-  "order.copy": "Our wines are available to order directly from the wine house. To place an order, contact us by telephone. We will be delighted to help you choose your wines, confirm availability and arrange your order.",
+  "order.copy": "VARVI wines are ordered directly from the wine house, by telephone. We help you choose, confirm availability and arrange your order personally.",
   "order.cta": "Call to place an order",
-  "order.email": "Order by email",
   "order.motto": "Direct from VARVI. Personally arranged.",
 
-  "contact.title": "Discover VARVI",
-  "contact.address": "Cricău · Alba · Romania",
-  "contact.link1": "Contact the wine house",
   "contact.link2": "Find VARVI",
 
   "footer.address": "Cricău · Alba · Transylvania · Romania",
@@ -125,7 +102,7 @@
   "privacy.title": "Privacy Policy",
   "privacy.intro": "This policy explains, simply and transparently, what personal data we process when you visit varvi.ro or order our wines.",
   "privacy.s1h": "Who we are",
-  "privacy.s1b": "<p>The varvi.ro website is operated by Casa de vinuri Maria, a wine house in Cricău, Alba county, Romania, the maker of VARVI wines. Under data protection law, Casa de vinuri Maria is the controller of the data described in this policy.</p>",
+  "privacy.s1b": "<p>The varvi.ro website is operated by Casa de vinuri Maria S.R.L., registered office Str. Mihai Viteazul nr. 283D, Cricău, Alba county, Romania, tax ID (CUI) 46214932, Trade Register no. J2022000640011, the maker of VARVI wines. Under data protection law, Casa de vinuri Maria is the controller of the data described in this policy.</p>",
   "privacy.s2h": "What data we process",
   "privacy.s2b": "<p>This is a presentation website. It has no user accounts, no shopping basket and collects no data through forms.</p><ul><li><strong>Technical access data.</strong> The site is hosted by GitHub Pages (GitHub, Inc.). On each visit, the hosting servers may record technical data such as your IP address, the time of access and the page requested, for security and operation.</li><li><strong>Order and correspondence data.</strong> When you contact us by telephone or email to order wine, we process the details you provide: name, telephone, email address, delivery address and the wines you would like.</li><li><strong>Preferences stored in your browser.</strong> Your chosen language and age confirmation are kept only in your browser and never reach us. See the <a href=\"cookies.html\">Cookies Policy</a>.</li></ul>",
   "privacy.s3h": "Purposes and legal bases",
@@ -159,7 +136,7 @@
   "terms.title": "Terms and Conditions",
   "terms.intro": "These terms set out the conditions for using the varvi.ro website.",
   "terms.s1h": "Who operates the site",
-  "terms.s1b": "<p>The varvi.ro website is operated by Casa de vinuri Maria, of Cricău, Alba county, Romania, the maker of VARVI wines. By using the site you accept these terms. If you do not agree with them, please do not use the site.</p>",
+  "terms.s1b": "<p>The varvi.ro website is operated by Casa de vinuri Maria S.R.L., registered office Str. Mihai Viteazul nr. 283D, Cricău, Alba county, Romania, tax ID (CUI) 46214932, Trade Register no. J2022000640011, the maker of VARVI wines. By using the site you accept these terms. If you do not agree with them, please do not use the site.</p>",
   "terms.s2h": "Legal drinking age",
   "terms.s2b": "<p>The site presents alcoholic beverages and is intended exclusively for people of legal drinking age in their country, 18 years in Romania. By using the site you confirm that you meet this condition. We do not sell alcohol to minors.</p>",
   "terms.s3h": "Role of the site and orders",
@@ -230,7 +207,7 @@
   "wp.ageingBarrique": "6 months in oak barrique",
   "wp.styleDryRed": "Dry red wine",
   "wp.styleBlend": "Dry white blend",
-  "wp.styleDryRose": "Dry rosé wine",
+  "wp.styleDryRose": "Dry Rosé wine",
   "ed.600": "Limited edition, 600 bottles",
   "ed.660": "Limited edition, 660 bottles",
   "ed.1200": "Limited edition, 1,200 bottles",
@@ -259,10 +236,12 @@
   "rose.food": "Salads, light dishes, starters, cheeses and, lately, salted crisps. Fish and seafood seem far better with a Rosé.",
   "rose.quote": "That wine is good is true enough,<br>But you know the saying well:<br>Nothing ever made you drunk<br>The way a woman did.",
 
-  "flag.ed2024": "Vintage 2024 · 1,200 bottles",
-  "flag.ed2025": "Vintage 2025 · 600 bottles",
   "flag.link2024": "Vintage 2024",
   "flag.link2025": "Vintage 2025",
   "cert.download": "Download PDF",
-  "frm.quote": "Two things ease my pain and ailing,<br>Two that soothe my every ill:<br>The demijohn when it is brimming<br>And a woman, bare and still."
+  "frm.quote": "Two things ease my pain and ailing,<br>Two that soothe my every ill:<br>The demijohn when it is brimming<br>And a woman, bare and still.",
+
+  "hero.call": "Call to order",
+  "order.emailLink": "Prefer email? Write to us.",
+  "footer.company": "Casa de vinuri Maria S.R.L. · Registered office: Str. Mihai Viteazul nr. 283D, Cricău, Alba county, Romania · Tax ID (CUI) 46214932 · Trade Register no. J2022000640011"
 }

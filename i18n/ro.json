@@ -11,7 +11,6 @@
   "gate.leave": "Ieși",
 
   "nav.wines": "Vinurile",
-  "nav.place": "Locul",
   "nav.house": "Casa",
   "nav.awards": "Distincții",
   "nav.order": "Comandă vin",
@@ -23,14 +22,12 @@
   "hero.cta": "Descoperă vinurile",
   "hero.location": "Cricău · Alba · România",
 
-  "crest.place": "Cricău · Transilvania",
-
   "house.eyebrow": "Casa",
   "house.statement": "Vinul nu începe în sticlă. Începe cu un loc.",
-  "house.support": "Vinurile VARVI se fac la Cricău, în Alba, în inima ținutului viticol istoric al Transilvaniei, de către Casa de vinuri Maria, o casă care lucrează la o scară la care fiecare îmbuteliere poate fi numărată.",
+  "house.support": "Vinurile VARVI se fac la Cricău, în Alba, în inima ținutului viticol istoric al Transilvaniei, de către Casa de vinuri Maria.",
 
   "flag.eyebrow": "Ediție limitată",
-  "flag.copy": "Un soi românesc. O expresie transilvăneană. Fetească Neagră se îmbuteliază în ediții limitate: 1.200 de sticle din recolta 2024 și doar 600 din recolta 2025.",
+  "flag.copy": "Nu se face cu milionul. Fetească Neagră se îmbuteliază în ediții limitate, numărate în sute de sticle, nu în sute de mii.",
   "flag.order": "Comandă telefonic",
 
   "col.eyebrow": "Colecția",
@@ -39,57 +36,37 @@
 
   "cat.red": "Vin roșu · Ediție limitată",
   "cat.white": "Vin alb",
-  "cat.rose": "Vin rozé",
+  "cat.rose": "Vin Rosé",
   "cat.blend": "Cupaj alb",
   "meta.fn": "2024 · Ediție de 1.200 de sticle",
   "meta.editionRose": "2024 · Ediție de 660 de sticle",
   "meta.editionFrm": "2024 · Ediție de 1.600 de sticle",
-  "meta.gold": "Medalie de aur · Premiat în Alba",
   "meta.goldFrm": "Medalie de aur · Recolta 2022",
   "meta.goldRose": "Medalie de aur · Recolta 2023",
-  "wine.order": "Comandă vin",
   "wine.viewCert": "Vezi diploma de premiere",
 
   "cert.close": "Închide",
 
-  "place.eyebrow": "Locul",
-  "place.title": "Transilvania",
-  "place.copy": "Dealuri, pădure, dimineți reci și toamne lungi, în ținutul viticol istoric al Transilvaniei. Locul este primul ingredient al vinului.",
-
   "origin.eyebrow": "Origine",
   "origin.country": "România",
   "origin.region": "Transilvania",
-  "origin.caption": "unde se fac vinurile",
 
-  "limited.title": "Nu se face cu milionul.",
-  "limited.copy": "Vinurile VARVI sunt îmbuteliate în ediții limitate, uneori numărate în sute, nu în sute de mii.",
   "limited.figure": "1.200",
   "limited.unit": "sticle",
-
-  "details.caption": "Detaliile contează.",
 
   "awards.eyebrow": "Recunoaștere",
   "awards.title": "Premiat pentru ce este în sticlă.",
   "awards.note": "Premiat în Alba",
   "awards.tierGold": "Aur",
 
-  "human.title": "Făcut la scară umană.",
-  "human.copy": "Nu există un château și nici un departament de marketing. Există o mică casă de vinuri la Cricău și ediții numărate în sute și mii de sticle. Aceste fotografii nu sunt o campanie. Așa arată cu adevărat.",
-  "human.docCap1": "standul, vinul județului Alba, înainte să vină fotograful",
-
   "motto.label": "Blazonul VARVI",
 
   "order.eyebrow": "Comenzi",
   "order.title": "Comandă vin VARVI",
-  "order.tagline": "Vinuri pentru cunoscători.",
-  "order.copy": "Vinurile noastre pot fi comandate direct de la casa de vinuri. Pentru a plasa o comandă, contactați-ne telefonic. Vă ajutăm cu plăcere să alegeți vinurile, să confirmăm disponibilitatea și să aranjăm comanda.",
+  "order.copy": "Vinurile VARVI se comandă direct de la casa de vinuri, telefonic. Vă ajutăm să alegeți vinurile, confirmăm disponibilitatea și aranjăm personal comanda.",
   "order.cta": "Sună pentru a comanda",
-  "order.email": "Comandă prin email",
   "order.motto": "Direct de la VARVI. Aranjat personal.",
 
-  "contact.title": "Descoperă VARVI",
-  "contact.address": "Cricău · Alba · România",
-  "contact.link1": "Contactează casa de vinuri",
   "contact.link2": "Găsește VARVI",
 
   "footer.address": "Cricău · Alba · Transilvania · România",
@@ -125,7 +102,7 @@
   "privacy.title": "Politica de confidențialitate",
   "privacy.intro": "Această politică explică, simplu și transparent, ce date cu caracter personal prelucrăm atunci când vizitați varvi.ro sau comandați vinurile noastre.",
   "privacy.s1h": "Cine suntem",
-  "privacy.s1b": "<p>Site-ul varvi.ro este operat de Casa de vinuri Maria, o casă de vinuri din Cricău, județul Alba, România, care produce vinurile marca VARVI. În sensul legislației privind protecția datelor, Casa de vinuri Maria este operatorul datelor descrise în această politică.</p>",
+  "privacy.s1b": "<p>Site-ul varvi.ro este operat de Casa de vinuri Maria S.R.L., cu sediul social în sat Cricău, comuna Cricău, Str. Mihai Viteazul nr. 283D, județul Alba, România, CUI 46214932, nr. de ordine în Registrul Comerțului J2022000640011, care produce vinurile marca VARVI. În sensul legislației privind protecția datelor, Casa de vinuri Maria este operatorul datelor descrise în această politică.</p>",
   "privacy.s2h": "Ce date prelucrăm",
   "privacy.s2b": "<p>Acest site este unul de prezentare. Nu are conturi de utilizator, nu are coș de cumpărături și nu colectează date prin formulare.</p><ul><li><strong>Date tehnice de acces.</strong> Site-ul este găzduit de GitHub Pages (GitHub, Inc.). La fiecare accesare, serverele de găzduire pot înregistra date tehnice precum adresa IP, ora accesării și pagina cerută, în scopuri de securitate și funcționare.</li><li><strong>Date de comandă și corespondență.</strong> Când ne contactați telefonic sau prin email pentru a comanda vin, prelucrăm datele pe care ni le furnizați: nume, telefon, adresă de email, adresă de livrare și vinurile dorite.</li><li><strong>Preferințe salvate în browser.</strong> Limba aleasă și confirmarea vârstei se păstrează doar în browserul dumneavoastră și nu ajung la noi. Detalii în <a href=\"cookies.html\">Politica de cookies</a>.</li></ul>",
   "privacy.s3h": "Scopuri și temeiuri",
@@ -159,7 +136,7 @@
   "terms.title": "Termeni și condiții",
   "terms.intro": "Acești termeni stabilesc condițiile de utilizare a site-ului varvi.ro.",
   "terms.s1h": "Cine operează site-ul",
-  "terms.s1b": "<p>Site-ul varvi.ro este operat de Casa de vinuri Maria, din Cricău, județul Alba, România, producătorul vinurilor marca VARVI. Prin utilizarea site-ului acceptați acești termeni. Dacă nu sunteți de acord cu ei, vă rugăm să nu folosiți site-ul.</p>",
+  "terms.s1b": "<p>Site-ul varvi.ro este operat de Casa de vinuri Maria S.R.L., cu sediul social în sat Cricău, comuna Cricău, Str. Mihai Viteazul nr. 283D, județul Alba, România, CUI 46214932, nr. de ordine în Registrul Comerțului J2022000640011, producătorul vinurilor marca VARVI. Prin utilizarea site-ului acceptați acești termeni. Dacă nu sunteți de acord cu ei, vă rugăm să nu folosiți site-ul.</p>",
   "terms.s2h": "Vârsta legală",
   "terms.s2b": "<p>Site-ul prezintă băuturi alcoolice și se adresează exclusiv persoanelor care au vârsta legală pentru consumul de alcool în țara lor, în România 18 ani. Prin utilizarea site-ului confirmați că îndepliniți această condiție. Nu vindem alcool minorilor.</p>",
   "terms.s3h": "Rolul site-ului și comenzile",
@@ -230,7 +207,7 @@
   "wp.ageingBarrique": "6 luni în baric de stejar",
   "wp.styleDryRed": "Vin roșu sec",
   "wp.styleBlend": "Cupaj alb sec",
-  "wp.styleDryRose": "Vin rozé sec",
+  "wp.styleDryRose": "Vin Rosé sec",
   "ed.600": "Ediție limitată, 600 de sticle",
   "ed.660": "Ediție limitată, 660 de sticle",
   "ed.1200": "Ediție limitată, 1.200 de sticle",
@@ -259,10 +236,12 @@
   "rose.food": "Salate, mâncăruri ușoare, aperitive, brânzeturi și mai nou, chipsuri sărate. Peștele și fructele de mare par mult mai bune cu un Rosé.",
   "rose.quote": "Că vinu-i bun, e-adevărat<br>Dar, știi prea bine vorba aceea:<br>Nimic nu te-a îmbătat<br>Precum te-a îmbătat femeia.",
 
-  "flag.ed2024": "Recolta 2024 · 1.200 de sticle",
-  "flag.ed2025": "Recolta 2025 · 600 de sticle",
   "flag.link2024": "Recolta 2024",
   "flag.link2025": "Recolta 2025",
   "cert.download": "Descarcă PDF",
-  "frm.quote": "Două lucruri mă alină<br>Al meu chin și a mea boală:<br>Damigeana când e plină<br>Și femeia când e goală."
+  "frm.quote": "Două lucruri mă alină<br>Al meu chin și a mea boală:<br>Damigeana când e plină<br>Și femeia când e goală.",
+
+  "hero.call": "Sună pentru comandă",
+  "order.emailLink": "Preferați emailul? Scrieți-ne.",
+  "footer.company": "Casa de vinuri Maria S.R.L. · Sediu social: Str. Mihai Viteazul nr. 283D, sat Cricău, comuna Cricău, jud. Alba · CUI 46214932 · Nr. Reg. Com. J2022000640011"
 }
