@@ -2,9 +2,6 @@
   "meta.homeTitle": "VARVI | Vinuri din Transilvania",
   "meta.contactTitle": "VARVI | Contact",
 
-  "cs.text": "Vinurile noastre se odihnesc încă. Site-ul VARVI se deschide în curând.",
-  "cs.order": "Comenzi telefonice",
-
   "gate.welcome": "Bine ați venit la VARVI",
   "gate.text": "Vă rugăm să confirmați că aveți vârsta legală pentru consumul de alcool în țara dumneavoastră.",
   "gate.enter": "Intră",
@@ -93,10 +90,9 @@
   "spage.catHotel": "Hotel & Restaurant",
   "spage.catPub": "Pub & Restaurant",
   "spage.catPension": "Pensiune",
-  "spage.note": "[ lista punctelor de vânzare este în curs de completare ]",
 
   "legal.eyebrow": "Legal",
-  "legal.updated": "Ultima actualizare: 3 octombrie 2026",
+  "legal.updated": "Ultima actualizare: 5 octombrie 2026",
 
   "meta.privacyTitle": "VARVI | Politica de confidențialitate",
   "privacy.title": "Politica de confidențialitate",
@@ -124,7 +120,7 @@
   "cookies.s2h": "Acest site nu setează cookie-uri",
   "cookies.s2b": "<p>varvi.ro este un site static de prezentare. Nu setează cookie-uri proprii, nu folosește instrumente de analiză a traficului, nu afișează reclame și nu integrează module de urmărire ale rețelelor sociale.</p>",
   "cookies.s3h": "Stocarea locală în browser",
-  "cookies.s3b": "<p>Pentru funcționarea site-ului folosim stocarea locală a browserului (localStorage). Aceste informații rămân pe dispozitivul dumneavoastră și nu ne sunt transmise:</p><ul><li><strong>varvi_lang</strong>: limba aleasă pentru afișarea site-ului;</li><li><strong>varvi_age_ok</strong>: confirmarea faptului că aveți vârsta legală, pentru ca întrebarea să nu reapară la fiecare vizită;</li><li><strong>varvi_admin_ok</strong>: intrare tehnică folosită doar în perioada de dinaintea lansării site-ului.</li></ul><p>Ele se păstrează până când ștergeți datele site-ului din browser.</p>",
+  "cookies.s3b": "<p>Pentru funcționarea site-ului folosim stocarea locală a browserului (localStorage). Aceste informații rămân pe dispozitivul dumneavoastră și nu ne sunt transmise:</p><ul><li><strong>varvi_lang</strong>: limba aleasă pentru afișarea site-ului;</li><li><strong>varvi_age_ok</strong>: confirmarea faptului că aveți vârsta legală, pentru ca întrebarea să nu reapară la fiecare vizită;</li><li><strong>varvi_music</strong> și <strong>varvi_volume</strong>: preferințele pentru muzica de fundal (pornită sau oprită și volumul).</li></ul><p>Ele se păstrează până când ștergeți datele site-ului din browser.</p>",
   "cookies.s4h": "Servicii terțe",
   "cookies.s4b": "<p>Fonturile și toate celelalte resurse ale paginii sunt servite direct de pe varvi.ro; la deschiderea paginii nu se transmit date către servicii terțe. Site-ul conține linkuri către servicii externe, precum Google Maps și platforma SAL a ANPC; după accesarea acestor linkuri se aplică politicile serviciilor respective.</p>",
   "cookies.s5h": "Cum controlați stocarea",
@@ -227,6 +223,12 @@
   "alc.fn25": "13,03% vol.",
   "alc.frm": "13,16% vol.",
   "alc.rose": "12,39% vol.",
+  "wp.energy": "Valoare energetică",
+  "wp.sugar": "Zahăr",
+  "kcal.sb25": "107,66 kcal / 150 ml",
+  "kcal.fn25": "109,5 kcal / 150 ml",
+  "sugar.sb25": "1,68 g/L",
+  "sugar.fn25": "2,5 g/L",
   "award.alba2026": "Concursul de vinuri al micilor producători din județul Alba, ediția a XII-a, 2026.",
   "award.alba2024": "Concursul de vinuri al micilor producători din județul Alba, ediția a X-a, 2024.",
   "award.vintage2022": "Medalia a fost acordată recoltei 2022.",

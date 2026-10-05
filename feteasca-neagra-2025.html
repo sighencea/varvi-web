@@ -19,43 +19,12 @@
 // Runs before paint: returning of-age visitors never see the gate flash.
 // Without JS the .js class is absent, so the gate stays hidden and the site
 // remains readable.
-(function(){try{if(localStorage.getItem('varvi_age_ok')==='1')document.documentElement.classList.add('age-ok');if(localStorage.getItem('varvi_admin_ok')==='1')document.documentElement.classList.add('admin-ok')}catch(e){}document.documentElement.classList.add('js')})();
+(function(){try{if(localStorage.getItem('varvi_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}document.documentElement.classList.add('js')})();
 </script>
 <script src="assets/js/i18n.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 </head>
 <body class="wp wp--fn25">
-
-<!-- ======================= Coming soon (pre-launch curtain) =======================
-     Remove this block from every page (plus the varvi_admin_ok reads in the head
-     scripts and the curtain section in main.js) when the site goes live. -->
-<div class="coming-soon" role="dialog" aria-modal="true" aria-label="VARVI - în curând">
-  <div class="lang-toggle">
-    <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
-    <span class="lang-toggle__sep" aria-hidden="true">/</span>
-    <button class="lang-btn" data-lang-btn="en">EN</button>
-  </div>
-  <div class="coming-soon__card">
-    <img class="coming-soon__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI" width="210" height="140">
-    <div class="coming-soon__brand">VARVI</div>
-    <p class="coming-soon__text" data-i18n="cs.text">Vinurile noastre se odihnesc încă. Site-ul VARVI se deschide în curând.</p>
-    <div class="coming-soon__order eyebrow eyebrow--gold-light" data-i18n="cs.order">Comenzi telefonice</div>
-    <a class="coming-soon__phone" data-cs-phone><span data-phone-number>+40 745 612 366</span></a>
-    <button class="coming-soon__admin-btn" type="button" data-admin-toggle>Admin</button>
-  </div>
-</div>
-
-<!-- Admin unlock popup (stacks above the curtain; removed together with it at launch) -->
-<div class="modal popup admin-popup" id="admin-popup" role="dialog" aria-modal="true" aria-labelledby="admin-popup-title">
-  <div class="popup__card" data-modal-card>
-    <img class="popup__crest crest" src="assets/images/brand/crest-logo.png" alt="" width="110" height="73">
-    <div class="popup__title" id="admin-popup-title">Acces administrator</div>
-    <form class="admin-popup__form" data-admin-form>
-      <input class="admin-popup__input" type="password" data-admin-pass autocomplete="off" aria-label="Parolă" placeholder="Parolă">
-      <button class="btn btn--dark" type="submit">Intră</button>
-    </form>
-  </div>
-</div>
 
 <!-- ======================= Age gate ======================= -->
 <div class="age-gate" role="dialog" aria-modal="true" aria-labelledby="gate-heading">
@@ -170,6 +139,8 @@
         <div class="wp-specs__row"><dt data-i18n="wp.vineyard">Podgorie</dt><dd>Siria</dd></div>
         <div class="wp-specs__row"><dt data-i18n="wp.ageing">Maturare</dt><dd data-i18n="wp.ageingBarrique">6 luni în baric de stejar</dd></div>
         <div class="wp-specs__row"><dt data-i18n="wp.alcohol">Alcool</dt><dd data-i18n="alc.fn25">13,03% vol.</dd></div>
+        <div class="wp-specs__row"><dt data-i18n="wp.energy">Valoare energetică</dt><dd data-i18n="kcal.fn25">109,5 kcal / 150 ml</dd></div>
+        <div class="wp-specs__row"><dt data-i18n="wp.sugar">Zahăr</dt><dd data-i18n="sugar.fn25">2,5 g/L</dd></div>
         <div class="wp-specs__row"><dt data-i18n="wp.edition">Ediție</dt><dd data-i18n="ed.600">Ediție limitată, 600 de sticle</dd></div>
         <div class="wp-specs__row"><dt data-i18n="wp.serving">Temperatura de servire</dt><dd>15-18 °C</dd></div>
         <div class="wp-specs__row"><dt data-i18n="wp.volume">Volum</dt><dd>750 ml</dd></div>

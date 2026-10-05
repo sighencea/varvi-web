@@ -15,42 +15,11 @@
 <link rel="icon" type="image/png" href="assets/images/brand/favicon.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
-<script>(function(){try{if(localStorage.getItem('varvi_admin_ok')==='1')document.documentElement.classList.add('admin-ok')}catch(e){}document.documentElement.classList.add('js','age-ok')})();</script>
+<script>(function(){document.documentElement.classList.add('js','age-ok')})();</script>
 <script src="assets/js/i18n.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-
-<!-- ======================= Coming soon (pre-launch curtain) =======================
-     Remove this block from every page (plus the varvi_admin_ok reads in the head
-     scripts and the curtain section in main.js) when the site goes live. -->
-<div class="coming-soon" role="dialog" aria-modal="true" aria-label="VARVI - în curând">
-  <div class="lang-toggle">
-    <button class="lang-btn is-active" data-lang-btn="ro">RO</button>
-    <span class="lang-toggle__sep" aria-hidden="true">/</span>
-    <button class="lang-btn" data-lang-btn="en">EN</button>
-  </div>
-  <div class="coming-soon__card">
-    <img class="coming-soon__crest crest" src="assets/images/brand/crest-logo.png" alt="Blazonul heraldic VARVI" width="210" height="140">
-    <div class="coming-soon__brand">VARVI</div>
-    <p class="coming-soon__text" data-i18n="cs.text">Vinurile noastre se odihnesc încă. Site-ul VARVI se deschide în curând.</p>
-    <div class="coming-soon__order eyebrow eyebrow--gold-light" data-i18n="cs.order">Comenzi telefonice</div>
-    <a class="coming-soon__phone" data-cs-phone><span data-phone-number>+40 745 612 366</span></a>
-    <button class="coming-soon__admin-btn" type="button" data-admin-toggle>Admin</button>
-  </div>
-</div>
-
-<!-- Admin unlock popup (stacks above the curtain; removed together with it at launch) -->
-<div class="modal popup admin-popup" id="admin-popup" role="dialog" aria-modal="true" aria-labelledby="admin-popup-title">
-  <div class="popup__card" data-modal-card>
-    <img class="popup__crest crest" src="assets/images/brand/crest-logo.png" alt="" width="110" height="73">
-    <div class="popup__title" id="admin-popup-title">Acces administrator</div>
-    <form class="admin-popup__form" data-admin-form>
-      <input class="admin-popup__input" type="password" data-admin-pass autocomplete="off" aria-label="Parolă" placeholder="Parolă">
-      <button class="btn btn--dark" type="submit">Intră</button>
-    </form>
-  </div>
-</div>
 
 <header class="cpage-header">
   <div class="cpage-header__inner">
@@ -67,7 +36,7 @@
     <div class="eyebrow eyebrow--gold" data-i18n="legal.eyebrow">Legal</div>
     <h1 class="lpage-main__title" data-i18n="cookies.title">Politica de cookies</h1>
     <p class="lpage-main__copy" data-i18n="cookies.intro">Această politică explică ce tehnologii de stocare folosește varvi.ro în browserul dumneavoastră.</p>
-    <div class="lpage-main__updated mono-note" data-i18n="legal.updated">Ultima actualizare: 3 octombrie 2026</div>
+    <div class="lpage-main__updated mono-note" data-i18n="legal.updated">Ultima actualizare: 5 octombrie 2026</div>
   </div>
 
   <div class="lpage-body">
@@ -84,7 +53,7 @@
 
     <section class="lpage-section">
       <h2 data-i18n="cookies.s3h">Stocarea locală în browser</h2>
-      <div data-i18n="cookies.s3b"><p>Pentru funcționarea site-ului folosim stocarea locală a browserului (localStorage). Aceste informații rămân pe dispozitivul dumneavoastră și nu ne sunt transmise:</p><ul><li><strong>varvi_lang</strong>: limba aleasă pentru afișarea site-ului;</li><li><strong>varvi_age_ok</strong>: confirmarea faptului că aveți vârsta legală, pentru ca întrebarea să nu reapară la fiecare vizită;</li><li><strong>varvi_admin_ok</strong>: intrare tehnică folosită doar în perioada de dinaintea lansării site-ului.</li></ul><p>Ele se păstrează până când ștergeți datele site-ului din browser.</p></div>
+      <div data-i18n="cookies.s3b"><p>Pentru funcționarea site-ului folosim stocarea locală a browserului (localStorage). Aceste informații rămân pe dispozitivul dumneavoastră și nu ne sunt transmise:</p><ul><li><strong>varvi_lang</strong>: limba aleasă pentru afișarea site-ului;</li><li><strong>varvi_age_ok</strong>: confirmarea faptului că aveți vârsta legală, pentru ca întrebarea să nu reapară la fiecare vizită;</li><li><strong>varvi_music</strong> și <strong>varvi_volume</strong>: preferințele pentru muzica de fundal (pornită sau oprită și volumul).</li></ul><p>Ele se păstrează până când ștergeți datele site-ului din browser.</p></div>
     </section>
 
     <section class="lpage-section">

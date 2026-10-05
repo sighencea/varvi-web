@@ -1,6 +1,6 @@
 # VARVI · Casa de vinuri Maria
 
-Brand presentation website for **VARVI**, a small Transylvanian wine house in Cricău, Alba, Romania. A long-scroll homepage plus a contact/order-by-email page. Ordering is by telephone or email only; there is no e-commerce by design.
+Brand presentation website for **VARVI**, a small Transylvanian wine house in Cricău, Alba, Romania. A long-scroll homepage, one page per wine (six wines), a contact/order-by-email page, a stockists page and the legal pages. Ordering is by telephone or email only; there is no e-commerce by design.
 
 ## Stack
 
@@ -21,20 +21,27 @@ Then open `http://localhost:8000`.
 
 ```
 index.html            homepage
+<wine>-<year>.html    one page per wine (six: sauvignon-blanc-2024/2025,
+                      feteasca-neagra-2024/2025,
+                      feteasca-regala-muscat-ottonel-2024, rose-2024)
 contact.html          order-by-email page
 stockists.html        where to find VARVI (partners and stockists)
+privacy.html, cookies.html, terms.html   legal pages
+404.html              branded not-found page
 assets/css/styles.css design system + all styles (mobile-first)
 assets/js/i18n.js     localization engine (RO default, EN offered)
-assets/js/main.js     age gate, menu, reveals, modals, contact wiring
-assets/images/        brand / campaign / documentary imagery
+assets/js/main.js     age gate, menu, reveals, modals, music, contact wiring
+assets/fonts/         self-hosted fonts (no request to Google Fonts)
+assets/images/        brand / campaign / wine imagery
+assets/certificates/  gold-medal diplomas (JPG, thumbnail and PDF per slug)
+assets/audio/         background music (Pixabay, royalty-free for commercial use)
 i18n/ro.json, en.json translation dictionaries
+robots.txt, sitemap.xml
 ```
 
-## Pre-launch coming soon curtain
+## Wine pages
 
-While the site is being built, every page shows a full-screen "coming soon" curtain (with the order telephone number) instead of the site. The owner unlocks it via the small **Admin** button in the bottom corner (password `22446688`, stored in plain sight by design; it only guards work in progress). The unlock persists per browser in `localStorage` (`varvi_admin_ok`).
-
-To go live, remove: the `.coming-soon` block from all three HTML pages, the `varvi_admin_ok` reads in their inline head scripts, the "Coming soon curtain" sections in `assets/js/main.js` (plus its `siteLocked` guards and the `data-cs-phone` wiring), and the curtain styles in `assets/css/styles.css`.
+All six wine pages share one template; only the data differs (name, vintage, label colour class `wp--<slug>` on `<body>`, spec rows, diploma slug). A change to the template has to be applied to all six files. Language-dependent values (alcohol, edition, energy, sugar) live in the dictionaries; the Romanian text in the HTML is the no-JS fallback and must match `i18n/ro.json`.
 
 ## Localization
 
@@ -42,8 +49,6 @@ Romanian is the default and English is available (`i18n/ro.json`, `en.json`). Ev
 
 ## Content still to be supplied
 
-- Company details (CUI, Reg. Com. number, registered office) for the footer and legal pages
-- Stockist addresses and telephone numbers
 - **Formspree**: the future contact form's insertion point is marked with a comment in `contact.html`. Add the `action="https://formspree.io/f/{form-id}"` form there when configured.
 
 ## GitHub Pages

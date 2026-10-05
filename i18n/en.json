@@ -2,9 +2,6 @@
   "meta.homeTitle": "VARVI | Wines from Transylvania",
   "meta.contactTitle": "VARVI | Contact",
 
-  "cs.text": "Our wines are still resting. The VARVI website opens soon.",
-  "cs.order": "Orders by telephone",
-
   "gate.welcome": "Welcome to VARVI",
   "gate.text": "Please confirm that you are of legal drinking age in your country.",
   "gate.enter": "Enter",
@@ -93,10 +90,9 @@
   "spage.catHotel": "Hotel & Restaurant",
   "spage.catPub": "Pub & Restaurant",
   "spage.catPension": "Guest House",
-  "spage.note": "[ the list of stockists is being completed ]",
 
   "legal.eyebrow": "Legal",
-  "legal.updated": "Last updated: 3 October 2026",
+  "legal.updated": "Last updated: 5 October 2026",
 
   "meta.privacyTitle": "VARVI | Privacy Policy",
   "privacy.title": "Privacy Policy",
@@ -124,7 +120,7 @@
   "cookies.s2h": "This site sets no cookies",
   "cookies.s2b": "<p>varvi.ro is a static presentation website. It sets no cookies of its own, uses no traffic analytics, shows no advertising and embeds no social media trackers.</p>",
   "cookies.s3h": "Local storage in your browser",
-  "cookies.s3b": "<p>For the site to work we use the browser's local storage (localStorage). This information stays on your device and is not transmitted to us:</p><ul><li><strong>varvi_lang</strong>: the language you chose for the site;</li><li><strong>varvi_age_ok</strong>: your confirmation of legal drinking age, so the question does not reappear on every visit;</li><li><strong>varvi_admin_ok</strong>: a technical entry used only during the pre-launch period.</li></ul><p>They remain until you clear the site's data from your browser.</p>",
+  "cookies.s3b": "<p>For the site to work we use the browser's local storage (localStorage). This information stays on your device and is not transmitted to us:</p><ul><li><strong>varvi_lang</strong>: the language you chose for the site;</li><li><strong>varvi_age_ok</strong>: your confirmation of legal drinking age, so the question does not reappear on every visit;</li><li><strong>varvi_music</strong> and <strong>varvi_volume</strong>: your background music preferences (on or off, and the volume).</li></ul><p>They remain until you clear the site's data from your browser.</p>",
   "cookies.s4h": "Third-party services",
   "cookies.s4b": "<p>The fonts and all other page resources are served directly from varvi.ro; no data is sent to third-party services when a page opens. The site links to external services such as Google Maps and ANPC's SAL platform; once you follow those links, the policies of those services apply.</p>",
   "cookies.s5h": "How to control storage",
@@ -227,6 +223,12 @@
   "alc.fn25": "13.03% vol.",
   "alc.frm": "13.16% vol.",
   "alc.rose": "12.39% vol.",
+  "wp.energy": "Energy",
+  "wp.sugar": "Sugar",
+  "kcal.sb25": "107.66 kcal / 150 ml",
+  "kcal.fn25": "109.5 kcal / 150 ml",
+  "sugar.sb25": "1.68 g/L",
+  "sugar.fn25": "2.5 g/L",
   "award.alba2026": "The Alba County Small Producers’ Wine Contest, 12th edition, 2026.",
   "award.alba2024": "The Alba County Small Producers’ Wine Contest, 10th edition, 2024.",
   "award.vintage2022": "The medal was awarded to the 2022 vintage.",

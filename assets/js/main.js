@@ -14,50 +14,6 @@
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ================= Coming soon curtain (pre-launch) =================
-     Hides the whole site from visitors while it is being built. The owner
-     unlocks it with the Admin password; the choice persists (varvi_admin_ok)
-     and the inline <head> script hides the curtain before paint from then on.
-     The password only guards work in progress; it is stored in plain sight
-     by design and is not treated as a secret. Remove with the curtain markup
-     when the site goes live. */
-  var curtain = document.querySelector('.coming-soon');
-  var siteLocked = !!curtain && !document.documentElement.classList.contains('admin-ok');
-  if (curtain) {
-    var adminPopup = document.getElementById('admin-popup');
-    var adminToggle = curtain.querySelector('[data-admin-toggle]');
-    var adminForm = adminPopup && adminPopup.querySelector('[data-admin-form]');
-    var adminPass = adminPopup && adminPopup.querySelector('[data-admin-pass]');
-    if (adminToggle && adminForm && adminPass) {
-      // The generic .modal wiring below adds backdrop-click and Escape close
-      adminToggle.addEventListener('click', function () {
-        openModal(adminPopup);
-        adminPass.focus();
-      });
-      adminPass.addEventListener('input', function () {
-        adminForm.classList.remove('is-wrong');
-      });
-      adminForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        if (adminPass.value === '22446688') {
-          var stored = false;
-          try {
-            localStorage.setItem('varvi_admin_ok', '1');
-            stored = localStorage.getItem('varvi_admin_ok') === '1';
-          } catch (err) {}
-          // Reload so everything (music, language prompt) initializes as for
-          // an unlocked visit; without storage, unlock this view only.
-          if (stored) window.location.reload();
-          else document.documentElement.classList.add('admin-ok');
-        } else {
-          adminForm.classList.add('is-wrong');
-          adminPass.value = '';
-          adminPass.focus();
-        }
-      });
-    }
-  }
-
   /* ================= Age gate =================
      Shown by default; an inline <head> script adds .age-ok before paint for
      returning visitors, so the gate never flashes. */
@@ -247,8 +203,8 @@
     el.textContent = PHONE || '+40 ··· ··· ···';
   });
 
-  // Tap-to-call: number links, the call CTA and the curtain's number
-  document.querySelectorAll('a[data-phone-number], [data-phone-href], [data-cs-phone]').forEach(function (a) {
+  // Tap-to-call: number links and the call CTA
+  document.querySelectorAll('a[data-phone-number], [data-phone-href]').forEach(function (a) {
     if (PHONE) a.setAttribute('href', 'tel:' + PHONE.replace(/\s/g, ''));
     else a.removeAttribute('href');
   });
@@ -275,7 +231,7 @@
   var soundControl = document.querySelector('.sound-control');
   var musicBtn = document.querySelector('[data-sound-toggle]');
   var musicVol = document.querySelector('[data-sound-volume]');
-  if (music && musicBtn && !siteLocked) {
+  if (music && musicBtn) {
     var savedVol = NaN;
     var savedOff = false;
     try {
@@ -433,7 +389,6 @@
   // Shown immediately, on top of the age gate when that is open (.modal
   // stacks above the gate), so the visitor can settle the language first.
   window.I18n.init().then(function (result) {
-    // No prompt behind the coming soon curtain; it reappears once unlocked
-    if (result && result.prompt && !siteLocked) showLangPrompt(result.prompt);
+    if (result && result.prompt) showLangPrompt(result.prompt);
   });
 })();
