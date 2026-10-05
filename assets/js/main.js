@@ -226,7 +226,9 @@
      Plays automatically on load. Browsers usually block unmuted autoplay
      without a gesture, so on rejection playback starts on the first
      interaction instead (the age gate / language prompt clicks count).
-     Mute state persists as varvi_music, volume as varvi_volume. */
+     Mute state persists as varvi_music, volume as varvi_volume. Every page
+     load creates a new player, so the playback position is saved on leaving
+     (varvi_music_pos) and the next page picks the track up from there. */
   var music = document.getElementById('bg-music');
   var soundControl = document.querySelector('.sound-control');
   var musicBtn = document.querySelector('[data-sound-toggle]');
@@ -311,6 +313,29 @@
       });
     }
 
+    var resumePosition = function () {
+      var pos = NaN;
+      try { pos = parseFloat(localStorage.getItem('varvi_music_pos')); } catch (e) {}
+      if (!(pos > 0)) return;
+      var seek = function () {
+        if (pos < music.duration) music.currentTime = pos;
+      };
+      if (music.readyState >= 1) seek();
+      else music.addEventListener('loadedmetadata', seek, { once: true });
+    };
+    window.addEventListener('pagehide', function () {
+      try { localStorage.setItem('varvi_music_pos', String(music.currentTime)); } catch (e) {}
+    });
+    // Back/forward can restore this page from the browser's cache with its
+    // old position; catch up with wherever the track got to since
+    window.addEventListener('pageshow', function (e) {
+      if (!e.persisted) return;
+      resumePosition();
+      if (music.paused) music.play().catch(function () {});
+      reflectMusic();
+    });
+
+    resumePosition();
     reflectMusic();
     startMusic();
   }
