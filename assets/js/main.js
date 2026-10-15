@@ -198,7 +198,7 @@
     });
   }
 
-  /* ================= Telephone / email wiring ================= */
+  /* ================= Phone / email wiring ================= */
   document.querySelectorAll('[data-phone-number]').forEach(function (el) {
     el.textContent = PHONE || '+40 ··· ··· ···';
   });
